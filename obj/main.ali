@@ -1,0 +1,22 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		075068c8 NE OO SU
+W matharray%s		matharray.adb		matharray.ali
+
+D main.adb		20181004094754 faf784a8 main%b
+D matharray.ads		20181004102848 fda7ec60 matharray%s
+D system.ads		20180524051738 32a08138 system%s
+X 1 main.adb
+3U11*Main 3b11 8l5 8t9
+X 2 matharray.ads
+1K9*MathArray 1|1w6 1r21 2|26e14
+
