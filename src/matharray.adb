@@ -31,7 +31,7 @@ package body MathArray with SPARK_Mode => On is
    end logarithm;
    
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean is
-   begin
+   begin pene
       return true;
    end perpendicular_vec;
 
