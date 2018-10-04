@@ -1,3 +1,4 @@
+with Ada.Text_IO; use Ada.Text_IO;
 package body MathArray with SPARK_Mode => On is
 
    function midpoint (point1 : vec; point2 : vec) return vec is
@@ -10,11 +11,6 @@ package body MathArray with SPARK_Mode => On is
       null;
    end module;
    
-   procedure fibonacci (vec1 : in out vec) is
-   begin
-      null;
-   end fibonacci;
-   
    function derivative (vec1 : vec) return vec is
    begin
       return vec1;
@@ -25,13 +21,36 @@ package body MathArray with SPARK_Mode => On is
       return 0;
    end derivative_x;
    
-   procedure logarithm (base : Integer; x: Integer; res: in out Integer) is
+   procedure logarithm (base : Integer; x: Float; res: in out Float) is
+      function exp (base:Float; n:Integer) return Float is
+         r:Float:=1.0;
+      begin
+         for i in reverse 1..n loop
+            r := r*base;
+         end loop;
+         return r;
+      end ;
+      val:Float:=0.0;
+      accurate:Integer:=10;
+      reps,i:Integer:=0;
+      bas:Integer:=base;
+      num:Float:=x;
    begin
-      null;
+      while num /= 1.0 and then accurate >= 0 loop
+         while num >= Float(bas) loop
+            num := num/Float(bas);
+            i := i+1;
+         end loop;
+         num := Float(exp(num,10));
+         val := 10.0*(val+Float(i));
+         accurate:=accurate-1;
+         reps:=reps+1;
+      end loop;
+      res := val/Float(exp(10.0,reps));
    end logarithm;
    
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean is
-   begin pene
+   begin 
       return true;
    end perpendicular_vec;
 
