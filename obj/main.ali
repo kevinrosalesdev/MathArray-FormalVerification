@@ -13,12 +13,11 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		c5928e91 NE OO SU
+U main%b		main.adb		875f7add NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.assertions%s	a-assert.adb		a-assert.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W matharray%s		matharray.adb		matharray.ali
-Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 W test_assertions%s	test_assertions.adb	test_assertions.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
@@ -31,14 +30,13 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20181004200550 068d91ab main%b
-D matharray.ads		20181004191836 fe7bc8bc matharray%s
+D main.adb		20181004200612 982e67a4 main%b
+D matharray.ads		20181005093148 2215caff matharray%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
-D s-imgrea.ads		20180524051736 c7a851e2 system.img_real%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
 D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
@@ -56,18 +54,17 @@ X 2 a-assert.ads
 55X4*Assertion_Error 11|21r12
 X 7 a-textio.ads
 49K13*Text_IO 471e16 11|2w10 2r32
-263U14*Put_Line 11|22s10 24s10 27s4 30s4
+263U14*Put_Line 11|22s10 24s10 27s4
 X 11 main.adb
-6U11*Main 6b11 31l5 31t9
-7f4 res{float} 29m24 29r24 30r13
+6U11*Main 6b11 29l5 29t9
+7f4 res{float}
 8U14 Test_logarithm 8b14 25l8 25t22 28s4
 9a7 Msg{string} 13r31 15r31 17r32 19r31 22r20 24r20
-10f7 res{float} 12m29 12r29 13r20 14m26 14r26 15r20 16m28 16r28 17r20 18m33
-. 18r33 19r20
+10f7 res{float} 12m29 13r20 14m26 15r20 16m28 17r20 18m33 19r20
 X 12 matharray.ads
-1K9*MathArray 11|1w6 1r28 12|23e14
-17U14*logarithm 11|12s7 14s7 16s7 18s7 29s4
-X 28 test_assertions.ads
-3K9*Test_Assertions 11|3w6 3r28 28|18e20
+1K9*MathArray 11|1w6 1r28 12|27e14
+17U14*logarithm 11|12s7 14s7 16s7 18s7
+X 27 test_assertions.ads
+3K9*Test_Assertions 11|3w6 3r28 27|18e20
 12U14*Assert_True 11|13s7 15s7 17s7 19s7
 

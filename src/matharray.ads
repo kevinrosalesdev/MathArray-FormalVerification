@@ -14,7 +14,13 @@ package MathArray with SPARK_Mode => On is
    function derivative_x (vec1 : vec; point : Integer) return Integer;
    --Return the derivative of a function in point (polynomial vec).
    
-   procedure logarithm (base : Integer; x: Float; res: in out Float);
+   procedure logarithm (base : Integer; x: Float; res: out Float) with
+     Global  => null,
+     Depends => (Res => (base, x)),
+     Pre => base > 1,
+     Post => res**base = x; 
+   --> Esto lo tendríamos que ver porque la precisión del método no es exacta varía en un par de decimales
+   --EN CUARENTENA(VERIFICACIÓN FORMAL)
    --Calculate the logarithm of x with base parameter and saves it in res.
    
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean;

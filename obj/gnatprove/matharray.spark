@@ -1,0 +1,802 @@
+{
+  "spark": [
+    {
+      "name": "MathArray",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.midpoint",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.module",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 8
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.derivative",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 11
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.derivative_x",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 14
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.logarithm",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 17
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.perpendicular_vec",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 24
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "MathArray.logarithm.exp",
+      "sloc": [
+        {
+          "file": "matharray.adb",
+          "line": 25
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "matharray.ads",
+      "line": 8,
+      "col": 34,
+      "rule": "INOUT_ONLY_READ",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 8,
+      "col": 22,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 1,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 8,
+      "col": 34,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 2,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 17,
+      "col": 51,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__100.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 21,
+      "col": 24,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__101.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 41,
+      "col": 17,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__102.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 41,
+      "col": 17,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__103.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 42,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__104.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 43,
+      "col": 13,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__105.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 40,
+      "col": 34,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__106.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 40,
+      "col": 34,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__107.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 45,
+      "col": 23,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__108.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 29,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__109.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 31,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__110.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 46,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__111.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 46,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__112.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 47,
+      "col": 18,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__113.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 48,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__114.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 49,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__115.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 50,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__116.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 39,
+      "col": 47,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__117.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 39,
+      "col": 47,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__118.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 52,
+      "col": 24,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__119.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 29,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__120.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 31,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__121.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 52,
+      "col": 11,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__122.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 5,
+      "col": 37,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.midpoint",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 3,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 24,
+      "col": 32,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 24
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 4,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 24,
+      "col": 44,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 24
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 5,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 29,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm.exp",
+        "sloc": [
+          {
+            "file": "matharray.adb",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__207.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 31,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.logarithm.exp",
+        "sloc": [
+          {
+            "file": "matharray.adb",
+            "line": 25
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__208.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 14,
+      "col": 27,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.derivative_x",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 6,
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 14,
+      "col": 39,
+      "rule": "UNUSED",
+      "severity": "warning",
+      "entity": {
+        "name": "MathArray.derivative_x",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 14
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "msg_id": 7,
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "MathArray.logarithm",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "MathArray.derivative",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "MathArray.logarithm.exp",
+          "sloc": [
+            {
+              "file": "matharray.adb",
+              "line": 25
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 3.25482198968530E-03,
+    "globals (basic)": 3.63880433142185E-02,
+    "globals/properties (advanced)": 5.22913075983524E-02,
+    "flow analysis": 2.05299407243729E-02
+  }
+}

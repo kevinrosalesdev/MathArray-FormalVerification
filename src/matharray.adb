@@ -21,12 +21,14 @@ package body MathArray with SPARK_Mode => On is
       return 0;
    end derivative_x;
    
-   procedure logarithm (base : Integer; x: Float; res: in out Float) is
+   procedure logarithm (base : Integer; x: Float; res:out Float) is
+      --EN CUARENTENA(VERIFICACIÓN FORMAL)--> Si quieres verificar vuestros casos comentar este procedimiento
       function exp (base:Float; n:Integer) return Float is
          r:Float:=1.0;
       begin
          for i in reverse 1..n loop
             r := r*base;
+            pragma Loop_Invariant (r = r'Loop_Entry*base);
          end loop;
          return r;
       end ;
@@ -40,11 +42,17 @@ package body MathArray with SPARK_Mode => On is
          while num >= Float(bas) loop
             num := num/Float(bas);
             i := i+1;
+            pragma Loop_Variant(Increases => i);
+            pragma Loop_Invariant(num < num'Loop_Entry);
+            -->Mejorar Invariante
          end loop;
          num := Float(exp(num,10));
          val := 10.0*(val+Float(i));
          accurate:=accurate-1;
          reps:=reps+1;
+         pragma Loop_Variant(Increases => reps);
+         pragma Loop_Variant(Decreases => accurate);
+         -->Encontrar Invariante adecuada******
       end loop;
       res := val/Float(exp(10.0,reps));
    end logarithm;
