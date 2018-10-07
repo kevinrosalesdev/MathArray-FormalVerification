@@ -6,6 +6,7 @@ A -gnatc
 P GP FX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
@@ -15,11 +16,11 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U matharray%b		matharray.adb		7c0cb279 OO PK IL
+U matharray%b		matharray.adb		6ed2edd7 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
-U matharray%s		matharray.ads		2215caff OO PK IL
+U matharray%s		matharray.ads		84587eba OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
@@ -27,8 +28,8 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181005093148 2215caff matharray%s
-D matharray.adb		20181005094612 d604cbdc matharray%b
+D matharray.ads		20181007183842 84587eba matharray%s
+D matharray.adb		20181007183634 62972037 matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
@@ -39,8 +40,8 @@ X 1 ada.ads
 X 4 a-textio.ads
 49K13*Text_IO 471e16 8|1w10 1r27
 X 7 matharray.ads
-1K9*MathArray 27l5 27e14 8|2b14 65l5 65t14
-3A9*vec(integer)<integer> 5r32 5r46 5r58 8r29 11r32 11r44 14r34 24r39 24r51
+1K9*MathArray 33l5 33e14 8|2b14 70l5 70t14
+3A9*vec(integer)<integer> 5r32 5r46 5r58 8r29 11r32 11r44 14r34 26r39 26r51
 . 8|4r32 4r46 4r58 9r29 14r32 14r44 19r34 60r39 60r51
 5V13*midpoint{3A9} 5>23 5>37 8|4b13 7l8 7t16
 5a23 point1{3A9} 8|4b23 6r14
@@ -53,25 +54,13 @@ X 7 matharray.ads
 14V13*derivative_x{integer} 14>27 14>39 8|19b13 22l8 22t20
 14a27 vec1{3A9} 8|19b27
 14i39 point{integer} 8|19b39
-17U14*logarithm 17>25 17>41 17<51 8|24b14 58l8 58t17
-17i25 base{integer} 19r26 20r13 21r19 8|24b25 38r20
-17f41 x{float} 19r32 21r26 8|24b41 39r18
-17f51 res{float} 19r18 21r14 8|24b51 57m7
-24V13*perpendicular_vec{boolean} 24>32 24>44 8|60b13 63l8 63t25
-24a32 vec1{3A9} 8|60b32
-24a44 vec2{3A9} 8|60b44
+26V13*perpendicular_vec{boolean} 26>32 26>44 28r18 30r14 30r49 8|60b13 68l8
+. 68t25
+26a32 vec1{3A9} 28r47 29r13 29r48 8|60b32 63r16 63r28 64r30 65r56
+26a44 vec2{3A9} 28r53 29r27 29r72 8|60b44 64r22 65r64
 X 8 matharray.adb
-26V16 exp{float} 34t11 49s23 57s24
-26f21 base{float} 30r20 31r53
-26i33 n{integer} 29r30
-27f10 r{float} 30m13 30r18 31r36 31r40 33r17
-29i14 i{integer}
-35f7 val{float} 50m10 50r23 57r14
-36i7 accurate{integer} 41r33 51m10 51r20 54r43
-37i7 reps{integer} 52m10 52r16 53r43 57r33
-37i12 i{integer} 44m13 44r18 45r46 50r33
-38i7 bas{integer} 42r29 43r30
-39f7 num{float} 41r13 42r16 43m13 43r20 46r35 46r41 49m10 49r27
+61i7 res{integer} 64m10 64r15 65r32 65r38 67r14
+63i11 i{integer} 64r27 64r35 65r61 65r69
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS matharray__midpoint 0
@@ -82,10 +71,6 @@ GG EK_DIRECT_CALLS matharray__derivative 0
 GG EK_GLOBALS matharray__derivative local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS matharray__derivative_x 0
 GG EK_GLOBALS matharray__derivative_x local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS matharray__logarithm__exp 0
-GG EK_GLOBALS matharray__logarithm__exp local TRUE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS matharray__logarithm 0
-GG EK_GLOBALS matharray__logarithm local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS matharray__perpendicular_vec 0
 GG EK_GLOBALS matharray__perpendicular_vec local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS matharray 0

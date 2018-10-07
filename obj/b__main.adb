@@ -21,16 +21,16 @@ package body ada_main is
    E080 : Short_Integer; pragma Import (Ada, E080, "system__object_reader_E");
    E047 : Short_Integer; pragma Import (Ada, E047, "system__dwarf_lines_E");
    E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
-   E105 : Short_Integer; pragma Import (Ada, E105, "ada__tags_E");
-   E103 : Short_Integer; pragma Import (Ada, E103, "ada__streams_E");
-   E117 : Short_Integer; pragma Import (Ada, E117, "system__file_control_block_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "system__finalization_root_E");
-   E114 : Short_Integer; pragma Import (Ada, E114, "ada__finalization_E");
-   E113 : Short_Integer; pragma Import (Ada, E113, "system__file_io_E");
-   E101 : Short_Integer; pragma Import (Ada, E101, "ada__text_io_E");
+   E107 : Short_Integer; pragma Import (Ada, E107, "ada__tags_E");
+   E105 : Short_Integer; pragma Import (Ada, E105, "ada__streams_E");
+   E119 : Short_Integer; pragma Import (Ada, E119, "system__file_control_block_E");
+   E118 : Short_Integer; pragma Import (Ada, E118, "system__finalization_root_E");
+   E116 : Short_Integer; pragma Import (Ada, E116, "ada__finalization_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "system__file_io_E");
+   E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "system__assertions_E");
-   E119 : Short_Integer; pragma Import (Ada, E119, "matharray_E");
-   E121 : Short_Integer; pragma Import (Ada, E121, "test_assertions_E");
+   E138 : Short_Integer; pragma Import (Ada, E138, "matharray_E");
+   E140 : Short_Integer; pragma Import (Ada, E140, "test_assertions_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -41,7 +41,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E101 := E101 - 1;
+      E103 := E103 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -52,7 +52,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E113 := E113 - 1;
+         E115 := E115 - 1;
          F2;
       end;
       declare
@@ -188,25 +188,25 @@ package body ada_main is
       E080 := E080 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
-      E105 := E105 + 1;
+      E107 := E107 + 1;
       Ada.Streams'Elab_Spec;
-      E103 := E103 + 1;
+      E105 := E105 + 1;
       System.File_Control_Block'Elab_Spec;
-      E117 := E117 + 1;
+      E119 := E119 + 1;
       System.Finalization_Root'Elab_Spec;
-      E116 := E116 + 1;
+      E118 := E118 + 1;
       Ada.Finalization'Elab_Spec;
-      E114 := E114 + 1;
+      E116 := E116 + 1;
       System.File_Io'Elab_Body;
-      E113 := E113 + 1;
+      E115 := E115 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E101 := E101 + 1;
+      E103 := E103 + 1;
       System.Assertions'Elab_Spec;
       E099 := E099 + 1;
-      E119 := E119 + 1;
+      E138 := E138 + 1;
       Test_Assertions'Elab_Spec;
-      E121 := E121 + 1;
+      E140 := E140 + 1;
    end adainit;
 
    procedure Ada_Main_Program;

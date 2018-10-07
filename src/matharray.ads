@@ -23,7 +23,11 @@ package MathArray with SPARK_Mode => On is
    --EN CUARENTENA(VERIFICACIÓN FORMAL)
    --Calculate the logarithm of x with base parameter and saves it in res.
    
-   function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean;
+   function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean  with
+     Global  => null,
+     Depends => (perpendicular_vec'Result => (vec1, vec2)),
+     Pre => vec1'Length = vec2'Length and then vec1'First > 0 and then vec2'First > 0,
+     Post => perpendicular_vec'Result = true or perpendicular_vec'Result = False;
    --Return true if both vecs are perpendicular between them.
    
 end MathArray;

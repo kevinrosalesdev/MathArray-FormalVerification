@@ -58,8 +58,14 @@ package body MathArray with SPARK_Mode => On is
    end logarithm;
    
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean is
+      res:Integer:=0;
    begin 
-      return true;
+      for i in vec1'First..vec1'Last loop
+         res:=res + (vec2(i)*vec1(i));
+         pragma Loop_Invariant(res = res'Loop_Entry + (vec1(i)*vec2(i)));
+         ---> Mejorar invariante los casos que da es porque no ayudamos lo suficiente al verificador
+      end loop;
+      return res = 0;
    end perpendicular_vec;
 
 end MathArray;
