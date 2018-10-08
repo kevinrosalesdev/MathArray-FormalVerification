@@ -12,7 +12,8 @@ package MathArray with SPARK_Mode => On is
      Global => null;
    --Return a derivative polynomial vec.
    
-   function derivative_x (vec1 : vec; point : Integer) return Integer;
+   function derivative_x (vec1 : vec; point : Integer) return Integer with
+     Global => null;
    --Return the derivative of a function in point (polynomial vec).
    
    procedure logarithm (base : Integer; x: Float; res: out Float) with

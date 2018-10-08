@@ -30,7 +30,7 @@ package body ada_main is
    E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "system__assertions_E");
    E138 : Short_Integer; pragma Import (Ada, E138, "matharray_E");
-   E140 : Short_Integer; pragma Import (Ada, E140, "test_assertions_E");
+   E142 : Short_Integer; pragma Import (Ada, E142, "test_assertions_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -206,7 +206,7 @@ package body ada_main is
       E099 := E099 + 1;
       E138 := E138 + 1;
       Test_Assertions'Elab_Spec;
-      E140 := E140 + 1;
+      E142 := E142 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
