@@ -34,9 +34,9 @@ procedure Main is
       --v3 : vec(1..5);
    begin
       v0 := (2,4); v1 := (3,-7);
-      Assert_True (perpendicular_vec(v0,v1)=False , Msg & " perpendicular");
+      Assert_True (perpendicular_vec(v0,v1)=False , Msg & " not perpendicular");
       v0 := (6,4); v1 := (-6, 9);
-      Assert_True (perpendicular_vec(v0,v1), Msg & " not perpendicular");
+      Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular");
       v2 := (1,1,1,1,2);
       Assert_True (perpendicular_vec(v0,v2)=False, Msg & " with diferents lengths");
       --Assert_True (perpendicular_vec(v2,v3)=False, Msg & " with diferents lengths");

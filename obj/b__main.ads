@@ -37,7 +37,11 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
+<<<<<<< HEAD
    u00001 : constant Version_32 := 16#ee1b48a0#;
+=======
+   u00001 : constant Version_32 := 16#0addcf22#;
+>>>>>>> 0ab8d2632c99dbc73e116b2bb3452ae328e642b0
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -309,9 +313,15 @@ package ada_main is
    pragma Export (C, u00135, "system__exn_llfS");
    u00136 : constant Version_32 := 16#6ad59d2c#;
    pragma Export (C, u00136, "system__fat_fltS");
+<<<<<<< HEAD
    u00137 : constant Version_32 := 16#155e863d#;
    pragma Export (C, u00137, "matharrayB");
    u00138 : constant Version_32 := 16#3d7cd9bf#;
+=======
+   u00137 : constant Version_32 := 16#9e2dcd5a#;
+   pragma Export (C, u00137, "matharrayB");
+   u00138 : constant Version_32 := 16#4b34ca51#;
+>>>>>>> 0ab8d2632c99dbc73e116b2bb3452ae328e642b0
    pragma Export (C, u00138, "matharrayS");
    u00139 : constant Version_32 := 16#0dcf11d5#;
    pragma Export (C, u00139, "test_assertionsB");

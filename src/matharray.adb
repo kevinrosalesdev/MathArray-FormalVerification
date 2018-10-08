@@ -32,7 +32,7 @@ package body MathArray with SPARK_Mode => On is
       end loop;
       return res;
    end derivative_x;
-   
+     
    procedure logarithm (base : Integer; x: Float; res:out Float) is
       --EN CUARENTENA(VERIFICACIÓN FORMAL)--> Si quieres verificar vuestros casos comentar este procedimiento
       function exp (base:Float; n:Integer) return Float is
@@ -74,7 +74,8 @@ package body MathArray with SPARK_Mode => On is
    begin 
       for i in vec1'First..vec1'Last loop
          res:=res + (vec2(i)*vec1(i));
-         pragma Loop_Invariant(res = res'Loop_Entry + (vec1(i)*vec2(i)));
+         pragma Loop_Invariant(for all k in vec1'First..i =>
+                                 res-res'Loop_Entry = vec1(k)*vec2(k));
          ---> Mejorar invariante los casos que da es porque no ayudamos lo suficiente al verificador
       end loop;
       return res = 0;

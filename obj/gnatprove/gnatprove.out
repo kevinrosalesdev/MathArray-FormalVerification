@@ -17,10 +17,6 @@ Total                            14    4 (29%)          .          .     5 (36%)
 
 
 Analyzed 1 unit
-in unit matharray, 6 subprograms and packages out of 6 analyzed
+in unit matharray, 2 subprograms and packages out of 2 analyzed
   MathArray at matharray.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.derivative at matharray.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.derivative_x at matharray.ads:14 flow analyzed (0 errors, 0 checks and 2 warnings) and proved (0 checks)
-  MathArray.midpoint at matharray.ads:5 flow analyzed (0 errors, 0 checks and 1 warnings) and proved (0 checks)
-  MathArray.module at matharray.ads:8 flow analyzed (0 errors, 0 checks and 3 warnings) and proved (0 checks)
   MathArray.perpendicular_vec at matharray.ads:26 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 5 checks out of 10 proved

@@ -27,8 +27,13 @@ package MathArray with SPARK_Mode => On is
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean  with
      Global  => null,
      Depends => (perpendicular_vec'Result => (vec1, vec2)),
-     Pre => vec1'Length = vec2'Length and then vec1'First > 0 and then vec2'First > 0,
-     Post => perpendicular_vec'Result = true or perpendicular_vec'Result = False;
+     Pre => vec1'Length = vec2'Length and then vec1'First > 0 and then vec2'First > 0;
+   -->Hay que ayudar al verificador con un post adecuada
+   -->Estoy pensando en la siguente 
+--     Post => (for all i in vec1'Firts..vec2'Last =>
+--                 vec1(i)*vec2(i) = -(vec1(i)*vec2(i)));
+--     claramente estoy no se cumple sería también añadir un cuantificador exitenciales 
+--       que indique lo contrario.
    --Return true if both vecs are perpendicular between them.
    
 end MathArray;
