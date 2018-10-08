@@ -11,46 +11,6 @@
       "spark": "all"
     },
     {
-      "name": "MathArray.midpoint",
-      "sloc": [
-        {
-          "file": "matharray.ads",
-          "line": 5
-        }
-      ],
-      "spark": "all"
-    },
-    {
-      "name": "MathArray.module",
-      "sloc": [
-        {
-          "file": "matharray.ads",
-          "line": 8
-        }
-      ],
-      "spark": "all"
-    },
-    {
-      "name": "MathArray.derivative",
-      "sloc": [
-        {
-          "file": "matharray.ads",
-          "line": 11
-        }
-      ],
-      "spark": "all"
-    },
-    {
-      "name": "MathArray.derivative_x",
-      "sloc": [
-        {
-          "file": "matharray.ads",
-          "line": 14
-        }
-      ],
-      "spark": "all"
-    },
-    {
       "name": "MathArray.perpendicular_vec",
       "sloc": [
         {
@@ -62,106 +22,6 @@
     }
   ],
   "flow": [
-    {
-      "file": "matharray.ads",
-      "line": 14,
-      "col": 27,
-      "rule": "UNUSED",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.derivative_x",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 0,
-      "how_proved": "flow"
-    },
-    {
-      "file": "matharray.ads",
-      "line": 14,
-      "col": 39,
-      "rule": "UNUSED",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.derivative_x",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 14
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 1,
-      "how_proved": "flow"
-    },
-    {
-      "file": "matharray.ads",
-      "line": 8,
-      "col": 34,
-      "rule": "INOUT_ONLY_READ",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 8
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 2,
-      "how_proved": "flow"
-    },
-    {
-      "file": "matharray.ads",
-      "line": 8,
-      "col": 22,
-      "rule": "UNUSED",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 8
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 3,
-      "how_proved": "flow"
-    },
-    {
-      "file": "matharray.ads",
-      "line": 8,
-      "col": 34,
-      "rule": "UNUSED",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 8
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 4,
-      "how_proved": "flow"
-    },
     {
       "file": "matharray.adb",
       "line": 64,
@@ -179,7 +39,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__81.trace",
+      "tracefile": "matharray__flow__47.trace",
       "how_proved": "flow"
     },
     {
@@ -199,12 +59,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__82.trace",
+      "tracefile": "matharray__flow__48.trace",
       "how_proved": "flow"
     },
     {
       "file": "matharray.adb",
-      "line": 65,
+      "line": 66,
       "col": 41,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -219,12 +79,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__83.trace",
+      "tracefile": "matharray__flow__49.trace",
       "how_proved": "flow"
     },
     {
       "file": "matharray.adb",
-      "line": 67,
+      "line": 69,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -239,34 +99,14 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__84.trace",
-      "how_proved": "flow"
-    },
-    {
-      "file": "matharray.ads",
-      "line": 5,
-      "col": 37,
-      "rule": "UNUSED",
-      "severity": "warning",
-      "entity": {
-        "name": "MathArray.midpoint",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 5
-          }
-        ]
-      },
-      "check_tree": {
-      },
-      "msg_id": 5,
+      "tracefile": "matharray__flow__50.trace",
       "how_proved": "flow"
     }
   ],
   "proof": [
     {
       "file": "matharray.ads",
-      "line": 30,
+      "line": 29,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -293,7 +133,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 30,
+      "check_line": 29,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -338,11 +178,6 @@
               "result": "Unknown (other)",
               "steps": 111,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 111,
-              "time": 0
             }
           },
           "transformations": {
@@ -351,6 +186,11 @@
         {
           "proof_attempts": {
             "CVC4": {
+              "result": "Unknown (other)",
+              "steps": 111,
+              "time": 0
+            },
+            "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 111,
               "time": 0
@@ -388,7 +228,7 @@
           "64": [
             {
               "name": "i",
-              "value": "2",
+              "value": "1",
               "kind": "variable"
             },
             {
@@ -398,17 +238,17 @@
             },
             {
               "name": "vec2",
-              "value": "(0 => 1, others => 2)",
+              "value": "(0 => 2, others => 1)",
               "kind": "variable"
             },
             {
               "name": "vec2'First",
-              "value": "1",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "vec2'Last",
-              "value": "1",
+              "value": "2",
               "kind": "variable"
             }
           ]
@@ -417,44 +257,84 @@
           "26": [
             {
               "name": "vec1",
-              "value": "(others => 2)",
+              "value": "(others => 1)",
               "kind": "variable"
             },
             {
               "name": "vec1'First",
-              "value": "2",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "vec1'Last",
-              "value": "2",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "vec2",
-              "value": "(0 => 1, others => 2)",
+              "value": "(0 => 2, others => 1)",
               "kind": "variable"
             },
             {
               "name": "vec2'First",
-              "value": "1",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "vec2'Last",
-              "value": "1",
+              "value": "2",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 6,
+      "msg_id": 0,
       "how_proved": "prover"
     },
     {
       "file": "matharray.adb",
-      "line": 65,
-      "col": 53,
+      "line": 66,
+      "col": 62,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 26
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 109,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 66,
+      "check_col": 62,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 66,
+      "col": 37,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -480,8 +360,8 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 65,
-      "check_col": 53,
+      "check_line": 66,
+      "check_col": 37,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -493,48 +373,8 @@
     },
     {
       "file": "matharray.adb",
-      "line": 65,
-      "col": 63,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 26
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 65,
-      "check_col": 63,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 65,
-      "col": 32,
+      "line": 66,
+      "col": 34,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "medium",
       "entity": {
@@ -551,13 +391,13 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 824,
-              "time": 1.30000000000000E-01
+              "steps": 3426,
+              "time": 4.70000000000000E-01
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 884,
-              "time": 1.70000000000000E-01
+              "steps": 2884,
+              "time": 4.10000000000000E-01
             }
           },
           "transformations": {
@@ -592,24 +432,29 @@
           "64": [
             {
               "name": "res",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             }
           ],
-          "65": [
+          "66": [
             {
               "name": "i",
-              "value": "3",
+              "value": "2",
+              "kind": "variable"
+            },
+            {
+              "name": "k",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "res",
-              "value": "0",
+              "value": "1",
               "kind": "variable"
             },
             {
               "name": "vec1",
-              "value": "(0 => -1, 1 => -1, 3 => -1, others => 1)",
+              "value": "(0 => -1, 1 => -2, 2 => -2, others => 1)",
               "kind": "variable"
             },
             {
@@ -619,12 +464,12 @@
             },
             {
               "name": "vec1'Last",
-              "value": "3",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "vec2",
-              "value": "(0 => -1, 1 => -1, 2 => -1, 3 => -1, others => 3)",
+              "value": "(0 => 0, 1 => 1, 2 => -2, others => 2)",
               "kind": "variable"
             },
             {
@@ -634,7 +479,7 @@
             },
             {
               "name": "vec2'Last",
-              "value": "3",
+              "value": "2",
               "kind": "variable"
             }
           ]
@@ -643,7 +488,7 @@
           "26": [
             {
               "name": "vec1",
-              "value": "(0 => -1, 1 => -1, 3 => -1, others => 1)",
+              "value": "(0 => -1, 1 => -2, 2 => -2, others => 1)",
               "kind": "variable"
             },
             {
@@ -653,12 +498,12 @@
             },
             {
               "name": "vec1'Last",
-              "value": "3",
+              "value": "2",
               "kind": "variable"
             },
             {
               "name": "vec2",
-              "value": "(0 => -1, 1 => -1, 2 => -1, 3 => -1, others => 3)",
+              "value": "(0 => 0, 1 => 1, 2 => -2, others => 2)",
               "kind": "variable"
             },
             {
@@ -668,13 +513,13 @@
             },
             {
               "name": "vec2'Last",
-              "value": "3",
+              "value": "2",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 7,
+      "msg_id": 1,
       "how_proved": "prover"
     },
     {
@@ -697,8 +542,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
-              "time": 0
+              "steps": 1220,
+              "time": 1.70000000000000E-01
             }
           },
           "transformations": {
@@ -713,58 +558,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 65,
-      "col": 61,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 26
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 65,
-      "check_col": 61,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.70000001788139E-01
         }
       }
     },
@@ -787,9 +581,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Timeout",
-              "steps": -1,
-              "time": 1
+              "result": "Unknown (other)",
+              "steps": 10242,
+              "time": 5.11000000000000E+00
             }
           },
           "transformations": {
@@ -800,12 +594,12 @@
             "CVC4": {
               "result": "Unknown (other)",
               "steps": 768,
-              "time": 1.10000000000000E-01
+              "time": 1.30000000000000E-01
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 768,
-              "time": 2.00000000000000E-01
+              "time": 1.40000000000000E-01
             }
           },
           "transformations": {
@@ -880,13 +674,13 @@
           ]
         }
       },
-      "msg_id": 8,
+      "msg_id": 2,
       "how_proved": "prover"
     },
     {
       "file": "matharray.adb",
-      "line": 65,
-      "col": 69,
+      "line": 66,
+      "col": 68,
       "rule": "VC_INDEX_CHECK",
       "severity": "medium",
       "entity": {
@@ -903,16 +697,35 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 180,
-              "time": 0
+              "steps": 156,
+              "time": 1.10000000000000E-01
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 180,
-              "time": 1.30000000000000E-01
+              "steps": 156,
+              "time": 0
             }
           },
           "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (other)",
+                    "steps": 157,
+                    "time": 9.00000000000000E-02
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
           }
         },
         {
@@ -928,9 +741,9 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 65,
-      "check_col": 69,
-      "tracefile": "matharray.adb_65_69_index_check.trace",
+      "check_line": 66,
+      "check_col": 68,
+      "tracefile": "matharray.adb_66_68_index_check.trace",
       "cntexmp": {
         "matharray.adb": {
           "61": [
@@ -959,15 +772,10 @@
               "kind": "variable"
             }
           ],
-          "65": [
-            {
-              "name": "i",
-              "value": "3",
-              "kind": "variable"
-            },
+          "66": [
             {
               "name": "vec2",
-              "value": "(2 => 0, 3 => 0, others => 3)",
+              "value": "(2 => 0, others => 3)",
               "kind": "variable"
             },
             {
@@ -986,7 +794,7 @@
           "26": [
             {
               "name": "vec1",
-              "value": "(2 => 0, 3 => 0, others => 3)",
+              "value": "(2 => 0, others => 3)",
               "kind": "variable"
             },
             {
@@ -1001,7 +809,7 @@
             },
             {
               "name": "vec2",
-              "value": "(2 => 0, 3 => 0, others => 3)",
+              "value": "(2 => 0, others => 3)",
               "kind": "variable"
             },
             {
@@ -1017,8 +825,59 @@
           ]
         }
       },
-      "msg_id": 9,
+      "msg_id": 3,
       "how_proved": "prover"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 66,
+      "col": 60,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 26
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 66,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     },
     {
       "file": "matharray.adb",
@@ -1045,8 +904,8 @@
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 3594,
-              "time": 9.80000000000000E-01
+              "steps": 4827,
+              "time": 8.90000000000000E-01
             }
           },
           "transformations": {
@@ -1101,58 +960,42 @@
           "26": [
             {
               "name": "vec1",
-              "value": "(0 => -7, 4 => -7, 5 => -7, 6 => -7, others => 4)",
+              "value": "(6 => -8, 7 => -8, others => 6)",
               "kind": "variable"
             },
             {
               "name": "vec1'First",
-              "value": "4",
+              "value": "6",
               "kind": "variable"
             },
             {
               "name": "vec1'Last",
-              "value": "7",
+              "value": "9",
               "kind": "variable"
             },
             {
               "name": "vec2",
-              "value": "(0 => -7, 4 => -7, 5 => 4, 6 => 4, others => 7)",
+              "value": "(0 => 5, 6 => 5, 7 => 5, others => 9)",
               "kind": "variable"
             },
             {
               "name": "vec2'First",
-              "value": "4",
+              "value": "6",
               "kind": "variable"
             },
             {
               "name": "vec2'Last",
-              "value": "7",
+              "value": "9",
               "kind": "variable"
             }
           ]
         }
       },
-      "msg_id": 10,
+      "msg_id": 4,
       "how_proved": "prover"
     }
   ],
   "assumptions": [
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "MathArray.derivative_x",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 14
-            }
-          ]
-        }
-      }
-    },
     {
       "assumptions": [
       ],
@@ -1175,22 +1018,6 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "MathArray.midpoint",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 5
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
           "name": "MathArray",
           "sloc": [
             {
@@ -1200,65 +1027,17 @@
           ]
         }
       }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "MathArray.module",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 8
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "MathArray.derivative",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 11
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "MathArray.derivative",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 11
-            }
-          ]
-        }
-      }
     }
   ],
   "timings": {
-    "marking": 3.02560790441930E-03,
-    "globals (basic)": 4.06219810247421E-02,
-    "globals/properties (advanced)": 5.77137283980846E-02,
-    "flow analysis": 1.15776406601071E-02,
-    "codepeer results": 1.43690003824304E-05,
-    "init_why_sections": 4.78267989819869E-04,
-    "translation of standard": 7.98276346176863E-03,
-    "translation of compilation unit": 9.42830890417099E-02,
-    "proof": 1.49096765518188E+01
+    "marking": 2.94487201608717E-03,
+    "globals (basic)": 4.28169481456280E-02,
+    "globals/properties (advanced)": 5.84171041846275E-02,
+    "flow analysis": 5.41352713480592E-03,
+    "codepeer results": 1.16319997687242E-05,
+    "init_why_sections": 4.68688987893984E-04,
+    "translation of standard": 7.61396996676922E-03,
+    "translation of compilation unit": 7.96504169702530E-02,
+    "proof": 1.43336076736450E+01
   }
 }
