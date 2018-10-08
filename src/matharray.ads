@@ -9,6 +9,7 @@ package MathArray with SPARK_Mode => On is
    --Calculate a vector module, which is saved in res. 
    
    function derivative (vec1 : vec) return vec;
+     Global => null;
    --Return a derivative polynomial vec.
    
    function derivative_x (vec1 : vec; point : Integer) return Integer;

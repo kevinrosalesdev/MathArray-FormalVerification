@@ -13,6 +13,7 @@ package body MathArray with SPARK_Mode => On is
    
    function derivative (vec1 : vec) return vec is
    begin
+      res : vec(vec1'Length);
       return vec1;
    end derivative;
    
