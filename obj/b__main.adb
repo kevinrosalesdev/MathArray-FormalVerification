@@ -242,11 +242,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Usuario\Desktop\MathArray\MathArray-PR3\obj\matharray.o
-   --   C:\Users\Usuario\Desktop\MathArray\MathArray-PR3\obj\test_assertions.o
-   --   C:\Users\Usuario\Desktop\MathArray\MathArray-PR3\obj\main.o
-   --   -LC:\Users\Usuario\Desktop\MathArray\MathArray-PR3\obj\
-   --   -LC:\Users\Usuario\Desktop\MathArray\MathArray-PR3\obj\
+   --   C:\Users\kevin\Desktop\Proyecto VF\MathArray-PR3\obj\matharray.o
+   --   C:\Users\kevin\Desktop\Proyecto VF\MathArray-PR3\obj\test_assertions.o
+   --   C:\Users\kevin\Desktop\Proyecto VF\MathArray-PR3\obj\main.o
+   --   -LC:\Users\kevin\Desktop\Proyecto VF\MathArray-PR3\obj\
+   --   -LC:\Users\kevin\Desktop\Proyecto VF\MathArray-PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

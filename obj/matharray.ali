@@ -5,21 +5,24 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U matharray%b		matharray.adb		48b931c8 NE OO PK IL
+U matharray%b		matharray.adb		155e863d NE OO PK IL
 W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U matharray%s		matharray.ads		2215caff EE NE OO PK IL
+U matharray%s		matharray.ads		3d7cd9bf EE NE OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -30,8 +33,8 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181005095734 2215caff matharray%s
-D matharray.adb		20181007182448 e2b1486d matharray%b
+D matharray.ads		20181008184838 3d7cd9bf matharray%s
+D matharray.adb		20181008194828 a03fecd8 matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -50,39 +53,46 @@ X 1 ada.ads
 X 6 a-textio.ads
 49K13*Text_IO 471e16 11|1w10 1r27
 X 10 matharray.ads
-1K9*MathArray 29l5 29e14 11|2b14 72l5 72t14
-3A9*vec(integer)<integer> 5r32 5r46 5r58 8r29 11r32 11r44 14r34 26r39 26r51
-. 11|4r32 4r46 4r58 9r29 14r32 14r44 19r34 60r39 60r51
+1K9*MathArray 34l5 34e14 11|2b14 83l5 83t14
+3A9*vec(integer)<integer> 5r32 5r46 5r58 8r29 11r32 11r44 15r34 27r39 27r51
+. 11|4r32 4r46 4r58 9r29 14r32 14r44 15r13 25r34 27r14 72r39 72r51
 5V13*midpoint{3A9} 5>23 5>37 11|4b13 7l8 7t16
 5a23 point1{3A9} 11|4b23 6r14
 5a37 point2{3A9} 11|4b37
 8U14*module 8>22 8=34 11|9b14 12l8 12t14
 8a22 vec1{3A9} 11|9b22
 8f34 res{float} 11|9b34
-11V13*derivative{3A9} 11>25 11|14b13 17l8 17t18
-11a25 vec1{3A9} 11|14b25 16r14
-14V13*derivative_x{integer} 14>27 14>39 11|19b13 22l8 22t20
-14a27 vec1{3A9} 11|19b27
-14i39 point{integer} 11|19b39
-17U14*logarithm 17>25 17>41 17<51 11|24b14 58l8 58t17
-17i25 base{integer} 19r26 20r13 21r19 11|24b25 38r20
-17f41 x{float} 19r32 21r26 11|24b41 39r18
-17f51 res{float} 19r18 21r14 11|24b51 57m7
-26V13*perpendicular_vec{boolean} 26>32 26>44 11|60b13 70l8 70t25
-26a32 vec1{3A9} 11|60b32 63r10 66r16 66r28 67r30
-26a44 vec2{3A9} 11|60b44 63r25 67r22
+11V13*derivative{3A9} 11>25 11|14b13 23l8 23t18 29s15
+11a25 vec1{3A9} 11|14b25 15r17 16r29 18r16 19r31
+15V13*derivative_x{integer} 15>27 15>39 11|25b13 34l8 34t20
+15a27 vec1{3A9} 11|25b27 27r18 29r26
+15i39 point{integer} 11|25b39 31r31
+18U14*logarithm 18>25 18>41 18<51 11|36b14 70l8 70t17
+18i25 base{integer} 20r26 21r13 22r19 11|36b25 50r20
+18f41 x{float} 20r32 22r26 11|36b41 51r18
+18f51 res{float} 20r18 22r14 11|36b51 69m7
+27V13*perpendicular_vec{boolean} 27>32 27>44 29r18 31r14 31r49 11|72b13 81l8
+. 81t25
+27a32 vec1{3A9} 29r47 30r13 30r48 11|72b32 75r16 75r28 76r30 77r56
+27a44 vec2{3A9} 29r53 30r27 30r72 11|72b44 76r22 77r64
 X 11 matharray.adb
-26V16 exp{float} 26b16 26>21 26>33 34t11 49s23 57s24
-26f21 base{float} 30r20 31r53
-26i33 n{integer} 29r30
-27f10 r{float} 30m13 30r18 31r36 31r40 33r17
-29i14 i{integer}
-35f7 val{float} 50m10 50r23 57r14
-36i7 accurate{integer} 41r33 51m10 51r20 54r43
-37i7 reps{integer} 52m10 52r16 53r43 57r33
-37i12 i{integer} 44m13 44r18 45r46 50r33
-38i7 bas{integer} 42r29 43r30
-39f7 num{float} 41r13 42r16 43m13 43r20 46r35 46r41 49m10 49r27
-61i7 res{integer} 67m10 67r15 69r14
-66i11 i{integer} 67r27 67r35
+15a7 res{10|3A9} 19m10 22r14
+16i7 exponent{integer} 19r20 20m10 20r22
+18i11 i{integer} 19r14 19r36
+26i7 res{integer} 31m10 31r17 33r14
+27a7 fder{10|3A9} 29m7 30r16 30r28 31r23
+30i11 i{integer} 31r28
+38V16 exp{float} 38b16 38>21 38>33 46t11 61s23 69s24
+38f21 base{float} 42r20 43r53
+38i33 n{integer} 41r30
+39f10 r{float} 42m13 42r18 43r36 43r40 45r17
+41i14 i{integer}
+47f7 val{float} 62m10 62r23 69r14
+48i7 accurate{integer} 53r33 63m10 63r20 66r43
+49i7 reps{integer} 64m10 64r16 65r43 69r33
+49i12 i{integer} 56m13 56r18 57r46 62r33
+50i7 bas{integer} 54r29 55r30
+51f7 num{float} 53r13 54r16 55m13 55r20 58r35 58r41 61m10 61r27
+73i7 res{integer} 76m10 76r15 77r32 77r38 80r14
+75i11 i{integer} 76r27 76r35 77r61 77r69
 

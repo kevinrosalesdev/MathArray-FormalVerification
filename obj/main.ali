@@ -10,16 +10,20 @@ RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		29e8c393 NE OO SU
+U main%b		main.adb		ee1b48a0 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.assertions%s	a-assert.adb		a-assert.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W matharray%s		matharray.adb		matharray.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W test_assertions%s	test_assertions.adb	test_assertions.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
@@ -34,8 +38,8 @@ D a-tiflio.ads		20180524051736 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20181007182546 d713994a main%b
-D matharray.ads		20181005095734 2215caff matharray%s
+D main.adb		20181008194050 0f890139 main%b
+D matharray.ads		20181008184838 3d7cd9bf matharray%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -50,34 +54,48 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_assertions.ads	20181002182040 1487d8c5 test_assertions%s
+D test_assertions.ads	20181008184722 1487d8c5 test_assertions%s
 X 1 ada.ads
 16K9*Ada 20e8 13|2r6 2r28 4r6 4r28 5r6 7r5
 X 2 a-assert.ads
 50K13*Assertions 66e19 13|4w10 4r32
-55X4*Assertion_Error 13|23r12 44r12
+55X4*Assertion_Error 13|23r12 44r12 75r12
 X 4 a-flteio.ads
 20K13*Float_Text_IO[9|46] 13|5w10 7r9
 X 8 a-textio.ads
 49K13*Text_IO 471e16 13|2w10 2r32
-263U14*Put_Line 13|24s10 26s10 45s10 47s10 50s4
+263U14*Put_Line 13|24s10 26s10 45s10 47s10 76s10 78s10 82s4
 X 13 main.adb
-9U11*Main 9b11 53l5 53t9
-10U14 Test_logarithm 10b14 27l8 27t22 51s4
+9U11*Main 9b11 86l5 86t9
+10U14 Test_logarithm 10b14 27l8 27t22 83s4
 11a7 Msg{string} 15r31 17r31 19r32 21r31 24r20 26r20
 12f7 res{float} 14m29 15r20 16m26 17r20 18m28 19r20 20m33 21r20
-29U14 Test_perpendicular_vec 29b14 48l8 48t30 52s4
-30a7 Msg{string} 37r53 39r46 41r52 42r52 45r20 47r20
+29U14 Test_perpendicular_vec 29b14 48l8 48t30 84s4
+30a7 Msg{string} 37r53 39r46 41r52 45r20 47r20
 31a7 v0{14|3A9} 36m7 37r38 38m7 39r38 41r38
 32a7 v1{14|3A9} 36m20 37r41 38m20 39r41
-33a7 v2{14|3A9} 40m7 41r41 42r38
-34a7 v3{14|3A9} 42r41
+33a7 v2{14|3A9} 40m7 41r41
+50U14 Test_derivative 50b14 79l8 79t23 85s4
+51a7 Msg{string} 65r48 67r37 69r39 71r43 73r46 76r20 78r20
+52a7 dv0{14|3A9} 63m7 63r15 64r29
+53a7 dv1{14|3A9} 66r29
+54a7 dv2{14|3A9} 68r29
+55a7 dv3{14|3A9} 70r29
+56a7 dv4{14|3A9} 72r29
+57a7 vecRes0{14|3A9} 64m7 65r20 65r28
+58a7 vecRes1{14|3A9} 66m7 67r20
+59a7 vecRes2{14|3A9} 68m7 69r20
+60a7 vecRes3{14|3A9} 70m7 71r20
+61a7 vecRes4{14|3A9} 72m7 73r20
 X 14 matharray.ads
-1K9*MathArray 13|1w6 1r28 14|29e14
-3A9*vec(integer)<integer> 13|31r12 32r12 33r12 34r12
-17U14*logarithm 13|14s7 16s7 18s7 20s7
-26V13*perpendicular_vec{boolean} 13|37s20 39s20 41s20 42s20
+1K9*MathArray 13|1w6 1r28 14|34e14
+3A9*vec(integer)<integer> 13|31r12 32r12 33r12 52r13 53r13 54r13 55r13 56r13
+. 57r17 58r17 59r17 60r17 61r17
+11V13*derivative{3A9} 13|64s18 66s18 68s18 70s18 72s18
+18U14*logarithm 13|14s7 16s7 18s7 20s7
+27V13*perpendicular_vec{boolean} 13|37s20 39s20 41s20
 X 29 test_assertions.ads
 3K9*Test_Assertions 13|3w6 3r28 29|18e20
-12U14*Assert_True 13|15s7 17s7 19s7 21s7 37s7 39s7 41s7 42s7
+12U14*Assert_True 13|15s7 17s7 19s7 21s7 37s7 39s7 41s7 65s7 67s7 69s7 71s7
+. 73s7
 

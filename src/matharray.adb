@@ -12,14 +12,25 @@ package body MathArray with SPARK_Mode => On is
    end module;
    
    function derivative (vec1 : vec) return vec is
+      res : vec(vec1'Range);
+      exponent : Integer := vec1'Length - 1;
    begin
-      res : vec(vec1'Length);
-      return vec1;
+      for i in vec1'Range loop
+         res(i) := exponent * vec1(i);
+         exponent := exponent - 1;
+      end loop;
+      return res;
    end derivative;
    
    function derivative_x (vec1 : vec; point : Integer) return Integer is
+      res : Integer := 0;
+      fder : vec(vec1'Range);
    begin
-      return 0;
+      fder := derivative(vec1);
+      for i in fder'First..fder'Last-1 loop
+         res := res + fder(i)*point;
+      end loop;
+      return res;
    end derivative_x;
    
    procedure logarithm (base : Integer; x: Float; res:out Float) is

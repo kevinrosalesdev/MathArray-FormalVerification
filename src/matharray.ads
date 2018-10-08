@@ -8,7 +8,7 @@ package MathArray with SPARK_Mode => On is
    procedure module (vec1 : vec; res : in out Float);
    --Calculate a vector module, which is saved in res. 
    
-   function derivative (vec1 : vec) return vec;
+   function derivative (vec1 : vec) return vec with
      Global => null;
    --Return a derivative polynomial vec.
    
