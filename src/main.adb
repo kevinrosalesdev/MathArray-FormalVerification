@@ -7,6 +7,7 @@ with Ada.Float_Text_IO;
 use Ada.Float_Text_IO;
 
 procedure Main is
+
    procedure Test_midpoint is
       Msg :constant String:="Test_midpoint";
       point1:vec :=(0,0,0);
@@ -96,26 +97,24 @@ procedure Main is
          Put_Line (Msg & " Failed (exception)");
    end Test_module;
 
-
-
-   procedure Test_logarithm is
-      Msg   : constant String := "Test_logarithm";
-      res : Float := 0.0;
-   begin
-      logarithm(10, 100.0 , res);
-      Assert_True (res = 2.0, Msg & " with a integer result in base 10");
-      logarithm(7, 1.0 , res);
-      Assert_True (res = 0.0, Msg & " with a zero result");
-      logarithm(2, 1024.0, res);
-      Assert_True (res = 10.0, Msg & " with a integer result in base distinct to 10");
-      logarithm(169, 4826809.0, res);
-      Assert_True (res = 3.0, Msg & " with a integer result in base distinct to 10");
-   exception
-      when Assertion_Error =>
-         Put_Line (Msg & " Failed (assertion)");
-      when others =>
-         Put_Line (Msg & " Failed (exception)");
-   end Test_logarithm;
+--     procedure Test_logarithm is
+--        Msg   : constant String := "Test_logarithm";
+--        res : Float := 0.0;
+--     begin
+--        logarithm(10, 100.0 , res);
+--        Assert_True (res = 2.0, Msg & " with a integer result in base 10");
+--        logarithm(7, 1.0 , res);
+--        Assert_True (res = 0.0, Msg & " with a zero result");
+--        logarithm(2, 1024.0, res);
+--        Assert_True (res = 10.0, Msg & " with a integer result in base distinct to 10");
+--        logarithm(169, 4826809.0, res);
+--        Assert_True (res = 3.0, Msg & " with a integer result in base distinct to 10");
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_logarithm;
 
    procedure Test_perpendicular_vec is
       Msg   : constant String := "Test_perpendicular_vec";
@@ -176,12 +175,11 @@ procedure Main is
          Put_Line (Msg & " Failed (exception)");
    end Test_derivative_x;
 
-
 begin
    Put_Line ("********************* Test_Max");
    Test_midpoint;
    Test_module;
-   Test_logarithm;
+   --Test_logarithm;
    Test_perpendicular_vec;
    Test_derivative;
    Test_derivative_x;
