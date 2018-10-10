@@ -27,12 +27,10 @@ package body MathArray with SPARK_Mode => On is
    end module;
    
    function derivative (vec1 : vec) return vec is
-      res : vec(vec1'Range);
-      exponent : Integer := vec1'Length - 1;
+      res : vec(vec1'Range) := (others => 0);
    begin
       for i in vec1'Range loop
-         res(i) := exponent * vec1(i);
-         exponent := exponent - 1;
+         res(i) := (vec1'Length-(i-vec1'First+1)) * vec1(i);
       end loop;
       return res;
    end derivative;
@@ -40,12 +38,10 @@ package body MathArray with SPARK_Mode => On is
    function derivative_x (vec1 : vec; point : Integer) return Integer is
       res : Integer := 0;
       fder : vec(vec1'Range);
-      exponent : Integer := vec1'Length-2;
    begin
       fder := derivative(vec1);
       for i in fder'First..fder'Last-1 loop
-         res := res + fder(i)*(point**exponent);
-         exponent := exponent -1;
+         res := res + fder(i)*(point**(vec1'Length-(i-vec1'First+2)));
       end loop;
       return res;
    end derivative_x;

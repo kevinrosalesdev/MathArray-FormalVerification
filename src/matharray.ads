@@ -14,12 +14,23 @@ package MathArray with SPARK_Mode => On is
      Post=>true;
    
    function derivative (vec1 : vec) return vec with
-     Global => null;
+     Global => null,
+     Depends => (derivative'Result => (vec1)),
+     Pre => (for all i in vec1'Range =>
+               vec1(i)*(vec1'Length-(i-vec1'First+1)) <= Integer'Last),
+     Post =>(for all i in derivative'Result'Range =>
+               derivative'Result(i) = vec1(i)*(vec1'Length-(i-vec1'First+1))) and
+     (derivative'Result(derivative'Result'Last) = 0);
    --Return a derivative polynomial vec.
    
    function derivative_x (vec1 : vec; point : Integer) return Integer with
-     Global => null;
+     Global => null,
+     Depends => (derivative_x'Result => (vec1, point)),
+     Pre => (for all i in derivative(vec1)'Range =>
+                 point*(derivative(vec1)(i)**(vec1'Length-(i-vec1'First+2))) <= Integer'Last),
+     Post => true;
    --Return the derivative of a function in point (polynomial vec).
+
    
    procedure logarithm (base : Integer; x: Float; res: out Float) with
      Global  => null,

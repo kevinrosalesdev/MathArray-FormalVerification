@@ -17,7 +17,7 @@ RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U matharray%b		matharray.adb		ed9deadd NE OO PK IL
+U matharray%b		matharray.adb		8626a76f NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -26,7 +26,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.exp_int%s	s-expint.adb		s-expint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U matharray%s		matharray.ads		f4c3ac43 EE NE OO PK IL
+U matharray%s		matharray.ads		de697667 EE NE OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -40,8 +40,8 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181010181828 f4c3ac43 matharray%s
-D matharray.adb		20181010181828 92abc8d8 matharray%b
+D matharray.ads		20181010185902 de697667 matharray%s
+D matharray.adb		20181010185902 d3ba5f4e matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
@@ -67,9 +67,9 @@ X 6 a-ngelfu.ads
 X 9 a-textio.ads
 49K13*Text_IO 471e16 14|1w10 1r27
 X 13 matharray.ads
-1K9*MathArray 45l5 45e14 14|5b14 101l5 101t14
-3A9*vec(integer)<integer> 5r32 5r46 5r58 12r29 16r32 16r44 20r34 33r39 33r51
-. 14|7r32 7r46 7r58 8r14 17r29 29r32 29r44 30r13 40r34 42r14 89r39 89r51
+1K9*MathArray 56l5 56e14 14|5b14 97l5 97t14
+3A9*vec(integer)<integer> 5r32 5r46 5r58 12r29 16r32 16r44 26r34 44r39 44r51
+. 14|7r32 7r46 7r58 8r14 17r29 29r32 29r44 30r13 38r34 40r14 85r39 85r51
 5V13*midpoint{3A9} 5>23 5>37 7r12 8r20 9r6 14|7b13 15l8 15t16
 5a23 point1{3A9} 6r12 6r50 6r69 7r35 9r26 14|7b23 8r19 10r16 11r25
 5a37 point2{3A9} 6r26 9r36 14|7b37 11r35
@@ -77,42 +77,46 @@ X 13 matharray.ads
 12U14*module 12>22 12=34 14|17b14 27l8 27t14
 12a22 vec1{3A9} 13r12 13r29 14|17b22 20r16 21r25 23r29 24r44
 12f34 res{float} 14|17b34 19m7 21m10 21r15 24r17 24r22 26m7 26r51
-16V13*derivative{3A9} 16>25 14|29b13 38l8 38t18 45s15
-16a25 vec1{3A9} 14|29b25 30r17 31r29 33r16 34r31
-20V13*derivative_x{integer} 20>27 20>39 14|40b13 51l8 51t20
-20a27 vec1{3A9} 14|40b27 42r18 43r29 45r26
-20i39 point{integer} 14|40b39 47r32
-24U14*logarithm 24>25 24>41 24<51 14|53b14 87l8 87t17
-24i25 base{integer} 26r26 27r13 28r19 14|53b25 67r20
-24f41 x{float} 26r32 28r26 14|53b41 68r18
-24f51 res{float} 26r18 28r14 14|53b51 86m7
-33V13*perpendicular_vec{boolean} 33>32 33>44 35r18 14|89b13 99l8 99t25
-33a32 vec1{3A9} 35r47 36r13 36r48 14|89b32 92r16 92r28 93r30 94r45 95r55
-33a44 vec2{3A9} 35r53 36r27 36r72 14|89b44 93r22 95r63
+16V13*derivative{3A9} 16>25 18r18 21r27 22r16 23r7 23r25 29s27 30s25 14|29b13
+. 36l8 36t18 42s15
+16a25 vec1{3A9} 18r40 19r27 20r16 20r25 20r40 22r39 22r48 22r63 14|29b25
+. 30r17 32r16 33r21 33r36 33r53
+19i22 i{integer} 20r21 20r38
+21i22 i{integer} 22r34 22r44 22r61
+26V13*derivative_x{integer} 26>27 26>39 28r18 14|38b13 47l8 47t20
+26a27 vec1{3A9} 28r42 29r38 30r36 30r47 30r62 14|38b27 40r18 42r26 44r40
+. 44r55
+26i39 point{integer} 28r48 30r18 14|38b39 44r32
+29i22 i{integer} 30r42 30r60
+35U14*logarithm 35>25 35>41 35<51 14|49b14 83l8 83t17
+35i25 base{integer} 37r26 38r13 39r19 14|49b25 63r20
+35f41 x{float} 37r32 39r26 14|49b41 64r18
+35f51 res{float} 37r18 39r14 14|49b51 82m7
+44V13*perpendicular_vec{boolean} 44>32 44>44 46r18 14|85b13 95l8 95t25
+44a32 vec1{3A9} 46r47 47r13 47r48 14|85b32 88r16 88r28 89r30 90r45 91r55
+44a44 vec2{3A9} 46r53 47r27 47r72 14|85b44 89r22 91r63
 X 14 matharray.adb
 8a7 result{13|3A9} 11m10 14r14
 10i11 i{integer} 11r18 11r32 11r42
 20i11 i{integer} 21r30 23r43
 23i24 j{integer} 24r49
-30a7 res{13|3A9} 34m10 37r14
-31i7 exponent{integer} 34r20 35m10 35r22
-33i11 i{integer} 34r14 34r36
-41i7 res{integer} 47m10 47r17 50r14
-42a7 fder{13|3A9} 45m7 46r16 46r28 47r23
-43i7 exponent{integer} 47r39 48m10 48r22
-46i11 i{integer} 47r28
-55V16 exp{float} 55b16 55>21 55>33 63t11 78s23 86s24
-55f21 base{float} 59r20 60r53
-55i33 n{integer} 58r30
-56f10 r{float} 59m13 59r18 60r36 60r40 62r17
-58i14 i{integer}
-64f7 val{float} 79m10 79r23 86r14
-65i7 accurate{integer} 70r33 80m10 80r20 83r43
-66i7 reps{integer} 81m10 81r16 82r43 86r33
-66i12 i{integer} 73m13 73r18 74r46 79r33
-67i7 bas{integer} 71r29 72r30
-68f7 num{float} 70r13 71r16 72m13 72r20 75r35 75r41 78m10 78r27
-90i7 res{integer} 93m10 93r15 95r34 95r38 98r14
-92i11 i{integer} 93r27 93r35 94r57
-94i40 k{integer} 95r60 95r68
+30a7 res{13|3A9} 33m10 35r14
+32i11 i{integer} 33r14 33r34 33r58
+39i7 res{integer} 44m10 44r17 46r14
+40a7 fder{13|3A9} 42m7 43r16 43r28 44r23
+43i11 i{integer} 44r28 44r53
+51V16 exp{float} 51b16 51>21 51>33 59t11 74s23 82s24
+51f21 base{float} 55r20 56r53
+51i33 n{integer} 54r30
+52f10 r{float} 55m13 55r18 56r36 56r40 58r17
+54i14 i{integer}
+60f7 val{float} 75m10 75r23 82r14
+61i7 accurate{integer} 66r33 76m10 76r20 79r43
+62i7 reps{integer} 77m10 77r16 78r43 82r33
+62i12 i{integer} 69m13 69r18 70r46 75r33
+63i7 bas{integer} 67r29 68r30
+64f7 num{float} 66r13 67r16 68m13 68r20 71r35 71r41 74m10 74r27
+86i7 res{integer} 89m10 89r15 91r34 91r38 94r14
+88i11 i{integer} 89r27 89r35 90r57
+90i40 k{integer} 91r60 91r68
 
