@@ -2,11 +2,16 @@ package MathArray with SPARK_Mode => On is
 
    type vec is array(Integer range <>) of Integer;
    
-   function midpoint (point1 : vec; point2 : vec) return vec;
+   function midpoint (point1 : vec; point2 : vec) return vec with
+     Pre =>point1'length=point2'Length and then (point1'Length=3 or point1'Length=2),
+     Post=>midpoint'Result'Length=point1'Length and then 
+     (for all i in midpoint'Result'Range =>
+     midpoint'Result(i)=(point1(i)+point2(i))/2);
    --Return vector midpoint of both parameters.
    
-   procedure module (vec1 : vec; res : in out Float);
-   --Calculate a vector module, which is saved in res. 
+   procedure module (vec1 : vec; res : in out Float) with 
+     Pre=>(vec1'length=3 or vec1'Length=2),
+     Post=>true;
    
    function derivative (vec1 : vec) return vec with
      Global => null;

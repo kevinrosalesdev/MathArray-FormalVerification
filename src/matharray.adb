@@ -1,14 +1,29 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Numerics.Elementary_Functions;
+
+
 package body MathArray with SPARK_Mode => On is
 
    function midpoint (point1 : vec; point2 : vec) return vec is
+      result:vec:=point1;
    begin
-      return point1;
+      for i in point1'Range loop
+         result (i) := (point1(i)+point2(i))/2;
+         
+      end loop;
+      return result;
    end midpoint;
    
    procedure module (vec1 : vec; res : in out Float)is
    begin
-      null;
+      res:=0.0;
+      for i in vec1'Range loop
+         res:=res+Float(vec1(i)**(2));
+         pragma Loop_Invariant(
+               for all j in vec1'First .. i =>
+                res= res'Loop_Entry +Float(vec1(j)**(2)));
+      end loop;
+      res:=Ada.Numerics.Elementary_Functions.Sqrt(res);
    end module;
    
    function derivative (vec1 : vec) return vec is

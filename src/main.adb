@@ -7,6 +7,97 @@ with Ada.Float_Text_IO;
 use Ada.Float_Text_IO;
 
 procedure Main is
+   procedure Test_midpoint is
+      Msg :constant String:="Test_midpoint";
+      point1:vec :=(0,0,0);
+      point2:vec :=(2,2,2);
+      point3:vec:=(0,0);
+      point4:vec:=(2,2);
+      res:vec:=(0,0,0);
+      res2:vec:=(0,0);
+   begin
+      res:=midpoint(point1,point2);
+      Assert_True(res=(1,1,1),Msg & " with point 0,0,0 and point 2,2,2");
+      point1:=(4,2,3);
+      point2:=(2,4,3);
+      res:=midpoint(point1,point2);
+      Assert_True(res=(3,3,3),Msg & " with point 4,2,3 and point 2,4,3");
+
+      point1:=(3,1,0);
+      point2:=(2,4,3);
+      res:=midpoint(point1,point2);
+      Assert_True(res=(2,2,1),Msg & " with point 3,1,0 and point 2,4,3");
+       point1:=(-4,2,-3);
+      point2:=(2,-4,3);
+      res:=midpoint(point1,point2);
+      Assert_True(res=(-1,-1,0),Msg & " with point -4,2,-3 and point 2,-4,3");
+       point1:=(-4,2,3);
+      point2:=(-2,-4,3);
+      res:=midpoint(point1,point2);
+      Assert_True(res=(-3,-1,3),Msg & " with point -4,2,3 and point -2,-4,3");
+
+      res2:=midpoint(point3,point4);
+      Assert_True(res2=(1,1),Msg & " with point 0,0 and point 2,2");
+      point3:=(4,2);
+      point4:=(2,4);
+      res2:=midpoint(point3,point4);
+      Assert_True(res2=(3,3),Msg & " with point 4,2 and point 2,4");
+      point3:=(-4,2);
+      point4:=(2,-4);
+      res2:=midpoint(point3,point4);
+      Assert_True(res2=(-1,-1),Msg & " with point -4,2 and point 2,-4");
+      point3:=(-4,2);
+      point4:=(-2,4);
+      res2:=midpoint(point3,point4);
+      Assert_True(res2=(-3,3),Msg & " with point -4,2 and point -2,4");
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_midpoint;
+
+   procedure Test_module is
+      Msg   : constant String := "Test_module";
+      vec1:vec:=(0,0);
+      vec2:vec:=(0,0,0);
+      res:Float:=0.0;
+   begin
+      module(vec1,res);
+      Assert_True(res=0.0,Msg & "With vec 0,0");
+      vec1:=(1,0);
+      module(vec1,res);
+      Assert_True(res=1.0,Msg & "With vec 1,0");
+      vec1:=(0,1);
+      module(vec1,res);
+      Assert_True(res=1.0,Msg & "With vec 0,1");
+      vec1:=(3,-4);
+      module(vec1,res);
+      Assert_True(res=5.0,Msg & "With vec 3,-4");
+
+      module(vec2,res);
+      Assert_True(res=0.0,Msg & "With vec 0,0,0");
+      vec2:=(1,0,0);
+      module(vec2,res);
+      Assert_True(res=1.0,Msg & "With vec 1,0,0");
+      vec2:=(4,3,0);
+      module(vec2,res);
+      Assert_True(res=5.0,Msg & "With vec 4,3,0");
+      vec2:=(-4,-3,0);
+      module(vec2,res);
+      Assert_True(res=5.0,Msg & "With vec -4,-3,0");
+      vec2:=(-1,-2,2);
+      module(vec2,res);
+      Assert_True(res=3.0,Msg & "With vec -1,-2,2");
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_module;
+
+
+
    procedure Test_logarithm is
       Msg   : constant String := "Test_logarithm";
       res : Float := 0.0;
@@ -87,6 +178,8 @@ procedure Main is
 
 begin
    Put_Line ("********************* Test_Max");
+   Test_midpoint;
+   Test_module;
    Test_logarithm;
    Test_perpendicular_vec;
    Test_derivative;

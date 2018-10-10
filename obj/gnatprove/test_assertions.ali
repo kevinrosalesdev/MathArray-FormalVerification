@@ -1,0 +1,69 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U test_assertions%b	test_assertions.adb	0dcf11d5 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U test_assertions%s	test_assertions.ads	1487d8c5 OO PK
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20181010181206 1487d8c5 test_assertions%s
+D test_assertions.adb	20181010181206 91557a4a test_assertions%b
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r23
+X 4 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27
+242U14*Put 13|20s7 23s10 47s7 50s10
+263U14*Put_Line 13|27s10 30s10 54s10 57s10
+X 12 test_assertions.ads
+3K9*Test_Assertions 18l5 18e20 13|3b14 61l5 61t20
+4X4*Test_Assertion_Error 13|14r16 41r16
+6U14*Assert_True 6>28 13|11b14 16l8 16t19
+6b28 Value{boolean} 13|11b28 13r14
+9U14*Assert_False 9>28 13|38b14 43l8 43t20
+9b28 Value{boolean} 13|38b28 40r10
+12U14*Assert_True 12>28 12>45 13|18b14 32l8 32t19
+12b28 Value{boolean} 13|18b28 26r10
+12a45 Message{string} 13|18b45 20r12 22r10 23r38
+15U14*Assert_False 15>28 15>45 13|45b14 59l8 59t20
+15b28 Value{boolean} 13|45b28 53r14
+15a45 Message{string} 13|45b45 47r12 49r10 50r38
+X 13 test_assertions.adb
+4N4 Max 22r27 23r32 49r27 50r32
+5a4 Separators{string} 23r15 50r15
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS test_assertions__assert_true 0
+GG EK_GLOBALS test_assertions__assert_true local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_assertions__assert_false 0
+GG EK_GLOBALS test_assertions__assert_false local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_assertions__assert_true__2 0
+GG EK_GLOBALS test_assertions__assert_true__2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 ada__text_io__put__4 ada__text_io__put_line__2 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_assertions__assert_false__2 0
+GG EK_GLOBALS test_assertions__assert_false__2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 ada__text_io__put__4 ada__text_io__put_line__2 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_assertions 0
+GG EK_GLOBALS test_assertions local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
