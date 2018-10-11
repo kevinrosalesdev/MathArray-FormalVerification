@@ -1,26 +1,32 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer                              Provers   Justified    Unproved
-----------------------------------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .                                    .           .           .
-Flow Dependencies                 .           .          .          .                                    .           .           .
-Initialization                   19          19          .          .                                    .           .           .
-Non-Aliasing                      .           .          .          .                                    .           .           .
-Run-time Checks                  83           .          2          .     55 (CVC4 95%, Z3 2%, altergo 2%)           .          26
-Assertions                        8           .          .          .                 4 (CVC4 50%, Z3 50%)           .           4
-Functional Contracts             12           .          .          .    5 (CVC4 50%, Z3 20%, altergo 30%)           .           7
-LSP Verification                  .           .          .          .                                    .           .           .
-----------------------------------------------------------------------------------------------------------------------------------
-Total                           122    19 (16%)     2 (2%)          .                             64 (52%)           .    37 (30%)
+-------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   Interval   CodePeer      Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .          .            .           .          .
+Flow Dependencies                 .         .          .          .            .           .          .
+Initialization                    2         2          .          .            .           .          .
+Non-Aliasing                      .         .          .          .            .           .          .
+Run-time Checks                  33         .          .          .    25 (CVC4)           .          8
+Assertions                        .         .          .          .            .           .          .
+Functional Contracts              7         .          .          .     7 (CVC4)           .          .
+LSP Verification                  .         .          .          .            .           .          .
+-------------------------------------------------------------------------------------------------------
+Total                            42    2 (5%)          .          .     32 (76%)           .    8 (19%)
 
 
-Analyzed 1 unit
-in unit matharray, 6 subprograms and packages out of 6 analyzed
-  MathArray at matharray.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.derivative at matharray.ads:16 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 26 checks out of 31 proved
-  MathArray.derivative_x at matharray.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 23 checks out of 42 proved
-  MathArray.midpoint at matharray.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 5 checks out of 10 proved
-  MathArray.module at matharray.ads:12 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 8 checks out of 11 proved
-  MathArray.perpendicular_vec at matharray.ads:51 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 4 checks out of 9 proved
+Analyzed 4 units
+in unit calculator, 2 subprograms and packages out of 2 analyzed
+  Calculator at calculator.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Calculator.Add at calculator.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:9 skipped
+in unit matharray, 2 subprograms and packages out of 2 analyzed
+  MathArray at matharray.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MathArray.module at matharray.ads:21 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 27 checks out of 35 proved
+in unit test_assertions, 0 subprograms and packages out of 4 analyzed
+  Test_Assertions.Assert_False at test_assertions.ads:9 skipped
+  Test_Assertions.Assert_False at test_assertions.ads:15 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:6 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:12 skipped

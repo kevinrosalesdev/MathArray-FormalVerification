@@ -30,6 +30,7 @@ package body ada_main is
    E115 : Short_Integer; pragma Import (Ada, E115, "system__file_io_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "system__assertions_E");
+   E146 : Short_Integer; pragma Import (Ada, E146, "calculator_E");
    E138 : Short_Integer; pragma Import (Ada, E138, "matharray_E");
    E148 : Short_Integer; pragma Import (Ada, E148, "test_assertions_E");
 
@@ -207,6 +208,7 @@ package body ada_main is
       E103 := E103 + 1;
       System.Assertions'Elab_Spec;
       E099 := E099 + 1;
+      E146 := E146 + 1;
       E138 := E138 + 1;
       Test_Assertions'Elab_Spec;
       E148 := E148 + 1;
@@ -245,11 +247,12 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\matharray.o
-   --   C:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\test_assertions.o
-   --   C:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\main.o
-   --   -LC:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\
-   --   -LC:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\
+   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\calculator.o
+   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\matharray.o
+   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\test_assertions.o
+   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\main.o
+   --   -LC:\Users\usuario\Desktop\VF\MathArray-PR3\obj\
+   --   -LC:\Users\usuario\Desktop\VF\MathArray-PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

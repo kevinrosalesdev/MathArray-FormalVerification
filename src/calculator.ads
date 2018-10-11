@@ -32,20 +32,20 @@ package Calculator with SPARK_Mode => On is
 --     --  Completa este contrato para que podamos verificar formalmente
 --     --  esta funcion.
 
-   procedure Multiply
-     (First_Operand  : Integer;
-      Second_Operand : Integer;
-      Result         : out Integer)
-   --  Using the function 'Add' and a for-loop statement, compute the
-   --  multiplication of First_Operand by Second_Operand
-   with
-        Global  => null,
-       Depends => (Result => (First_Operand,Second_Operand)),
-       Pre  => First_Operand in 1..Integer'Last/2-1 and then
-       Second_Operand in 1..Integer'Last/-1,
-        Post => Result = First_Operand*Second_Operand;
-   --  Completa esta especificacion para que podamos verificar
-   --  formalmente esta funcion.
+--     procedure Multiply
+--       (First_Operand  : Integer;
+--        Second_Operand : Integer;
+--        Result         : out Integer)
+--     --  Using the function 'Add' and a for-loop statement, compute the
+--     --  multiplication of First_Operand by Second_Operand
+--     with
+--          Global  => null,
+--         Depends => (Result => (First_Operand,Second_Operand)),
+--         Pre  => First_Operand in 1..Integer'Last/2-1 and then
+--         Second_Operand in 1..Integer'Last/-1,
+--          Post => Result = First_Operand*Second_Operand;
+--     --  Completa esta especificacion para que podamos verificar
+--     --  formalmente esta funcion.
 
 --     procedure Divide
 --       (Dividend  : Integer;

@@ -9,13 +9,12 @@ P GP FX
 RN
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
-RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U main%b		main.adb		711f8edc OO SU
+U main%b		main.adb		86aea423 OO SU
 W ada%s			ada.ads			ada.ali
 W ada.assertions%s	a-assert.adb		a-assert.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
@@ -31,92 +30,50 @@ D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-tiflio.ads		20180524051736 56fbda09 ada.text_io.float_io%s
+D calculator.ads	20181011095836 e68c54e0 calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20181010181828 5932b2b9 main%b
-D matharray.ads		20181010181828 f4c3ac43 matharray%s
+D main.adb		20181011094044 ca9f0c16 main%b
+D matharray.ads		20181011100158 90df3813 matharray%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_assertions.ads	20181010181206 1487d8c5 test_assertions%s
+D test_assertions.ads	20181011093218 1487d8c5 test_assertions%s
 X 1 ada.ads
-16K9*Ada 20e8 10|2r6 2r28 4r6 4r28 5r6 7r5
+16K9*Ada 20e8 11|2r6 2r28 4r6 4r28 5r6 7r5
 X 2 a-assert.ads
-50K13*Assertions 66e19 10|4w10 4r32
-55X4*Assertion_Error 10|54r12 93r12 114r12 135r12 154r12 173r12
+50K13*Assertions 66e19 11|4w10 4r32
+55X4*Assertion_Error 11|55r12
 X 3 a-flteio.ads
-20K13*Float_Text_IO[7|46] 10|5w10 7r9
+20K13*Float_Text_IO[7|46] 11|5w10 7r9
 X 6 a-textio.ads
-49K13*Text_IO 471e16 10|2w10 2r32
-263U14*Put_Line 10|55s10 57s10 94s10 96s10 115s10 117s10 136s10 138s10 155s10
-. 157s10 174s10 176s10 180s4
-X 10 main.adb
-9U11*Main 9b11 187l5 187t9
-10U14 Test_midpoint 58l8 58t21 181s4
-11a7 Msg{string} 20r31 24r31 29r31 33r33 37r33 40r30 44r30 48r32 52r31 55r20
-. 57r20
-12a7 point1{11|3A9} 19r21 21m7 23r21 26m7 28r21 30m8 32r21 34m8 36r21
-13a7 point2{11|3A9} 19r28 22m7 23r28 27m7 28r28 31m7 32r28 35m7 36r28
-14a7 point3{11|3A9} 39r22 41m7 43r22 45m7 47r22 49m7 51r22
-15a7 point4{11|3A9} 39r29 42m7 43r29 46m7 47r29 50m7 51r29
-16a7 res{11|3A9} 19m7 20r19 23m7 24r19 28m7 29r19 32m7 33r19 36m7 37r19
-17a7 res2{11|3A9} 39m7 40r19 43m7 44r19 47m7 48r19 51m7 52r19
-60U14 Test_module 97l8 97t19 182s4
-61a7 Msg{string} 67r27 70r27 73r27 76r27 79r27 82r27 85r27 88r27 91r27 94r20
-. 96r20
-62a7 vec1{11|3A9} 66r14 68m7 69r14 71m7 72r14 74m7 75r14
-63a7 vec2{11|3A9} 78r14 80m7 81r14 83m7 84r14 86m7 87r14 89m7 90r14
-64f7 res{float} 66m19 66r19 67r19 69m19 69r19 70r19 72m19 72r19 73r19 75m19
-. 75r19 76r19 78m19 78r19 79r19 81m19 81r19 82r19 84m19 84r19 85r19 87m19
-. 87r19 88r19 90m19 90r19 91r19
-101U14 Test_logarithm 118l8 118t22 183s4
-102a7 Msg{string} 106r31 108r31 110r32 112r31 115r20 117r20
-103f7 res{float} 105m29 106r20 107m26 108r20 109m28 110r20 111m33 112r20
-120U14 Test_perpendicular_vec 139l8 139t30 184s4
-121a7 Msg{string} 128r53 130r46 132r52 136r20 138r20
-122a7 v0{11|3A9} 127m7 128r38 129m7 130r38 132r38
-123a7 v1{11|3A9} 127m20 128r41 129m20 130r41
-124a7 v2{11|3A9} 131m7 132r41
-141U14 Test_derivative 158l8 158t23 185s4
-142a7 Msg{string} 148r46 149r47 150r51 151r59 152r64 155r20 157r20
-143a7 dv0{11|3A9} 146m7 146r15 147r28
-144a7 vecRes{11|3A9} 147m7 148r20 148r27
-160U14 Test_derivative_x 177l8 177t25 186s4
-161a7 Msg{string} 167r30 168r48 169r50 170r55 171r61 174r20 176r20
-162a7 dv0{11|3A9} 165m7 165r15 166r28
-163i7 res0{integer} 166m7 167r20
-X 11 matharray.ads
-1K9*MathArray 10|1w6 1r28 11|45e14
-3A9*vec(integer)<integer> 10|12r14 13r14 14r14 15r14 16r11 17r12 62r12 63r12
-. 122r12 123r12 124r12 143r13 144r16 162r13
-5V13*midpoint{3A9} 10|19s12 23s12 28s12 32s12 36s12 39s13 43s13 47s13 51s13
-12U14*module 10|66s7 69s7 72s7 75s7 78s7 81s7 84s7 87s7 90s7
-16V13*derivative{3A9} 10|147s17 149s20 150s20 151s20 152s20
-20V13*derivative_x{integer} 10|166s15 168s20 169s20 170s20 171s20
-24U14*logarithm 10|105s7 107s7 109s7 111s7
-33V13*perpendicular_vec{boolean} 10|128s20 130s20 132s20
-X 18 test_assertions.ads
-3K9*Test_Assertions 10|3w6 3r28 18|18e20
-12U14*Assert_True 10|20s7 24s7 29s7 33s7 37s7 40s7 44s7 48s7 52s7 67s7 70s7
-. 73s7 76s7 79s7 82s7 85s7 88s7 91s7 106s7 108s7 110s7 112s7 128s7 130s7
-. 132s7 148s7 149s7 150s7 151s7 152s7 167s7 168s7 169s7 170s7 171s7
+49K13*Text_IO 471e16 11|2w10 2r32
+263U14*Put_Line 11|56s10 58s10 179s4
+X 11 main.adb
+9U11*Main 9b11 186l5 186t9
+11U14 Test_midpoint 59l8 59t21 180s4
+12a7 Msg{string} 21r31 25r31 30r31 34r33 38r33 41r30 45r30 49r32 53r31 56r20
+. 58r20
+13a7 point1{12|5A9} 20r21 22m7 24r21 27m7 29r21 31m8 33r21 35m8 37r21
+14a7 point2{12|5A9} 20r28 23m7 24r28 28m7 29r28 32m7 33r28 36m7 37r28
+15a7 point3{12|5A9} 40r22 42m7 44r22 46m7 48r22 50m7 52r22
+16a7 point4{12|5A9} 40r29 43m7 44r29 47m7 48r29 51m7 52r29
+17a7 res{12|5A9} 20m7 21r19 24m7 25r19 29m7 30r19 33m7 34r19 37m7 38r19
+18a7 res2{12|5A9} 40m7 41r19 44m7 45r19 48m7 49r19 52m7 53r19
+X 12 matharray.ads
+3K9*MathArray 11|1w6 1r28 12|71e14
+5A9*vec(integer)<integer> 11|13r14 14r14 15r14 16r14 17r11 18r12
+8V13*midpoint{5A9} 11|20s12 24s12 29s12 33s12 37s12 40s13 44s13 48s13 52s13
+X 19 test_assertions.ads
+3K9*Test_Assertions 11|3w6 3r28 19|18e20
+12U14*Assert_True 11|21s7 25s7 30s7 34s7 38s7 41s7 45s7 49s7 53s7
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS main__test_midpoint 0
 GG EK_GLOBALS main__test_midpoint local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__midpoint ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS main__test_module 0
-GG EK_GLOBALS main__test_module local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__module ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS main__test_logarithm 0
-GG EK_GLOBALS main__test_logarithm local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__logarithm ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS main__test_perpendicular_vec 0
-GG EK_GLOBALS main__test_perpendicular_vec local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__perpendicular_vec ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS main__test_derivative 0
-GG EK_GLOBALS main__test_derivative local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__derivative ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS main__test_derivative_x 0
-GG EK_GLOBALS main__test_derivative_x local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__derivative_x ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS main 0
-GG EK_GLOBALS main local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 8 matharray__midpoint matharray__module matharray__derivative matharray__derivative_x matharray__logarithm matharray__perpendicular_vec ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_GLOBALS main local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 matharray__midpoint ada__text_io__put_line__2 test_assertions__assert_true__2 local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_END_MARKER

@@ -9,24 +9,20 @@ RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
-RV NO_SECONDARY_STACK
-RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U matharray%b		matharray.adb		7e27b57e NE OO PK IL
+U matharray%b		matharray.adb		0cfab845 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.exp_int%s	s-expint.adb		s-expint.ali
-Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W calculator%s		calculator.adb		calculator.ali
 
-U matharray%s		matharray.ads		a6ac4e3e EE NE OO PK IL
+U matharray%s		matharray.ads		d3717d5c EE NE OO PK IL
+W calculator%s		calculator.adb		calculator.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -38,14 +34,14 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-tags.ads		20180524051738 491b781d ada.tags%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D calculator.ads	20181011095836 e68c54e0 calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181010201542 a6ac4e3e matharray%s
-D matharray.adb		20181010193344 537e7506 matharray%b
+D matharray.ads		20181011102926 35fd29bc matharray%s
+D matharray.adb		20181011102926 547e4b5f matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
-D s-expint.ads		20180524051738 192336fc system.exp_int%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
@@ -57,52 +53,24 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 14|1r6 1r23 2r6 25r12
+16K9*Ada 20e8 15|1r6 1r23 2r6 30r12
 X 4 a-numeri.ads
-16K13*Numerics 32e17 14|2r10 25r16
+16K13*Numerics 32e17 15|2r10 30r16
 X 5 a-nuelfu.ads
-18K22*Elementary_Functions[6|39] 14|2w19 25r25
+18K22*Elementary_Functions[6|39] 15|2w19 30r25
 X 6 a-ngelfu.ads
-52V13*Sqrt{float} 14|25s46[5|18]
+52V13*Sqrt{float} 15|30s46[5|18]
 X 9 a-textio.ads
-49K13*Text_IO 471e16 14|1w10 1r27
-X 13 matharray.ads
-1K9*MathArray 63l5 63e14 14|5b14 100l5 100t14
-3A9*vec(integer)<integer> 5r32 5r46 5r58 12r29 16r32 16r44 27r34 51r39 51r51
-. 14|7r32 7r46 7r58 8r14 16r29 28r32 28r44 29r13 40r34 42r14 88r39 88r51
-5V13*midpoint{3A9} 5>23 5>37 7r12 8r20 9r6 14|7b13 14l8 14t16
-5a23 point1{3A9} 6r12 6r50 6r69 7r35 9r26 14|7b23 8r19 10r16 11r25
-5a37 point2{3A9} 6r26 9r36 14|7b37 11r35
-8i15 i{integer} 9r22 9r33 9r43
-12U14*module 12>22 12<34 14|16b14 26l8 26t14
-12a22 vec1{3A9} 13r12 13r29 14|16b22 19r16 20r25 22r29 23r44
-12f34 res{float} 14|16b34 18m7 20m10 20r15 23r17 23r22 25m7 25r51
-16V13*derivative{3A9} 16>25 18r18 22r27 23r13 24r14 24r32 31s27 32s20 33s21
-. 36s72 36s89 14|28b13 38l8 38t18 44s15
-16a25 vec1{3A9} 18r40 19r13 20r27 21r13 21r22 21r37 23r36 23r45 23r60 14|28b25
-. 29r17 32r21 32r36 32r53 34r57 34r72
-20i22 i{integer} 21r18 21r35
-22i22 i{integer} 23r31 23r41 23r58
-27V13*derivative_x{integer} 27>27 27>39 29r18 34r50 36r50 14|40b13 50l8 50t20
-27a27 vec1{3A9} 29r42 30r13 31r38 32r31 32r42 32r57 33r14 33r32 33r51 35r54
-. 36r83 36r100 14|40b27 42r18 44r26 46r40 46r55 47r62 47r77
-27i39 point{integer} 29r48 32r13 14|40b39 46r32 47r54
-31i22 i{integer} 32r37 32r55
-51V13*perpendicular_vec{boolean} 51>32 51>44 53r18 14|88b13 98l8 98t25
-51a32 vec1{3A9} 53r47 54r13 54r48 14|88b32 91r16 91r28 92r30 93r45 94r55
-51a44 vec2{3A9} 53r53 54r27 54r72 14|88b44 92r22 94r63
-X 14 matharray.adb
-8a7 result{13|3A9} 11m10 13r14
-10i11 i{integer} 11r18 11r32 11r42
-19i11 i{integer} 20r30 22r43
-22i24 j{integer} 23r49
-29a7 res{13|3A9} 31r16 32m10 33r46 34r33 34r43 37r14
-31i11 i{integer} 32r14 32r34 32r58 33r59
-33i41 j{integer} 34r37 34r55 34r77
-41i7 res{integer} 46m10 46r17 47r33 47r39 49r14
-42a7 fder{13|3A9} 44m7 45r16 45r28 46r23 47r45
-45i11 i{integer} 46r28 46r53 47r50 47r75
-89i7 res{integer} 92m10 92r15 94r34 94r38 97r14
-91i11 i{integer} 92r27 92r35 93r57
-93i40 k{integer} 94r60 94r68
+49K13*Text_IO 471e16 15|1w10 1r27
+X 11 calculator.ads
+1K9*Calculator 68e15 14|1w6 1r22 15|3w6 3r22
+X 14 matharray.ads
+3K9*MathArray 75l5 75e14 15|6b14 105l5 105t14
+5A9*vec(integer)<integer> 19r29 15|21r29
+19U14*module 19>22 19<34 15|21b14 31l8 31t14
+19a22 vec1{5A9} 20r12 20r29 15|21b22 24r16 25r25 27r29 28r44
+19f34 res{float} 15|21b34 23m7 25m10 25r15 28r17 28r22 30m7 30r51
+X 15 matharray.adb
+24i11 i{integer} 25r30 27r43
+27i24 j{integer} 28r49
 

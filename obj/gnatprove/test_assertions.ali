@@ -30,8 +30,8 @@ D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_assertions.ads	20181010181206 1487d8c5 test_assertions%s
-D test_assertions.adb	20181010181206 91557a4a test_assertions%b
+D test_assertions.ads	20181011093218 1487d8c5 test_assertions%s
+D test_assertions.adb	20181011093218 91557a4a test_assertions%b
 X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 4 a-textio.ads

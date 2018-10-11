@@ -10,20 +10,16 @@ RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_FLOATING_POINT
 RV NO_IO
-RV NO_SECONDARY_STACK
-RV NO_STANDARD_STORAGE_POOLS
-RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main%b		main.adb		9334682c NE OO SU
+U main%b		main.adb		bbfc2ca7 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.assertions%s	a-assert.adb		a-assert.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W matharray%s		matharray.adb		matharray.ali
-Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W test_assertions%s	test_assertions.adb	test_assertions.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
@@ -36,10 +32,11 @@ D a-tags.ads		20180524051738 491b781d ada.tags%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-tiflio.ads		20180524051736 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D calculator.ads	20181011095836 e68c54e0 calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20181010190616 e976b634 main%b
-D matharray.ads		20181010201542 a6ac4e3e matharray%s
+D main.adb		20181011102924 52ef953d main%b
+D matharray.ads		20181011102926 35fd29bc matharray%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -54,61 +51,31 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_assertions.ads	20181010185706 1487d8c5 test_assertions%s
+D test_assertions.ads	20181011093218 1487d8c5 test_assertions%s
 X 1 ada.ads
-16K9*Ada 20e8 13|2r6 2r28 4r6 4r28 5r6 7r5
+16K9*Ada 20e8 14|2r6 2r28 4r6 4r28 5r6 7r5
 X 2 a-assert.ads
-50K13*Assertions 66e19 13|4w10 4r32
-55X4*Assertion_Error 13|55r12 94r12 134r12 153r12 172r12
+50K13*Assertions 66e19 14|4w10 4r32
+55X4*Assertion_Error 14|94r12
 X 4 a-flteio.ads
-20K13*Float_Text_IO[9|46] 13|5w10 7r9
+20K13*Float_Text_IO[9|46] 14|5w10 7r9
 X 8 a-textio.ads
-49K13*Text_IO 471e16 13|2w10 2r32
-263U14*Put_Line 13|56s10 58s10 95s10 97s10 135s10 137s10 154s10 156s10 173s10
-. 175s10 179s4
-X 13 main.adb
+49K13*Text_IO 471e16 14|2w10 2r32
+263U14*Put_Line 14|95s10 97s10 179s4
+X 14 main.adb
 9U11*Main 9b11 186l5 186t9
-11U14 Test_midpoint 11b14 59l8 59t21 180s4
-12a7 Msg{string} 21r31 25r31 30r31 34r33 38r33 41r30 45r30 49r32 53r31 56r20
-. 58r20
-13a7 point1{14|3A9} 20r21 22m7 24r21 27m7 29r21 31m8 33r21 35m8 37r21
-14a7 point2{14|3A9} 20r28 23m7 24r28 28m7 29r28 32m7 33r28 36m7 37r28
-15a7 point3{14|3A9} 40r22 42m7 44r22 46m7 48r22 50m7 52r22
-16a7 point4{14|3A9} 40r29 43m7 44r29 47m7 48r29 51m7 52r29
-17a7 res{14|3A9} 20m7 21r19 24m7 25r19 29m7 30r19 33m7 34r19 37m7 38r19
-18a7 res2{14|3A9} 40m7 41r19 44m7 45r19 48m7 49r19 52m7 53r19
 61U14 Test_module 61b14 98l8 98t19 181s4
 62a7 Msg{string} 68r27 71r27 74r27 77r27 80r27 83r27 86r27 89r27 92r27 95r20
 . 97r20
-63a7 vec1{14|3A9} 67r14 69m7 70r14 72m7 73r14 75m7 76r14
-64a7 vec2{14|3A9} 79r14 81m7 82r14 84m7 85r14 87m7 88r14 90m7 91r14
+63a7 vec1{15|5A9} 67r14 69m7 70r14 72m7 73r14 75m7 76r14
+64a7 vec2{15|5A9} 79r14 81m7 82r14 84m7 85r14 87m7 88r14 90m7 91r14
 65f7 res{float} 67m19 68r19 70m19 71r19 73m19 74r19 76m19 77r19 79m19 80r19
 . 82m19 83r19 85m19 86r19 88m19 89r19 91m19 92r19
-119U14 Test_perpendicular_vec 119b14 138l8 138t30 183s4
-120a7 Msg{string} 127r53 129r46 131r52 135r20 137r20
-121a7 v0{14|3A9} 126m7 127r38 128m7 129r38 131r38
-122a7 v1{14|3A9} 126m20 127r41 128m20 129r41
-123a7 v2{14|3A9} 130m7 131r41
-140U14 Test_derivative 140b14 157l8 157t23 184s4
-141a7 Msg{string} 147r46 148r47 149r51 150r59 151r64 154r20 156r20
-142a7 dv0{14|3A9} 145m7 145r15 146r28
-143a7 vecRes{14|3A9} 146m7 147r20 147r27
-159U14 Test_derivative_x 159b14 176l8 176t25 185s4
-160a7 Msg{string} 166r30 167r48 168r50 169r55 170r61 173r20 175r20
-161a7 dv0{14|3A9} 164m7 164r15 165r28
-162i7 res0{integer} 165m7 166r20
-X 14 matharray.ads
-1K9*MathArray 13|1w6 1r28 14|63e14
-3A9*vec(integer)<integer> 13|13r14 14r14 15r14 16r14 17r11 18r12 63r12 64r12
-. 121r12 122r12 123r12 142r13 143r16 161r13
-5V13*midpoint{3A9} 13|20s12 24s12 29s12 33s12 37s12 40s13 44s13 48s13 52s13
-12U14*module 13|67s7 70s7 73s7 76s7 79s7 82s7 85s7 88s7 91s7
-16V13*derivative{3A9} 13|146s17 148s20 149s20 150s20 151s20
-27V13*derivative_x{integer} 13|165s15 167s20 168s20 169s20 170s20
-51V13*perpendicular_vec{boolean} 13|127s20 129s20 131s20
-X 29 test_assertions.ads
-3K9*Test_Assertions 13|3w6 3r28 29|18e20
-12U14*Assert_True 13|21s7 25s7 30s7 34s7 38s7 41s7 45s7 49s7 53s7 68s7 71s7
-. 74s7 77s7 80s7 83s7 86s7 89s7 92s7 127s7 129s7 131s7 147s7 148s7 149s7
-. 150s7 151s7 166s7 167s7 168s7 169s7 170s7
+X 15 matharray.ads
+3K9*MathArray 14|1w6 1r28 15|75e14
+5A9*vec(integer)<integer> 14|63r12 64r12
+19U14*module 14|67s7 70s7 73s7 76s7 79s7 82s7 85s7 88s7 91s7
+X 30 test_assertions.ads
+3K9*Test_Assertions 14|3w6 3r28 30|18e20
+12U14*Assert_True 14|68s7 71s7 74s7 77s7 80s7 83s7 86s7 89s7 92s7
 
