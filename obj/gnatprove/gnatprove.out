@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
--------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total      Flow   Interval   CodePeer      Provers   Justified   Unproved
--------------------------------------------------------------------------------------------------------
-Data Dependencies                 .         .          .          .            .           .          .
-Flow Dependencies                 .         .          .          .            .           .          .
-Initialization                    2         2          .          .            .           .          .
-Non-Aliasing                      .         .          .          .            .           .          .
-Run-time Checks                  69         .          3          .    64 (CVC4)           .          2
-Assertions                        .         .          .          .            .           .          .
-Functional Contracts              5         .          .          .     5 (CVC4)           .          .
-LSP Verification                  .         .          .          .            .           .          .
--------------------------------------------------------------------------------------------------------
-Total                            76    2 (3%)     3 (4%)          .     69 (91%)           .     2 (3%)
+----------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer       Provers   Justified    Unproved
+----------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .          .             .           .           .
+Flow Dependencies                 .          .          .          .             .           .           .
+Initialization                   20         20          .          .             .           .           .
+Non-Aliasing                      .          .          .          .             .           .           .
+Run-time Checks                 210          .          3          .    174 (CVC4)           .          33
+Assertions                       14          .          .          .      9 (CVC4)           .           5
+Functional Contracts             19          .          .          .      9 (CVC4)           .          10
+LSP Verification                  .          .          .          .             .           .           .
+----------------------------------------------------------------------------------------------------------
+Total                           263    20 (8%)     3 (1%)          .     192 (73%)           .    48 (18%)
 
 
 Analyzed 4 units
@@ -22,9 +22,14 @@ in unit calculator, 2 subprograms and packages out of 2 analyzed
   Calculator.Add at calculator.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:9 skipped
-in unit matharray, 2 subprograms and packages out of 2 analyzed
+in unit matharray, 7 subprograms and packages out of 7 analyzed
   MathArray at matharray.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MathArray.derivative at matharray.ads:33 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 21 checks out of 31 proved
+  MathArray.derivative_x at matharray.ads:44 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 19 checks out of 42 proved
+  MathArray.get at matharray.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
+  MathArray.midpoint at matharray.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (32 checks)
   MathArray.module at matharray.ads:21 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 72 checks out of 74 proved
+  MathArray.perpendicular_vec at matharray.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 43 checks out of 56 proved
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped

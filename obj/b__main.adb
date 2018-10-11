@@ -32,7 +32,7 @@ package body ada_main is
    E099 : Short_Integer; pragma Import (Ada, E099, "system__assertions_E");
    E146 : Short_Integer; pragma Import (Ada, E146, "calculator_E");
    E138 : Short_Integer; pragma Import (Ada, E138, "matharray_E");
-   E148 : Short_Integer; pragma Import (Ada, E148, "test_assertions_E");
+   E150 : Short_Integer; pragma Import (Ada, E150, "test_assertions_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -211,7 +211,7 @@ package body ada_main is
       E146 := E146 + 1;
       E138 := E138 + 1;
       Test_Assertions'Elab_Spec;
-      E148 := E148 + 1;
+      E150 := E150 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -247,12 +247,12 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\calculator.o
-   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\matharray.o
-   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\test_assertions.o
-   --   C:\Users\usuario\Desktop\VF\MathArray-PR3\obj\main.o
-   --   -LC:\Users\usuario\Desktop\VF\MathArray-PR3\obj\
-   --   -LC:\Users\usuario\Desktop\VF\MathArray-PR3\obj\
+   --   C:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\calculator.o
+   --   C:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\matharray.o
+   --   C:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\test_assertions.o
+   --   C:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\main.o
+   --   -LC:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\
+   --   -LC:\Users\Usuario\Desktop\Math\MathArray-PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

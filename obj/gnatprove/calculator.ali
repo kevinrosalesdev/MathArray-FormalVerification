@@ -16,8 +16,8 @@ U calculator%b		calculator.adb		38fbe164 OO PK
 
 U calculator%s		calculator.ads		e68c54e0 OO PK
 
-D calculator.ads	20181011115432 e68c54e0 calculator%s
-D calculator.adb	20181011115432 de77b584 calculator%b
+D calculator.ads	20181011132540 e68c54e0 calculator%s
+D calculator.adb	20181011132540 de77b584 calculator%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 calculator.ads
 1K9*Calculator 68l5 68e15 2|1b14 70l5 70t15
