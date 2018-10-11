@@ -21,9 +21,9 @@ package body MathArray with SPARK_Mode => On is
    procedure module (vec1 : vecFloat; res : out Float)is
    begin
       if vec1'Length = 2 then
-         res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)**2 + vec1(vec1'Last)**2);
+         res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'Last)*vec1(vec1'Last));
       else
-         res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)**2 + vec1(vec1'First+1)**2 + vec1(vec1'Last)**2);
+         res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last));
       end if;
    end module;
 --     

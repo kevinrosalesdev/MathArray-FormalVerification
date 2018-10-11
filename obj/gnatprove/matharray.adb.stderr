@@ -1,5 +1,2 @@
-matharray.ads:24:111: missing ";"
-matharray.ads:25:54: declaration expected
-matharray.ads:28:18: "=" should be ":="
-matharray.ads:30:18: "=" should be ":="
-matharray.ads:84:01: "end if;" expected for "if" at line 27
+matharray.ads:27:104: medium: float overflow check might fail[#1]
+matharray.ads:27:144: medium: float overflow check might fail[#0]

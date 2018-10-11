@@ -20,14 +20,15 @@ package MathArray with SPARK_Mode => On is
    
    procedure module (vec1 : vecFloat; res : out Float) with 
      Pre=>(vec1'length=3 or vec1'Length=2) and then (for all i in vec1'Range =>
-                                                         vec1(i)**2 <= Float'Last) and then (if vec1'Length = 2 then
-                                                       Float'Last - vec1(vec1'First)**2 >= vec1(vec1'Last)**2)
+                                                       (vec1(i)/Float'Last)*vec1(i) <= 1.0) and then 
+                                                    (if vec1'Length = 2 then
+                                                       ((vec1(vec1'First)*vec1(vec1'First))/2.0)+((vec1(vec1'Last)*vec1(vec1'Last))/2.0)<=Float'Last/2.0
                                                      else
-                                                       Float'Last >= (vec1(vec1'First)**2 + vec1(vec1'First+1)**2 + vec1(vec1'Last)**2)),
+                                                       Float'Last >= vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last)),
      Post=>(if vec1'Length = 2 then                                          
-              res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)**2 + vec1(vec1'Last)**2)
+              res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'Last)*vec1(vec1'Last))
             else
-              res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)**2 + vec1(vec1'First+1)**2 + vec1(vec1'Last)**2));
+              res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last)));
    
 --     function derivative (vec1 : vec) return vec with
 --       Global => null,

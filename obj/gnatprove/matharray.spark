@@ -39,12 +39,12 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__32.trace",
+      "tracefile": "matharray__flow__19.trace",
       "how_proved": "flow"
     },
     {
       "file": "matharray.ads",
-      "line": 29,
+      "line": 28,
       "col": 13,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -59,15 +59,254 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__33.trace",
+      "tracefile": "matharray__flow__20.trace",
       "how_proved": "flow"
     }
   ],
   "proof": [
     {
       "file": "matharray.ads",
+      "line": 25,
+      "col": 92,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "interval"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 132,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "interval"
+    },
+    {
+      "file": "matharray.ads",
       "line": 23,
-      "col": 61,
+      "col": 64,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "interval"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 84,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 84,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 67,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 67,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 128,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 128,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 22803,
+              "time": 3.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 52,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 223,
+          "max_time": 3.40000003576279E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 23,
+      "col": 82,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -105,7 +344,7 @@
       ],
       "check_file": "matharray.ads",
       "check_line": 23,
-      "check_col": 61,
+      "check_col": 82,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -116,11 +355,11 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 94,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 52,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
       "entity": {
         "name": "MathArray.module",
         "sloc": [
@@ -134,113 +373,232 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 11383,
-              "time": 2.50000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 29478,
-              "time": 1.03000000000000E+00
+              "result": "Valid",
+              "steps": 21730,
+              "time": 3.40000000000000E-01
             }
           },
           "transformations": {
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 94,
-      "tracefile": "matharray.adb_26_94_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 52,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 193,
+          "max_time": 3.40000003576279E-01
         }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
-    },
-    {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 74,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 27013,
-              "time": 6.10000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 19335,
-              "time": 1.06000000000000E+00
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 74,
-      "tracefile": "matharray.adb_26_74_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 1,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "matharray.ads",
-      "line": 30,
-      "col": 89,
+      "line": 29,
+      "col": 92,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 92,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.19999997317791E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 97,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 17316,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 44852,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 97,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 67,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 48,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19357,
+              "time": 3.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 48,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 125,
+          "max_time": 3.89999985694885E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 109,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 109,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 84,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -274,7 +632,167 @@
           },
           "transformations": {
           }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 84,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 92,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 92,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 88,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 18528,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 88,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 101,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 140,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 140,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 96,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
         {
           "proof_attempts": {
             "CVC4": {
@@ -299,12 +817,354 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 89,
+      "check_line": 27,
+      "check_col": 96,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 128,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 18579,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 128,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 103,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 109,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 109,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 80,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 80,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 124,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 124,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 105,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 105,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 48,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 18782,
+              "time": 2.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 48,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 109,
+          "max_time": 2.80000001192093E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 92,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 92,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.19999997317791E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 124,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 124,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -312,7 +1172,200 @@
     },
     {
       "file": "matharray.ads",
-      "line": 32,
+      "line": 27,
+      "col": 121,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 121,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 63,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 63,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 109,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 109,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 28,
+      "col": 12,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 28,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.40000000596046E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
       "col": 67,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -347,199 +1400,25 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 32,
+      "check_line": 31,
       "check_col": 67,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 74,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 74,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 2.00000002980232E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 29,
-      "col": 12,
-      "rule": "VC_POSTCONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 29,
-      "check_col": 12,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 2.00000002980232E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 70,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 16533,
-              "time": 5.30000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 21663,
-              "time": 1.03000000000000E+00
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 70,
-      "tracefile": "matharray.adb_26_70_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 2,
-      "how_proved": "prover"
-    },
-    {
       "file": "matharray.ads",
-      "line": 30,
-      "col": 74,
-      "rule": "VC_FP_OVERFLOW_CHECK",
+      "line": 23,
+      "col": 64,
+      "rule": "VC_DIVISION_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.module",
@@ -556,7 +1435,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -564,206 +1443,21 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 74,
+      "check_line": 23,
+      "check_col": 64,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "matharray.ads",
-      "line": 30,
-      "col": 95,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.40000000000000E-01
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 34823,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 95,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.40000000596046E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 48,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 19154,
-              "time": 5.80000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 48,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 119,
-          "max_time": 5.79999983310699E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 30,
-      "col": 78,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 78,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.70000001788139E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 52,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 22238,
-              "time": 6.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 52,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 207,
-          "max_time": 6.70000016689301E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 24,
-      "col": 85,
+      "line": 27,
+      "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -797,493 +1491,11 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 85,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 119,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-01
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 119,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 2.00000002980232E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 63,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 63,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 98,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 38124,
-              "time": 8.90000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 16710,
-              "time": 1.12000000000000E+00
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 98,
-      "tracefile": "matharray.adb_26_98_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 3,
-      "how_proved": "prover"
-    },
-    {
-      "file": "matharray.adb",
-      "line": 24,
-      "col": 63,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 63,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 4,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 115,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 7609,
-              "time": 2.00000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 27501,
-              "time": 1.05000000000000E+00
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 115,
-      "tracefile": "matharray.adb_26_115_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 4,
-      "how_proved": "prover"
-    },
-    {
-      "file": "matharray.adb",
-      "line": 24,
-      "col": 91,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 7609,
-              "time": 2.30000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 27463,
-              "time": 9.20000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 91,
-      "tracefile": "matharray.adb_24_91_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 5,
-      "how_proved": "prover"
-    },
-    {
-      "file": "matharray.adb",
-      "line": 24,
-      "col": 48,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 11385,
-              "time": 3.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 48,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 3.60000014305115E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 95,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 95,
+      "check_line": 27,
+      "check_col": 79,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1295,10 +1507,10 @@
     },
     {
       "file": "matharray.adb",
-      "line": 24,
-      "col": 70,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "medium",
+      "line": 26,
+      "col": 105,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
       "entity": {
         "name": "MathArray.module",
         "sloc": [
@@ -1312,14 +1524,20 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 11382,
-              "time": 3.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 25568,
-              "time": 1.06000000000000E+00
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
           },
           "transformations": {
@@ -1327,36 +1545,20 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 70,
-      "tracefile": "matharray.adb_24_70_fp_overflow_check.trace",
-      "cntexmp": {
-        "matharray.ads": {
-          "21": [
-            {
-              "name": "vec1",
-              "value": "(others => )",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'First",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "vec1'Last",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
+      "check_line": 26,
+      "check_col": 105,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 6,
-      "how_proved": "prover"
+      }
     },
     {
-      "file": "matharray.adb",
-      "line": 26,
+      "file": "matharray.ads",
+      "line": 25,
       "col": 109,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -1391,37 +1593,15 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
+      "check_file": "matharray.ads",
+      "check_line": 25,
       "check_col": 109,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1429,168 +1609,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 23,
-      "col": 67,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 23,
-      "check_col": 67,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 30,
-      "col": 52,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 14324,
-              "time": 3.70000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 52,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 3.70000004768372E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 98,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 98,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 2.00000002980232E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 32,
-      "col": 78,
-      "rule": "VC_FP_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.module",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 21
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 78,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 2.00000002980232E-01
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 30,
-      "col": 67,
+      "line": 31,
+      "col": 159,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1624,46 +1644,24 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 30,
-      "check_col": 67,
+      "check_line": 31,
+      "check_col": 159,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 91,
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 103,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1697,12 +1695,81 @@
           },
           "transformations": {
           }
-        },
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 103,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 124,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
         {
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 13,
+              "steps": 16936,
+              "time": 6.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 124,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 56,
+          "max_time": 6.70000016689301E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 125,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
               "time": 0
             }
           },
@@ -1721,13 +1788,13 @@
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 91,
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 125,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1736,7 +1803,109 @@
     {
       "file": "matharray.adb",
       "line": 24,
-      "col": 74,
+      "col": 99,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 99,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 115,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 115,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 144,
       "rule": "VC_FP_OVERFLOW_CHECK",
       "severity": "medium",
       "entity": {
@@ -1753,23 +1922,23 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Unknown (other)",
-              "steps": 27879,
-              "time": 5.10000000000000E-01
+              "steps": 38995,
+              "time": 1.72000000000000E+00
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 20357,
-              "time": 9.80000000000000E-01
+              "steps": 24580,
+              "time": 1.03000000000000E+00
             }
           },
           "transformations": {
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 24,
-      "check_col": 74,
-      "tracefile": "matharray.adb_24_74_fp_overflow_check.trace",
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 144,
+      "tracefile": "matharray.ads_27_144_fp_overflow_check.trace",
       "cntexmp": {
         "matharray.ads": {
           "21": [
@@ -1791,13 +1960,860 @@
           ]
         }
       },
-      "msg_id": 7,
+      "msg_id": 0,
       "how_proved": "prover"
     },
     {
       "file": "matharray.ads",
-      "line": 32,
-      "col": 95,
+      "line": 27,
+      "col": 121,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 121,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 105,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14873,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 105,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 74,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 74,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.70000001788139E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 88,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 33168,
+              "time": 7.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 88,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 520,
+          "max_time": 7.20000028610229E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 70,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 18589,
+              "time": 4.50000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 70,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 103,
+          "max_time": 4.49999988079071E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 143,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 143,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 139,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 139,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 132,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 132,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 115,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 11602,
+              "time": 5.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 115,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.09999990463257E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 63,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 63,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 155,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 155,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.09999999403954E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 108,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 18231,
+              "time": 4.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 108,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 93,
+          "max_time": 4.39999997615814E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 119,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 119,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 161,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 11602,
+              "time": 4.50000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 161,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 4.49999988079071E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 104,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (other)",
+              "steps": 30369,
+              "time": 1.45000000000000E+00
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 38690,
+              "time": 1.06000000000000E+00
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 104,
+      "tracefile": "matharray.ads_27_104_fp_overflow_check.trace",
+      "cntexmp": {
+        "matharray.ads": {
+          "21": [
+            {
+              "name": "vec1",
+              "value": "(others => )",
+              "kind": "variable"
+            },
+            {
+              "name": "vec1'First",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "vec1'Last",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 74,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 16935,
+              "time": 8.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 74,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 56,
+          "max_time": 8.10000002384186E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 23,
+      "col": 62,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 23,
+      "check_col": 62,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 140,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 140,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 145,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 17831,
+              "time": 3.70000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 145,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 81,
+          "max_time": 3.70000004768372E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 128,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1831,47 +2847,25 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 1.60000000000000E-01
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 95,
+      "check_line": 31,
+      "check_col": 128,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 1.70000001788139E-01
         }
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 26,
-      "col": 91,
-      "rule": "VC_OVERFLOW_CHECK",
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 132,
+      "rule": "VC_FP_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.module",
@@ -1888,40 +2882,29 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
-              "time": 0
+              "time": 1.70000000000000E-01
             }
           },
           "transformations": {
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 26,
-      "check_col": 91,
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 132,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 2,
+          "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.70000001788139E-01
         }
       }
     },
     {
       "file": "matharray.ads",
-      "line": 32,
-      "col": 113,
+      "line": 27,
+      "col": 155,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1955,37 +2938,15 @@
           },
           "transformations": {
           }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 113,
+      "check_line": 27,
+      "check_col": 155,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 4,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1993,8 +2954,48 @@
     },
     {
       "file": "matharray.ads",
-      "line": 32,
-      "col": 102,
+      "line": 27,
+      "col": 86,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 24688,
+              "time": 1.17000000000000E+00
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 86,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 277,
+          "max_time": 1.16999995708466E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 149,
       "rule": "VC_FP_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -2012,7 +3013,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.40000000000000E-01
+              "time": 1.60000000000000E-01
             }
           },
           "transformations": {
@@ -2020,14 +3021,378 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 32,
-      "check_col": 102,
+      "check_line": 31,
+      "check_col": 149,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 25,
+      "col": 67,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 25,
+      "check_col": 67,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 31,
+      "col": 112,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 31,
+      "check_col": 112,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.19999997317791E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 23,
+      "col": 76,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 7579,
+              "time": 3.90000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 23,
+      "check_col": 76,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.89999985694885E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 27,
+      "col": 171,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 27,
+      "check_col": 171,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 24,
+      "col": 70,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14982,
+              "time": 3.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 24,
+      "check_col": 70,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.30000013113022E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 84,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 84,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 29,
+      "col": 74,
+      "rule": "VC_FP_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 1.60000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 29,
+      "check_col": 74,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.59999996423721E-01
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 26,
+      "col": 80,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.module",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 21
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 26,
+      "check_col": 80,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
       }
     }
@@ -2083,14 +3448,14 @@
     }
   ],
   "timings": {
-    "marking": 1.44679495133460E-03,
-    "globals (basic)": 6.81228004395962E-03,
-    "globals/properties (advanced)": 1.34715177118778E-02,
-    "flow analysis": 1.50535500142723E-03,
+    "marking": 3.54502489790320E-03,
+    "globals (basic)": 1.00926337763667E-02,
+    "globals/properties (advanced)": 1.94647330790758E-02,
+    "flow analysis": 2.48278491199017E-03,
     "codepeer results": 3.31999990521581E-06,
-    "init_why_sections": 1.60889001563191E-04,
-    "translation of standard": 2.85887601785362E-03,
-    "translation of compilation unit": 3.53590771555901E-02,
-    "proof": 5.40781831741333E+00
+    "init_why_sections": 3.33553005475551E-04,
+    "translation of standard": 3.29508609138429E-03,
+    "translation of compilation unit": 4.10053469240665E-02,
+    "proof": 9.11327648162842E+00
   }
 }
