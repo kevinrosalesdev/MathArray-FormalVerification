@@ -52,44 +52,27 @@ package body MathArray with SPARK_Mode => On is
    end derivative_x;
      
    procedure get(a:in out vec; x:Integer; bool:out Boolean)  is
-      --->i:Integer:=a'First;
+      i:Integer:=a'First;
    begin
       bool := false;
---        while  i <= a'Last loop
---           if a(i)=x then
---              a(i):=0;
---              bool := True;
---              exit;
---           end if;
---           pragma Loop_Variant(Increases => i);
---           pragma Loop_Invariant(i in a'Range and then (for some k in a'First..i => 
---                                     (if a'Loop_Entry(k) /= a(k) then a(k) = 0 and then bool = true
---                                      else a'Loop_Entry(k) = a(k) and then bool = false)));
---           i:=i+1;
---        end loop;
-      for i in a'Range loop
+      while  i <= a'Last loop
          if a(i)=x then
             a(i):=0;
             bool := True;
             exit;
          end if;
-         pragma Loop_Invariant((for some k in a'First..i => 
-                                   (if a'Loop_Entry(k) /= a(k) then a(k) = 0 and then bool = true
-                                    else a'Loop_Entry(k) = a(k) and then bool = false)));
+         pragma Loop_Variant(Increases => i);
+         pragma Loop_Invariant(i in a'Range and then (for some k in a'First..i => 
+                                   (if a'Loop_Entry(k) /= a(k) then a(k) = 0
+                                    else a'Loop_Entry(k) = a(k))));
+         i:=i+1;
       end loop;
    end get;
    
    
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean is
-      res:Integer:=0;
    begin 
-      for i in vec1'First..vec1'Last loop
-         res:=res + (vec2(i)*vec1(i));
-         pragma Loop_Invariant(for all k in vec1'First..i =>
-                                 res = res'Loop_Entry+vec1(k)*vec2(k));
-         ---> Mejorar invariante los casos que da es porque no ayudamos lo suficiente al verificador
-      end loop;
-      return res = 0;
+      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
    end perpendicular_vec;
 
 end MathArray;

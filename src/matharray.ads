@@ -66,18 +66,16 @@ package MathArray with SPARK_Mode => On is
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean  with
      Global  => null,
      Depends => (perpendicular_vec'Result => (vec1, vec2)),
-     Pre => (vec1'First > 1 and then vec1'Last < 4) and then vec2'Length = vec1'Length ,
+     Pre => vec1'Length=2 and then vec2'Length = vec1'Length and then
+     (for all x in  vec1'Range => vec1(x) < 46340 and then vec1(x) > -46340)
+     and then (for all x in vec2'Range =>  vec2(x) < 46340 and then vec2(x) > -46340)
+       and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+            and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
      Post => (if perpendicular_vec'Result 
-   then 
-        (if vec1'Length = 2 
-           then vec1(vec1'First)*vec2(vec2'First)= vec1(vec1'First+1)*vec2(vec2'First+1) 
-             else (vec1(vec1'First)*vec2(vec2'First)) 
-                + (vec1(vec1'First+1)*vec2(vec2'First+1)) +  (vec1(vec1'First+2)*vec2(vec2'First+2)) = 0)
+                then 
+                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
                 else 
-             (if vec1'Length = 2 
-           then vec1(vec1'First)*vec2(vec2'First) /= vec1(vec1'First+1)*vec2(vec2'First+1) 
-             else (vec1(vec1'First)*vec2(vec2'First)) 
-                   + (vec1(vec1'First+1)*vec2(vec2'First+1)) +  (vec1(vec1'First+2)*vec2(vec2'First+2)) /= 0)); 
--->Cambiar a contras_case
-   
+                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);      
 end MathArray;

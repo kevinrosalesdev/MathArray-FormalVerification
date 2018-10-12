@@ -1642,7 +1642,7 @@ end
 module Calculator__add__first_operand
  use import "_gnatprove_standard".Main
 
- function first_operand #"calculator.ads" 6 0 0#"model" "model_trace:2389" "name:First_Operand" 
+ function first_operand #"calculator.ads" 6 0 0#"model" "model_trace:2499" "name:First_Operand" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1661,7 +1661,7 @@ end
 module Calculator__add__second_operand
  use import "_gnatprove_standard".Main
 
- function second_operand #"calculator.ads" 7 0 0#"model" "model_trace:2398" "name:Second_Operand" 
+ function second_operand #"calculator.ads" 7 0 0#"model" "model_trace:2508" "name:Second_Operand" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1687,11 +1687,137 @@ module Calculator__add
    (result : int) (first_operand : int) (second_operand : int) 
 
 end
+
+(* Module for defining the constant "first_operand" defined at calculator.ads:36, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__multiply__first_operand
+ use import "_gnatprove_standard".Main
+
+ function first_operand #"calculator.ads" 36 0 0#"model" "name:First_Operand" "model_trace:2587" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "first_operand" defined at calculator.ads:36, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__first_operand___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "second_operand" defined at calculator.ads:37, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__multiply__second_operand
+ use import "_gnatprove_standard".Main
+
+ function second_operand #"calculator.ads" 37 0 0#"model" "name:Second_Operand" "model_trace:2596" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "second_operand" defined at calculator.ads:37, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__second_operand___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for axiomatizing type "T8s" defined at calculator.ads:45, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__multiply__L7s__T8s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t8s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t8s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t8s__ref =
+  { mutable t8s__content "model_trace:" "name:" : t8s }
+ 
+ function t8s__ref___projection 
+   (a : t8s__ref) : t8s =
+  a.t8s__content
+ 
+ meta "model_projection" function t8s__ref___projection
+ 
+ meta "inline : no" function t8s__ref___projection
+ 
+ val t8s__havoc 
+   (x : t8s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for defining the constant "R2b" defined at calculator.adb:26, created in Gnat2Why.Decls.Translate_Constant *)
+module Calculator__multiply__L_1__R2b
+ use import "_gnatprove_standard".Main
+
+ function r2b #"calculator.adb" 26 0 0#
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module for axiomatizing type "T3b" defined at calculator.adb:26, created in Gnat2Why.Types.Translate_Type *)
+module Calculator__multiply__L_1__T3b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t3b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t3b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t3b__ref =
+  { mutable t3b__content "model_trace:" "name:" : t3b }
+ 
+ function t3b__ref___projection 
+   (a : t3b__ref) : t3b =
+  a.t3b__content
+ 
+ meta "model_projection" function t3b__ref___projection
+ 
+ meta "inline : no" function t3b__ref___projection
+ 
+ val t3b__havoc 
+   (x : t3b__ref) : unit
+  writes {x}
+
+end
 (* Module for defining a ref holding the value of variable "last_quotient" defined at calculator.ads:2, created in Gnat2Why.Decls.Translate_Variable *)
 module Calculator__last_quotient
  use import "_gnatprove_standard".Main
 
- val last_quotient #"calculator.ads" 2 0 0#"model_projected" "model_trace:2364" "name:Last_Quotient"  : int__ref 
+ val last_quotient #"calculator.ads" 2 0 0#"model_projected" "model_trace:2474" "name:Last_Quotient"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
@@ -1709,7 +1835,7 @@ end
 module Calculator__last_remainder
  use import "_gnatprove_standard".Main
 
- val last_remainder #"calculator.ads" 3 0 0#"model_projected" "model_trace:2373" "name:Last_Remainder"  : int__ref 
+ val last_remainder #"calculator.ads" 3 0 0#"model_projected" "model_trace:2483" "name:Last_Remainder"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
@@ -1718,6 +1844,96 @@ end
 
 (* Module giving an empty axiom for the entity "last_remainder" defined at calculator.ads:3, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Calculator__last_remainder___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "result" defined at calculator.ads:38, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__multiply__result
+ use import "_gnatprove_standard".Main
+
+ val result__ #"calculator.ads" 38 0 0#"model_projected" "model_trace:2605" "name:Result"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "result" defined at calculator.ads:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__result___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "a" defined at calculator.adb:22, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__multiply__a
+ use import "_gnatprove_standard".Main
+
+ val a #"calculator.adb" 22 0 0#"model_projected" "model_trace:2378" "name:A"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "a" defined at calculator.adb:22, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__a___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "b" defined at calculator.adb:23, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__multiply__b
+ use import "_gnatprove_standard".Main
+
+ val b #"calculator.adb" 23 0 0#"model_projected" "model_trace:2388" "name:B"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "b" defined at calculator.adb:23, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "res" defined at calculator.adb:24, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__multiply__res
+ use import "_gnatprove_standard".Main
+
+ val res #"calculator.adb" 24 0 0#"model_projected" "model_trace:2398" "name:res"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "res" defined at calculator.adb:24, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__res___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at calculator.adb:26, created in Gnat2Why.Decls.Translate_Variable *)
+module Calculator__multiply__L_1__i
+ use import "_gnatprove_standard".Main
+
+ val i #"calculator.adb" 26 0 0#"model_projected" "model_trace:2411" "name:i"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at calculator.adb:26, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__L_1__i___axiom
  use import "_gnatprove_standard".Main
 
 
@@ -2084,6 +2300,49 @@ module Standard__universal_integer___axiom
   true
 
 end
+
+(* Module for possibly declaring a logic function for "multiply" defined at calculator.ads:35, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Calculator__multiply
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the loop exit exception for the loop "L_1" defined at calculator.adb:26, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Calculator__multiply__L_1
+ use import "_gnatprove_standard".Main
+
+ exception L_1
+
+end
+
+(* Module giving an empty axiom for the entity "L_1" defined at calculator.adb:26, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Calculator__multiply__L_1___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T8s" defined at calculator.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Calculator__multiply__L7s__T8s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T3b" defined at calculator.adb:26, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Calculator__multiply__L_1__T3b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+(* Module for defining the value of constant "R2b" defined at calculator.adb:26, created in Gnat2Why.Decls.Translate_Constant_Value *)
+module Calculator__multiply__L_1__R2b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
 (* Module for declaring a program function (and possibly an axiom) for "add" defined at calculator.ads:5, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Calculator__add___axiom
  use import "_gnatprove_standard".Main
@@ -2110,6 +2369,25 @@ module Calculator__add___axiom
     (if ((Calculator__add.add__function_guard result first_operand second_operand)) then (
      ( ( (result = (first_operand + second_operand)) /\ (Standard__integer___axiom.dynamic_invariant result True False True True) ) /\ true )) else true)))
     ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "multiply" defined at calculator.ads:35, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Calculator__multiply___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer___axiom
+
+ val multiply 
+   (first_operand : int) (second_operand : int) (result__ : int__ref) : unit
+  requires {  ( (first_operand >= 0) /\ ( (second_operand > 0) /\ (forall i   "model" "name:i" "model_trace:2640"  : int.
+   ( ( (0 <= i) /\ (i <= (second_operand - 1)) ) -> ( (if (( ((first_operand * i) > 0) /\ ((first_operand * (i + 1)) > 0) )) then (
+    ((first_operand * i) <= (2147483647 - (first_operand * (i + 1))))) else (
+    true)) /\ (if (( ((first_operand * i) < 0) /\ ((first_operand * (i + 1)) < 0) )) then (
+    ((first_operand * i) >= ((first_operand * i) - (first_operand * (i + 1))))) else (
+    true)) ) )) ) ) }
+  ensures {  ( (result__.int__content = (first_operand * second_operand)) /\ (Standard__integer___axiom.dynamic_invariant result__.int__content True True True True) ) }
+  writes {result__}
 
 end
 
@@ -2144,8 +2422,16 @@ module Calculator__package_def
   (#"calculator.ads" 12 0 0# ());
   (#"calculator.ads" 11 0 0# ());
   (#"calculator.ads" 10 0 0# ());
+  (#"calculator.ads" 35 0 0# ());
+  (#"calculator.ads" 49 0 0# ());
+  (#"calculator.ads" 44 0 0# ());
+  (#"calculator.ads" 44 0 0# ());
+  (#"calculator.ads" 44 0 0# ());
+  (#"calculator.ads" 43 0 0# ());
+  (#"calculator.ads" 42 0 0# ());
   (#"calculator.adb" 1 0 0# ());
   (#"calculator.adb" 3 0 0# ());
+  (#"calculator.adb" 18 0 0# ());
   ( "GP_Sloc:calculator.adb:70:1" (#"calculator.adb" 70 0 0# ()) ) )
 end
 
@@ -2163,13 +2449,13 @@ module Calculator__add__subprogram_def
  use        Calculator__add__first_operand___axiom
  use        Calculator__add__second_operand___axiom
 
- val calculator__add__result "model_projected" "model_trace:2382@result" "name:Add"  : int__ref 
+ val calculator__add__result "model_projected" "model_trace:2492@result" "name:Add"  : int__ref 
  
  let def #"calculator.ads" 5 0 0#"W:diverges:N" "GP_Subp:calculator.ads:5" 
    (__void_param : unit)
   requires { #"calculator.ads" 5 0 0# true }
   ensures { #"calculator.ads" 5 0 0# (#"calculator.ads" 17 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:calculator.ads:17:14" "GP_Reason:VC_POSTCONDITION" "GP_Id:4" "comment:     Post => Add'Result = First_Operand+Second_Operand;
-             ^ calculator.ads:17:14:VC_POSTCONDITION" "GP_Shape:pragargs__cmp" ( "GP_Pretty_Ada:2540" "GP_Sloc:calculator.ads:17:14" (calculator__add__result.int__content = (Calculator__add__first_operand.first_operand + Calculator__add__second_operand.second_operand)) ) )) }
+             ^ calculator.ads:17:14:VC_POSTCONDITION" "GP_Shape:pragargs__cmp" ( "GP_Pretty_Ada:2786" "GP_Sloc:calculator.ads:17:14" (calculator__add__result.int__content = (Calculator__add__first_operand.first_operand + Calculator__add__second_operand.second_operand)) ) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram calculator.ads:5 *)
   ;
@@ -2209,4 +2495,188 @@ module Calculator__add__subprogram_def
    ()))
    end ;
   calculator__add__result.int__content )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "multiply" defined at calculator.ads:35, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Calculator__multiply__subprogram_def
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Boolean
+ use        Standard__integer
+ use        Standard__integer___axiom
+ use        Calculator__add___axiom
+ use        Calculator__multiply__first_operand
+ use        Calculator__multiply__second_operand
+ use        Calculator__multiply__result
+ use        Calculator__multiply__a
+ use        Calculator__multiply__b
+ use        Calculator__multiply__res
+ use        Calculator__multiply__L_1__R2b
+ use        Calculator__multiply__L_1
+ use        Calculator__multiply__L_1__T3b
+ use        Calculator__multiply__L_1__i
+ use        Standard__integer___axiom
+ use        Standard__integer___axiom
+ use        Calculator__multiply__a___axiom
+ use        Calculator__multiply__b___axiom
+ use        Calculator__multiply__res___axiom
+ use        Calculator__multiply__L_1__i___axiom
+ use        Calculator__multiply__L_1___axiom
+ use        Calculator__add___axiom
+ use        Calculator__multiply__first_operand___axiom
+ use        Calculator__multiply__second_operand___axiom
+ use        Calculator__multiply__result___axiom
+ use        Calculator__multiply__L_1__R2b___axiom
+ use        Calculator__multiply__L_1__T3b___axiom
+
+ let def #"calculator.ads" 35 0 0#"W:diverges:N" "GP_Subp:calculator.ads:35" 
+   (__void_param : unit)
+  requires { #"calculator.ads" 35 0 0# true }
+  ensures { #"calculator.ads" 35 0 0# (#"calculator.ads" 49 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__cmp" "GP_Sloc:calculator.ads:49:17" "GP_Id:25" "comment:        Post => Result = First_Operand*Second_Operand;
+                ^ calculator.ads:49:17:VC_POSTCONDITION" ( "GP_Pretty_Ada:2938" "GP_Sloc:calculator.ads:49:17" (Calculator__multiply__result.result__.int__content = (Calculator__multiply__first_operand.first_operand * Calculator__multiply__second_operand.second_operand)) ) )) }
+   =
+  ( () (* Assume dynamic invariants of inputs of the subprogram calculator.ads:35 *)
+  ;
+   assume {  (Standard__integer___axiom.dynamic_invariant Calculator__multiply__first_operand.first_operand True False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Calculator__multiply__second_operand.second_operand True False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Calculator__multiply__result.result__.int__content False False True True) };
+   assume {  true };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram calculator.ads:35 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram calculator.ads:35 *)
+  ;
+   abstract ensures {true}(let _ = ( (Calculator__multiply__first_operand.first_operand >= 0) && ( (Calculator__multiply__second_operand.second_operand > 0) && ( (let i =  (any int
+  ) in (
+   (if ((Boolean.andb((0 <= i)) ((i <= (#"calculator.ads" 45 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:45:38" "GP_Id:9" "comment:     (for all i in 0..(Second_Operand-1) =>  (if (First_Operand*i) > 0 and (First_Operand*(i+1)) > 0 then
+                                     ^ calculator.ads:45:38:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__range__sub" (Standard__integer.range_check_((Calculator__multiply__second_operand.second_operand - 1))) )))))) then (
+     abstract ensures {true}(let _ = (Boolean.andb((if ((Boolean.andb(((#"calculator.ads" 45 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:45:64" "GP_Id:14" "comment:     (for all i in 0..(Second_Operand-1) =>  (if (First_Operand*i) > 0 and (First_Operand*(i+1)) > 0 then
+                                                               ^ calculator.ads:45:64:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * i))) )) > 0)) (((#"calculator.ads" 45 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult" "GP_Sloc:calculator.ads:45:90" "GP_Id:16" "comment:     (for all i in 0..(Second_Operand-1) =>  (if (First_Operand*i) > 0 and (First_Operand*(i+1)) > 0 then
+                                                                                         ^ calculator.ads:45:90:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * (#"calculator.ads" 45 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:45:93" "GP_Id:15" "comment:     (for all i in 0..(Second_Operand-1) =>  (if (First_Operand*i) > 0 and (First_Operand*(i+1)) > 0 then
+                                                                                            ^ calculator.ads:45:93:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult__add" (Standard__integer.range_check_((i + 1))) ))))) )) > 0)))) then (
+     ((#"calculator.ads" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:46:34" "GP_Id:10" "comment:                   (First_Operand*i)  <= Integer'Last - (First_Operand*(i+1)))                
+                                 ^ calculator.ads:46:34:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__mult" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * i))) )) <= (#"calculator.ads" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:46:55" "GP_Id:13" "comment:                   (First_Operand*i)  <= Integer'Last - (First_Operand*(i+1)))                
+                                                      ^ calculator.ads:46:55:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub" (Standard__integer.range_check_((2147483647 - (#"calculator.ads" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:46:71" "GP_Id:12" "comment:                   (First_Operand*i)  <= Integer'Last - (First_Operand*(i+1)))                
+                                                                      ^ calculator.ads:46:71:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub__mult" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * (#"calculator.ads" 46 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:46:74" "GP_Id:11" "comment:                   (First_Operand*i)  <= Integer'Last - (First_Operand*(i+1)))                
+                                                                         ^ calculator.ads:46:74:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub__mult__add" (Standard__integer.range_check_((i + 1))) ))))) ))))) )))) else (
+     (Boolean.of_int(1))))) ((if ((Boolean.andb(((#"calculator.ads" 47 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult" "GP_Sloc:calculator.ads:47:35" "GP_Id:22" "comment:            and (if (First_Operand*i) < 0 and (First_Operand*(i+1)) < 0 then                   
+                                  ^ calculator.ads:47:35:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * i))) )) < 0)) (((#"calculator.ads" 47 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult" "GP_Sloc:calculator.ads:47:61" "GP_Id:24" "comment:            and (if (First_Operand*i) < 0 and (First_Operand*(i+1)) < 0 then                   
+                                                            ^ calculator.ads:47:61:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * (#"calculator.ads" 47 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__and__cmp__mult__add" "GP_Sloc:calculator.ads:47:64" "GP_Id:23" "comment:            and (if (First_Operand*i) < 0 and (First_Operand*(i+1)) < 0 then                   
+                                                               ^ calculator.ads:47:64:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((i + 1))) ))))) )) < 0)))) then (
+     ((#"calculator.ads" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__mult" "GP_Sloc:calculator.ads:48:34" "GP_Id:17" "comment:                   (First_Operand*i) >= (First_Operand*i) - (First_Operand*(i+1)))),
+                                 ^ calculator.ads:48:34:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * i))) )) >= (#"calculator.ads" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub" "GP_Sloc:calculator.ads:48:59" "GP_Id:21" "comment:                   (First_Operand*i) >= (First_Operand*i) - (First_Operand*(i+1)))),
+                                                          ^ calculator.ads:48:59:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((#"calculator.ads" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub__mult" "GP_Sloc:calculator.ads:48:55" "GP_Id:18" "comment:                   (First_Operand*i) >= (First_Operand*i) - (First_Operand*(i+1)))),
+                                                      ^ calculator.ads:48:55:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * i))) )) - (#"calculator.ads" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub__mult" "GP_Sloc:calculator.ads:48:75" "GP_Id:20" "comment:                   (First_Operand*i) >= (First_Operand*i) - (First_Operand*(i+1)))),
+                                                                          ^ calculator.ads:48:75:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * (#"calculator.ads" 48 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__and__if__cmp__sub__mult__add" "GP_Sloc:calculator.ads:48:78" "GP_Id:19" "comment:                   (First_Operand*i) >= (First_Operand*i) - (First_Operand*(i+1)))),
+                                                                             ^ calculator.ads:48:78:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((i + 1))) ))))) ))))) )))) else (
+     (Boolean.of_int(1)))))) in (
+     ()))
+     end ))))
+  ;
+   (any bool
+  requires { true} 
+  ensures { ( (result = True) <-> (forall i   "model" "name:i" "model_trace:2640"  : int.
+   ( ( (0 <= i) /\ (i <= (Calculator__multiply__second_operand.second_operand - 1)) ) -> ( (if (( ((Calculator__multiply__first_operand.first_operand * i) > 0) /\ ((Calculator__multiply__first_operand.first_operand * (i + 1)) > 0) )) then (
+    ((Calculator__multiply__first_operand.first_operand * i) <= (2147483647 - (Calculator__multiply__first_operand.first_operand * (i + 1))))) else (
+    true)) /\ (if (( ((Calculator__multiply__first_operand.first_operand * i) < 0) /\ ((Calculator__multiply__first_operand.first_operand * (i + 1)) < 0) )) then (
+    ((Calculator__multiply__first_operand.first_operand * i) >= ((Calculator__multiply__first_operand.first_operand * i) - (Calculator__multiply__first_operand.first_operand * (i + 1))))) else (
+    true)) ) )) )} 
+  ) ) ) ) in (
+   ()))
+   end ;
+  () (* Assume Pre of the subprogram calculator.ads:35 *)
+  ;
+   assume {  ( (Calculator__multiply__first_operand.first_operand >= 0) /\ ( (Calculator__multiply__second_operand.second_operand > 0) /\ (forall i   "model" "name:i" "model_trace:2640"  : int.
+   ( ( (0 <= i) /\ (i <= (Calculator__multiply__second_operand.second_operand - 1)) ) -> ( (if (( ((Calculator__multiply__first_operand.first_operand * i) > 0) /\ ((Calculator__multiply__first_operand.first_operand * (i + 1)) > 0) )) then (
+    ((Calculator__multiply__first_operand.first_operand * i) <= (2147483647 - (Calculator__multiply__first_operand.first_operand * (i + 1))))) else (
+    true)) /\ (if (( ((Calculator__multiply__first_operand.first_operand * i) < 0) /\ ((Calculator__multiply__first_operand.first_operand * (i + 1)) < 0) )) then (
+    ((Calculator__multiply__first_operand.first_operand * i) >= ((Calculator__multiply__first_operand.first_operand * i) - (Calculator__multiply__first_operand.first_operand * (i + 1))))) else (
+    true)) ) )) ) ) };
+   try
+   ( (#"calculator.adb" 22 0 0# ( #"calculator.adb" 22 0 0# Calculator__multiply__a.a.int__content <- ( Calculator__multiply__first_operand.first_operand );
+   #"calculator.adb" 22 0 0# assume { #"calculator.adb" 22 0 0# (Standard__integer___axiom.dynamic_invariant Calculator__multiply__a.a.int__content True False True True) } ));
+   (#"calculator.adb" 23 0 0# ( #"calculator.adb" 23 0 0# Calculator__multiply__b.b.int__content <- ( Calculator__multiply__second_operand.second_operand );
+   #"calculator.adb" 23 0 0# assume { #"calculator.adb" 23 0 0# (Standard__integer___axiom.dynamic_invariant Calculator__multiply__b.b.int__content True False True True) } ));
+   (#"calculator.adb" 24 0 0# ( #"calculator.adb" 24 0 0# Calculator__multiply__res.res.int__content <- ( 0 );
+   #"calculator.adb" 24 0 0# assume { #"calculator.adb" 24 0 0# (Standard__integer___axiom.dynamic_invariant Calculator__multiply__res.res.int__content True False True True) } ));
+   (#"calculator.adb" 26 0 0# ());
+   ( "GP_Sloc:calculator.adb:26:19" (#"calculator.adb" 26 0 0# ()) );
+   ( "GP_Sloc:calculator.adb:26:19" (#"calculator.adb" 26 0 0# (#"calculator.adb" 26 0 0# ( (let calculator__multiply__L_1__R2b__assume = Calculator__multiply__b.b.int__content in (
+    #"calculator.adb" 26 0 0# assume { #"calculator.adb" 26 0 0# (calculator__multiply__L_1__R2b__assume = Calculator__multiply__L_1__R2b.r2b) }))
+   ;
+   #"calculator.adb" 26 0 0# assume { #"calculator.adb" 26 0 0# (Standard__integer___axiom.dynamic_invariant Calculator__multiply__L_1__R2b.r2b True False True True) } ))) );
+   ( "GP_Sloc:calculator.adb:26:21" (#"calculator.adb" 26 0 0# (let temp___154 = 1 in (
+   (let temp___155 = Calculator__multiply__L_1__R2b.r2b in (
+    ( #"calculator.adb" 26 0 0# Calculator__multiply__L_1__i.i.int__content <- ( temp___154 );
+    () (* Translation of an Ada loop from calculator.adb:26 *)
+    ;
+    (if ((Boolean.andb((temp___154 <= Calculator__multiply__L_1__i.i.int__content)) ((Calculator__multiply__L_1__i.i.int__content <= temp___155)))) then (
+     #"calculator.adb" 26 0 0# try
+      ( #"calculator.adb" 26 0 0# abstract ensures {true}(let _ = Calculator__multiply__L_1__i.i.int__content in (
+       ()))
+       end ;
+      (let temp___157 = #"calculator.adb" 26 0 0# (any int
+      ensures {#"calculator.adb" 26 0 0# (result = Calculator__multiply__L_1__i.i.int__content)} 
+      ) in (
+       ( #"calculator.adb" 26 0 0# abstract ensures {true}(let _ = Calculator__multiply__res.res.int__content in (
+        ()))
+        end ;
+       (let temp___156 = #"calculator.adb" 26 0 0# (any int
+       ensures {#"calculator.adb" 26 0 0# (result = Calculator__multiply__res.res.int__content)} 
+       ) in (
+        ( () (* First unroling of the loop statements appearing before the loop invariant of loop calculator.adb:26 *)
+        ;
+        ( "GP_Sloc:calculator.adb:27:10" (#"calculator.adb" 27 0 0# ()) );
+        ( "GP_Sloc:calculator.adb:27:21" (#"calculator.adb" 27 0 0# ()) );
+        ( "GP_Sloc:calculator.adb:27:24" (#"calculator.adb" 27 0 0# ()) );
+        ( "GP_Sloc:calculator.adb:27:17" (#"calculator.adb" 27 0 0# ()) );
+        ( "GP_Sloc:calculator.adb:27:14" (#"calculator.adb" 27 0 0# #"calculator.adb" 27 0 0# Calculator__multiply__res.res.int__content <- ( (#"calculator.adb" 27 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:calculator.adb:27:17" "GP_Reason:VC_PRECONDITION" "GP_Id:5" "comment:         res := Add(A, res);
+                ^ calculator.adb:27:17:VC_PRECONDITION" "GP_Shape:L_1_while__res_assign__call_add" (Calculator__add___axiom.add(Calculator__multiply__a.a.int__content) (Calculator__multiply__res.res.int__content)) )) )) );
+        () (* While loop translating the Ada loop from calculator.adb:26 *)
+        ;
+         while True do
+         invariant { 
+          (#"calculator.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:calculator.adb:29:32" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:7" "comment:         pragma Loop_Invariant(res=A*i);
+                               ^ calculator.adb:29:32:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" ( "GP_Pretty_Ada:2435" "GP_Sloc:calculator.adb:29:32" (Calculator__multiply__res.res.int__content = (Calculator__multiply__a.a.int__content * Calculator__multiply__L_1__i.i.int__content)) ) ))
+          }
+         ( () (* Assume implicit invariants from the loop calculator.adb:26 *)
+         ;
+          assume {  (Boolean.andb(( ( ( ( true /\ (Standard__integer___axiom.dynamic_invariant Calculator__multiply__res.res.int__content False True True True) ) /\ true ) /\ (if ((1 <= Calculator__multiply__L_1__R2b.r2b)) then (
+          (Calculator__multiply__L_1__T3b.dynamic_property 1 Calculator__multiply__L_1__R2b.r2b Calculator__multiply__L_1__i.i.int__content)) else true) ) /\ true )) (( (1 <= Calculator__multiply__L_1__i.i.int__content) /\ (Calculator__multiply__L_1__i.i.int__content <= Calculator__multiply__L_1__R2b.r2b) ))) };
+         () (* Check for absence of RTE in the invariant of loop calculator.adb:26 *)
+         ;
+          abstract ensures {true}(let _ = (Calculator__multiply__res.res.int__content = (#"calculator.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.adb:29:37" "GP_Id:6" "comment:         pragma Loop_Invariant(res=A*i);
+                                    ^ calculator.adb:29:37:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__cmp__mult" (Standard__integer.range_check_((Calculator__multiply__a.a.int__content * Calculator__multiply__L_1__i.i.int__content))) ))) in (
+          ()))
+          end ;
+         () (* Loop statements appearing after the loop invariant of loop calculator.adb:26 *)
+         ;
+         () (* Check for the exit condition and loop statements appearing before the loop invariant of loop calculator.adb:26 *)
+         ;
+         (if ((Calculator__multiply__L_1__i.i.int__content = temp___155)) then (
+           raise Calculator__multiply__L_1.L_1));
+          Calculator__multiply__L_1__i.i.int__content <- ( (Calculator__multiply__L_1__i.i.int__content + 1) );
+         ( "GP_Sloc:calculator.adb:27:10" (#"calculator.adb" 27 0 0# ()) );
+         ( "GP_Sloc:calculator.adb:27:21" (#"calculator.adb" 27 0 0# ()) );
+         ( "GP_Sloc:calculator.adb:27:24" (#"calculator.adb" 27 0 0# ()) );
+         ( "GP_Sloc:calculator.adb:27:17" (#"calculator.adb" 27 0 0# ()) );
+         ( "GP_Sloc:calculator.adb:27:14" (#"calculator.adb" 27 0 0# #"calculator.adb" 27 0 0# Calculator__multiply__res.res.int__content <- ( (#"calculator.adb" 27 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:calculator.adb:27:17" "GP_Reason:VC_PRECONDITION" "GP_Id:5" "comment:         res := Add(A, res);
+                ^ calculator.adb:27:17:VC_PRECONDITION" "GP_Shape:L_1_while__res_assign__call_add" (Calculator__add___axiom.add(Calculator__multiply__a.a.int__content) (Calculator__multiply__res.res.int__content)) )) )) ) )
+        done )))
+        )))
+       )
+     with
+      Calculator__multiply__L_1.L_1 -> ()
+     end)) )))
+   ))
+   ) );
+   ( "GP_Sloc:calculator.adb:31:17" (#"calculator.adb" 31 0 0# ()) );
+   ( "GP_Sloc:calculator.adb:31:14" (#"calculator.adb" 31 0 0# #"calculator.adb" 31 0 0# Calculator__multiply__result.result__.int__content <- ( Calculator__multiply__res.res.int__content )) );
+    raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+   abstract ensures {true}(let _ = (Calculator__multiply__result.result__.int__content = (#"calculator.ads" 49 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:calculator.ads:49:39" "GP_Id:8" "comment:        Post => Result = First_Operand*Second_Operand;
+                                      ^ calculator.ads:49:39:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__cmp__mult" (Standard__integer.range_check_((Calculator__multiply__first_operand.first_operand * Calculator__multiply__second_operand.second_operand))) ))) in (
+   ()))
+   end  )
 end
