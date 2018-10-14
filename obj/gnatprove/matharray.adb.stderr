@@ -1,0 +1,5 @@
+matharray.adb:34:51: medium: overflow check might fail (e.g. when res = (others => 0))[#0]
+matharray.adb:38:35: medium: loop invariant might fail in first iteration, cannot prove res(j) = (vec1'Length-(j-vec1'First+1)) * vec1 (j) (e.g. when i = 0 and j = 0 and res = (others => 0) and res'First = 0 and vec1 = (others => 0) and vec1'First = 0 and vec1'Last = 0)[#1]
+matharray.adb:38:35: medium: loop invariant might fail after first iteration, cannot prove res(j) = (vec1'Length-(j-vec1'First+1)) * vec1 (j) (e.g. when i = 0 and j = 0 and res = (others => 0) and res'First = 0 and vec1 = (others => 0) and vec1'First = 0 and vec1'Last = 0)[#3]
+matharray.adb:38:75: medium: overflow check might fail[#2]
+matharray.ads:46:44: medium: overflow check might fail[#4]

@@ -6,14 +6,14 @@ SPARK Analysis results        Total        Flow   Interval   CodePeer       Prov
 ----------------------------------------------------------------------------------------------------------
 Data Dependencies                 .           .          .          .             .           .          .
 Flow Dependencies                 .           .          .          .             .           .          .
-Initialization                   19          19          .          .             .           .          .
+Initialization                   22          22          .          .             .           .          .
 Non-Aliasing                      .           .          .          .             .           .          .
-Run-time Checks                 104           .          .          .    103 (CVC4)           .          1
-Assertions                       11           .          .          .     11 (CVC4)           .          .
-Functional Contracts              8           .          .          .      8 (CVC4)           .          .
+Run-time Checks                 134           .          3          .    127 (CVC4)           .          4
+Assertions                       17           .          .          .     15 (CVC4)           .          2
+Functional Contracts              9           .          .          .      9 (CVC4)           .          .
 LSP Verification                  .           .          .          .             .           .          .
 ----------------------------------------------------------------------------------------------------------
-Total                           142    19 (13%)          .          .     122 (86%)           .     1 (1%)
+Total                           182    22 (12%)     3 (2%)          .     151 (83%)           .     6 (3%)
 
 
 Analyzed 4 units
@@ -23,11 +23,12 @@ in unit calculator, 3 subprograms and packages out of 3 analyzed
   Calculator.Multiply at calculator.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 21 checks out of 22 proved
 in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:9 skipped
-in unit matharray, 4 subprograms and packages out of 4 analyzed
-  MathArray at matharray.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.get at matharray.ads:58 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
-  MathArray.midpoint at matharray.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (32 checks)
-  MathArray.perpendicular_vec at matharray.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
+in unit matharray, 5 subprograms and packages out of 5 analyzed
+  MathArray at matharray.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MathArray.derivative at matharray.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 32 checks out of 37 proved
+  MathArray.get at matharray.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  MathArray.midpoint at matharray.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (32 checks)
+  MathArray.perpendicular_vec at matharray.ads:70 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped
