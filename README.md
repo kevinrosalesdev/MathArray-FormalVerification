@@ -1,6 +1,8 @@
 # MathArray-PR3
 Math &amp; Array Library [Ada] - Formal Verification [SPARK] - Programmation III - ULPGC
 A simple Ada/Spark package which works with some mathematical functions and arrays.
+
+
 Cosas a Resolver [ELIMINAR CADA VEZ QUE SE RESUELVA UNO. DEBEN ESTAR RESUELTOS ANTES DEL PRÓXIMO JUEVES][SI ENCUENTRAN ALGUNO MÁS, AÑADIR]:
 
 
