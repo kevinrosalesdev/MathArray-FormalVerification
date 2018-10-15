@@ -8,12 +8,12 @@ Data Dependencies                 .          .          .          .            
 Flow Dependencies                 .          .          .          .             .           .          .
 Initialization                   23         23          .          .             .           .          .
 Non-Aliasing                      .          .          .          .             .           .          .
-Run-time Checks                 265          .         11          .    253 (CVC4)           .          1
-Assertions                       11          .          .          .     11 (CVC4)           .          .
-Functional Contracts             15          .          .          .     15 (CVC4)           .          .
+Run-time Checks                 250          .          6          .    243 (CVC4)           .          1
+Assertions                        7          .          .          .      7 (CVC4)           .          .
+Functional Contracts             12          .          .          .     11 (CVC4)           .          1
 LSP Verification                  .          .          .          .             .           .          .
 ---------------------------------------------------------------------------------------------------------
-Total                           314    23 (7%)    11 (4%)          .     279 (89%)           .     1 (0%)
+Total                           292    23 (8%)     6 (2%)          .     261 (89%)           .     2 (1%)
 
 
 Analyzed 4 units
@@ -22,14 +22,14 @@ in unit calculator, 3 subprograms and packages out of 3 analyzed
   Calculator.Add at calculator.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
   Calculator.Multiply at calculator.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 21 checks out of 22 proved
 in unit main, 0 subprograms and packages out of 1 analyzed
-  Main at main.adb:9 skipped
+  Main at main.adb:8 skipped
 in unit matharray, 6 subprograms and packages out of 6 analyzed
   MathArray at matharray.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.derivative at matharray.ads:46 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (27 checks)
-  MathArray.get at matharray.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
-  MathArray.midpoint at matharray.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (32 checks)
-  MathArray.module at matharray.ads:24 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (141 checks)
-  MathArray.perpendicular_vec at matharray.ads:79 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
+  MathArray.derivative at matharray.ads:45 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
+  MathArray.get at matharray.ads:69 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 8 checks out of 9 proved
+  MathArray.midpoint at matharray.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (28 checks)
+  MathArray.module at matharray.ads:23 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (139 checks)
+  MathArray.perpendicular_vec at matharray.ads:78 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped

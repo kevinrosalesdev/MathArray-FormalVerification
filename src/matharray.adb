@@ -10,10 +10,8 @@ package body MathArray with SPARK_Mode => On is
    begin
       for i in point1'Range loop
          result (i) := (point1(i)+point2(i))/2;
-         pragma Loop_Invariant(result'Length = point1'Length and then  result'Length = point2'Length);
-         pragma Loop_Invariant(result'Loop_Entry'Length = point1'Length);
          pragma Loop_Invariant (for all j in result'First .. i =>
-                                result (j) = Add(point1(j),point2(j))/2);
+                                result (j) = (point1(j)+point2(j))/2);
       end loop;
       return result;
    end midpoint;
@@ -30,18 +28,8 @@ package body MathArray with SPARK_Mode => On is
    function derivative (vec1 : vec) return vec is
       res : vec(vec1'Range) := (others => 0);
    begin
-      
       for i in res'Range loop
-                  
---           pragma Loop_Invariant (res'Length = vec1'Length);
---           pragma Loop_Invariant (res'Length = 1 or res'Length = 2 or res'Length = 3);
---           pragma Loop_Invariant (for all j in res'First .. i =>
---                                    (res'Last - j) in res'Range and then
---                                  
---                                  res(j) = (res'Last-j) * vec1'Loop_Entry (j));
          res(i) :=  vec1(i)*(res'Last - i);
-         
-
       end loop;
       return res;
    end derivative;
@@ -69,9 +57,9 @@ package body MathArray with SPARK_Mode => On is
             exit;
          end if;
          pragma Loop_Variant(Increases => i);
-         pragma Loop_Invariant(i in a'Range and then (for some k in a'First..i => 
-                                   (if a'Loop_Entry(k) /= a(k) then a(k) = 0
-                                    else a'Loop_Entry(k) = a(k))));
+         pragma Loop_Invariant(i in a'Range and then (for all j in a'First .. i =>
+                                                     j in a'Range and then 
+                                                     a(j) /= x));
          i:=i+1;
       end loop;
    end get;
