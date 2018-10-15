@@ -46,25 +46,25 @@ package body MathArray with SPARK_Mode => On is
 --        return res;
 --     end derivative_x;
      
-   procedure get(a:in out vec; x:Integer; bool:out Boolean)  is
-      i:Integer:=a'First;
-   begin
-      bool := false;
-      while  i <= a'Last loop
-         if a(i)=x then
-            a(i):=0;
-            bool := True;
-            exit;
-         end if;
-         pragma Loop_Variant(Increases => i);
-         pragma Loop_Invariant(i in a'Range and then (for all j in a'First .. i =>
-                                                     j in a'Range and then 
-                                                     a(j) /= x));
-         i:=i+1;
-      end loop;
-   end get;
-   
-   
+--     procedure get(a:in out vec; x:Integer; bool:out Boolean)  is
+--        i:Integer:=a'First;
+--     begin
+--        bool := false;
+--        while  i <= a'Last loop
+--           if a(i)=x then
+--              a(i):=0;
+--              bool := True;
+--              exit;
+--           end if;
+--           pragma Loop_Variant(Increases => i);
+--           pragma Loop_Invariant(i in a'Range and then (for all j in a'First .. i =>
+--                                                       j in a'Range and then 
+--                                                       a(j) /= x));
+--           i:=i+1;
+--        end loop;
+--     end get;
+--     
+--     
    function perpendicular_vec (vec1 : vec; vec2 : vec) return Boolean is
    begin 
       return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;

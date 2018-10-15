@@ -1,1 +1,0 @@
-matharray.ads:73:45: medium: postcondition might fail, cannot prove a = a'old (e.g. when a = (others => 1) and a'First = 0 and a'Last = 0 and a'Old = (others => 0) and bool = False)[#0]

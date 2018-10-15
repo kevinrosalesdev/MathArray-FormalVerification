@@ -49,6 +49,10 @@ procedure Main is
       point4:=(-2,4);
       res2:=midpoint(point3,point4);
       Assert_True(res2=(-3,3),Msg & " with point -4,2 and point -2,4");
+      point3:=(-3,2);
+      point4:=(-2,7);
+      res2:=midpoint(point3,point4);
+      Assert_True(res2=(-2,4),Msg & " with point -3,2 and point -2,7");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -56,73 +60,73 @@ procedure Main is
          Put_Line (Msg & " Failed (exception)");
    end Test_midpoint;
 
---     procedure Test_module is
---        Msg   : constant String := "Test_module";
---        vec1:vec:=(0,0);
---        vec2:vec:=(0,0,0);
---        res:Float:=0.0;
---     begin
---        module(vec1,res);
---        Assert_True(res=0.0,Msg & " with vec 0,0");
---        vec1:=(1,0);
---        module(vec1,res);
---        Assert_True(res=1.0,Msg & " with vec 1,0");
---        vec1:=(0,1);
---        module(vec1,res);
---        Assert_True(res=1.0,Msg & " with vec 0,1");
---        vec1:=(3,-4);
---        module(vec1,res);
---        Assert_True(res=5.0,Msg & " with vec 3,-4");
---
---        module(vec2,res);
---        Assert_True(res=0.0,Msg & " with vec 0,0,0");
---        vec2:=(1,0,0);
---        module(vec2,res);
---        Assert_True(res=1.0,Msg & " with vec 1,0,0");
---        vec2:=(4,3,0);
---        module(vec2,res);
---        Assert_True(res=5.0,Msg & " with vec 4,3,0");
---        vec2:=(-4,-3,0);
---        module(vec2,res);
---        Assert_True(res=5.0,Msg & " with vec -4,-3,0");
---        vec2:=(-1,-2,2);
---        module(vec2,res);
---        Assert_True(res=3.0,Msg & " with vec -1,-2,2");
---     exception
---        when Assertion_Error =>
---           Put_Line (Msg & " Failed (assertion)");
---        when others =>
---           Put_Line (Msg & " Failed (exception)");
---     end Test_module;
-
-   procedure Test_get is
-      Msg   : constant String := "Test_get";
-      bool:Boolean;
-      vec1:vec(1..5);
-      vec2:vec(1..2);
+   procedure Test_module is
+      Msg   : constant String := "Test_module";
+      vec1:vecFloat:=(0.0,0.0);
+      vec2:vecFloat:=(0.0,0.0,0.0);
+      res:Float:=0.0;
    begin
-      vec1:=(1,2,3,4,5);
-      vec2:=(-4,-1);
-      get(vec1,3,bool);
-      Assert_True (bool and then vec1(3)=0, Msg & " get successfully in the middle");
-      get(vec1,1,bool);
-      Assert_True (bool and then vec1(1)=0, Msg & " get successfully in the First element");
-      get(vec1,5,bool);
-      Assert_True (bool and then vec1(5)=0, Msg & " get successfully in the last element");
-      get(vec1,10,bool);
-      Assert_True (bool = False, Msg & " get fail");
-      get(vec1,2,bool);
-      Assert_True (bool and then vec1(2)=0, Msg & " get successfully");
-      get(vec2,4,bool);
-      Assert_True (bool = False, Msg & " get fail with two elements");
-      get(vec2,-4,bool);
-      Assert_True (bool and then vec2(1)=0, Msg & " get successfully with two elements");
+      module(vec1,res);
+      Assert_True(res=0.0,Msg & " with vec 0.0,0.0");
+      vec1:=(1.0,0.0);
+      module(vec1,res);
+      Assert_True(res=1.0,Msg & " with vec 1.0,0.0");
+      vec1:=(0.0,1.0);
+      module(vec1,res);
+      Assert_True(res=1.0,Msg & " with vec 0.0,1.0");
+      vec1:=(3.0,-4.0);
+      module(vec1,res);
+      Assert_True(res=5.0,Msg & " with vec 3.0,-4.0");
+
+      module(vec2,res);
+      Assert_True(res=0.0,Msg & " with vec 0.0,0.0,0.0");
+      vec2:=(1.0,0.0,0.0);
+      module(vec2,res);
+      Assert_True(res=1.0,Msg & " with vec 1.0,0.0,0.0");
+      vec2:=(4.0,3.0,0.0);
+      module(vec2,res);
+      Assert_True(res=5.0,Msg & " with vec 4.0,3.0,0.0");
+      vec2:=(-4.0,-3.0,0.0);
+      module(vec2,res);
+      Assert_True(res=5.0,Msg & " with vec -4.0,-3.0,0.0");
+      vec2:=(-1.0,-2.0,2.0);
+      module(vec2,res);
+      Assert_True(res=3.0,Msg & " with vec -1.0,-2.0,2.0");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
       when others =>
          Put_Line (Msg & " Failed (exception)");
-   end Test_get;
+   end Test_module;
+
+--     procedure Test_get is
+--        Msg   : constant String := "Test_get";
+--        bool:Boolean;
+--        vec1:vec(1..5);
+--        vec2:vec(1..2);
+--     begin
+--        vec1:=(1,2,3,4,5);
+--        vec2:=(-4,-1);
+--        get(vec1,3,bool);
+--        Assert_True (bool and then vec1(3)=0, Msg & " get successfully in the middle");
+--        get(vec1,1,bool);
+--        Assert_True (bool and then vec1(1)=0, Msg & " get successfully in the First element");
+--        get(vec1,5,bool);
+--        Assert_True (bool and then vec1(5)=0, Msg & " get successfully in the last element");
+--        get(vec1,10,bool);
+--        Assert_True (bool = False, Msg & " get fail");
+--        get(vec1,2,bool);
+--        Assert_True (bool and then vec1(2)=0, Msg & " get successfully");
+--        get(vec2,4,bool);
+--        Assert_True (bool = False, Msg & " get fail with two elements");
+--        get(vec2,-4,bool);
+--        Assert_True (bool and then vec2(1)=0, Msg & " get successfully with two elements");
+--     exception
+--        when Assertion_Error =>
+--           Put_Line (Msg & " Failed (assertion)");
+--        when others =>
+--           Put_Line (Msg & " Failed (exception)");
+--     end Test_get;
 
    procedure Test_perpendicular_vec is
       Msg   : constant String := "Test_perpendicular_vec";
@@ -177,8 +181,8 @@ procedure Main is
 begin
    Put_Line ("********************* Test_Max");
    Test_midpoint;
-   --Test_module;
-   Test_get;
+   Test_module;
+   --Test_get;
    Test_perpendicular_vec;
    Test_derivative;
    --Test_derivative_x;

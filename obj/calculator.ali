@@ -15,8 +15,8 @@ U calculator%b		calculator.adb		ce49fc38 NE OO PK
 
 U calculator%s		calculator.ads		450d3b27 EE NE OO PK
 
-D calculator.ads	20181014202214 450d3b27 calculator%s
-D calculator.adb	20181014202214 8b44c71f calculator%b
+D calculator.ads	20181015205938 450d3b27 calculator%s
+D calculator.adb	20181015205938 8b44c71f calculator%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 calculator.ads
 1K9*Calculator 71l5 71e15 2|1b14 70l5 70t15

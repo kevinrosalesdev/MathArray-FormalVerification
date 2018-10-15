@@ -47,8 +47,9 @@ package MathArray with SPARK_Mode => On is
      Depends => (derivative'Result => (vec1)),
      Pre => (((vec1'Length = 1 and then vec1'First = 0) or (vec1'Length = 2 and then vec1'First = 0 and then vec1'Last = 1) 
             or (vec1'Length = 3 and then vec1'First = 0 and then vec1'Last = 2)) and then
-            (for all k in vec1'Range=> 
-            (Float'First>=(Float(vec1(k)))*Float(vec1'Last-k)))),
+            (for all i in vec1'Range =>
+                 ((Float(vec1(i))/Float'Last)*Float(vec1'Last-i) <= 1.0)and then (Float(vec1(i))/Float'First)*Float(vec1'Last-i) >= 1.0 )), 
+           
      Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
              derivative'Result(i) = vec1(i)*(vec1'Last - i)));
    --Return a derivative polynomial vec. (Vector must have length = 1, 2 or 3).
@@ -66,12 +67,12 @@ package MathArray with SPARK_Mode => On is
                                                      
     --Return the derivative of a function in point (polynomial vec with length = 1, 2 or 3).
 
-   procedure get(a:in out vec; x:Integer; bool:out Boolean) with
-     Global => null,
-     Depends => (a => (a,x) , bool => (a,x)),
-     Pre => x /= 0 and then a'Length > 0 and then a'Last<Integer'Last,
-     Post => (if bool then a /= a'Old else (a = a'Old and then (for all j in a'Range =>
-                                            a(j) /= x)));
+--     procedure get(a:in out vec; x:Integer; bool:out Boolean) with
+--       Global => null,
+--       Depends => (a => (a,x) , bool => (a,x)),
+--       Pre => x /= 0 and then a'Length > 0 and then a'Last<Integer'Last,
+--       Post => (if bool then a /= a'Old else (a = a'Old and then (for all j in a'Range =>
+--                                              a(j) /= x)));
    --Search for x in the array and replace it with zero (x can't be zero).
    --In bool it is stored true if the operation was successful, if not false.
    
