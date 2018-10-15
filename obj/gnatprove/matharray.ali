@@ -35,11 +35,11 @@ D a-nuelfu.ads		20180524051736 03e83d1c ada.numerics.elementary_functions%s
 D a-ngelfu.ads		20180524051738 55716239 ada.numerics.generic_elementary_functions%s
 D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
-D calculator.ads	20181015205938 450d3b27 calculator%s
+D calculator.ads	20181015215938 450d3b27 calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181015212738 1bac2ad8 matharray%s
-D matharray.adb		20181015212738 1a4d9abf matharray%b
+D matharray.ads		20181015221436 1bac2ad8 matharray%s
+D matharray.adb		20181015221006 1a4d9abf matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s

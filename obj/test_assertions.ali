@@ -46,8 +46,8 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_assertions.ads	20181015205938 1487d8c5 test_assertions%s
-D test_assertions.adb	20181015205938 91557a4a test_assertions%b
+D test_assertions.ads	20181015215938 1487d8c5 test_assertions%s
+D test_assertions.adb	20181015215938 91557a4a test_assertions%b
 X 1 ada.ads
 16K9*Ada 20e8 24|1r6 1r23
 X 6 a-textio.ads

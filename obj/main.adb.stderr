@@ -1,3 +1,0 @@
-matharray.ads:51:26: invalid operand types for operator "/"
-matharray.ads:51:26: left operand has type "Standard.Integer"
-matharray.ads:51:26: right operand has type "Standard.Float"
