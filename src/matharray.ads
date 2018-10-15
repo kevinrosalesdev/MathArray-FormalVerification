@@ -46,8 +46,11 @@ package MathArray with SPARK_Mode => On is
    function derivative (vec1 : vec) return vec with
      Global => null,
      Depends => (derivative'Result => (vec1)),
-     Pre => ((vec1'Length = 1 and then vec1'First = 0) or (vec1'Length = 2 and then vec1'First = 0 and then vec1'Last = 1) or (vec1'Length = 3 and then vec1'First = 0 and then vec1'Last = 2)) and then
-            (for all i in vec1'Range => Float((vec1(i)/Integer'Last))*Float((vec1'Last - i)) <= 1.0),
+     Pre => (((vec1'Length = 1 and then vec1'First = 0) or (vec1'Length = 2 and then 
+                 vec1'First = 0 and then vec1'Last = 1) 
+             or (vec1'Length = 3 and then vec1'First = 0 and then vec1'Last = 2))and then
+               (for all k in vec1'Range=> 
+                 (if vec1(k)/=0 then Float(1.0)/Float(vec1(k))>=Float(vec1'last-k)/Float'Last) and then (Float'First/4.0>=Float(Float(vec1(k))/2.0)*Float(vec1'Last-k)/2.0))) ,
      Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
              derivative'Result(i) = vec1(i)*(vec1'Last - i)));
    --Return a derivative polynomial vec. (Vector must have length = 1, 2 or 3).

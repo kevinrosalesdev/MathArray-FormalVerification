@@ -16,14 +16,14 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U matharray%b		matharray.adb		b3303b15 OO PK IL
+U matharray%b		matharray.adb		2d5cf20e OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W calculator%s		calculator.adb		calculator.ali
 
-U matharray%s		matharray.ads		81efc2a1 OO PK IL
+U matharray%s		matharray.ads		69383761 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -39,8 +39,8 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D calculator.ads	20181015074744 450d3b27 calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181015090936 c70ac49a matharray%s
-D matharray.adb		20181015092240 bac24aee matharray%b
+D matharray.ads		20181015160802 2fdd315a matharray%s
+D matharray.adb		20181015160934 cc797635 matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
@@ -59,9 +59,9 @@ X 8 calculator.ads
 1K9*Calculator 71e15 11|1w6 1r22 12|3w6 3r22
 5V13*Add{integer} 11|21s25 12|16s46
 X 11 matharray.ads
-5K9*MathArray 92l5 92e14 12|6b14 81l5 81t14
-7A9*vec(integer)<integer> 10r32 10r46 10r58 46r32 46r44 68r27 76r39 76r51
-. 12|8r32 8r46 8r58 9r14 30r32 30r44 31r13 57r27 76r39 76r51
+5K9*MathArray 95l5 95e14 12|6b14 85l5 85t14
+7A9*vec(integer)<integer> 10r32 10r46 10r58 46r32 46r44 71r27 79r39 79r51
+. 12|8r32 8r46 8r58 9r14 30r32 30r44 31r13 61r27 80r39 80r51
 8A9*vecFloat(float)<integer> 24r29 12|21r29
 10V13*midpoint{7A9} 10>23 10>37 12r18 19r12 19r59 19r87 20r20 21r6 12|8b13
 . 19l8 19t16
@@ -87,36 +87,34 @@ X 11 matharray.ads
 24f39 res{float} 26r18 41r17 43r17 12|21b39 24m10 26m10
 27i62 x{integer} 27r86
 28i15 i{integer} 29r15 29r35
-46V13*derivative{7A9} 46>25 48r18 51r14 51r76 52r14 12|30b13 43l8 43t18
-46a25 vec1{7A9} 48r40 49r15 49r40 49r60 49r85 49r109 49r128 49r153 49r177
-. 50r27 50r48 50r78 51r41 52r37 52r46 12|30b25 31r17 34r37 35r46 40r59
-50i22 i{integer} 50r53 50r90
-51i71 i{integer} 52r32 52r42 52r58
-68U14*get 68=18 68>32 68<43 12|57b14 73l8 73t11
-68a18 a{7A9} 70r18 70r24 70r40 71r29 71r51 72r15 72r20 72r31 72r35 12|57b18
-. 58r18 61r19 62r13 63m13 68r37 68r69 69r40 69r59 69r69 70r42 70r60
-68i32 x{integer} 70r26 70r42 71r13 12|57b32 62r18
-68b43 bool{boolean} 70r31 12|57b43 60m7 64m13
-76V13*perpendicular_vec{boolean} 76>32 76>44 78r18 86r18 12|76b13 79l8 79t25
-76a32 vec1{7A9} 78r47 79r13 79r50 80r21 80r35 80r60 82r24 82r29 82r68 82r73
-. 83r22 83r27 83r77 83r82 84r23 84r28 84r67 84r72 85r22 85r27 85r77 85r82
-. 88r18 88r23 88r54 88r59 90r18 90r23 90r54 90r59 12|76b32 78r15 78r20 78r51
-. 78r56
-76a44 vec2{7A9} 78r53 79r36 81r29 81r44 81r69 82r41 82r46 82r84 82r89 83r39
-. 83r44 83r93 83r98 84r40 84r45 84r83 84r88 85r39 85r44 85r93 85r98 88r35
-. 88r40 88r70 88r75 90r35 90r40 90r70 90r75 12|76b44 78r32 78r37 78r67 78r72
-80i15 x{integer} 80r40 80r65
-81i24 x{integer} 81r49 81r74
+46V13*derivative{7A9} 46>25 48r18 54r14 54r76 55r14 12|30b13 47l8 47t18
+46a25 vec1{7A9} 48r40 49r16 49r41 49r61 50r18 50r42 51r18 51r43 51r67 52r30
+. 53r22 53r55 53r71 53r135 53r155 54r41 55r37 55r46 12|30b25 31r17 42r21
+52i25 k{integer} 53r27 53r60 53r81 53r140 53r165
+54i71 i{integer} 55r32 55r42 55r58
+71U14*get 71=18 71>32 71<43 12|61b14 77l8 77t11
+71a18 a{7A9} 73r18 73r24 73r40 74r29 74r51 75r15 75r20 75r31 75r35 12|61b18
+. 62r18 65r19 66r13 67m13 72r37 72r69 73r40 73r59 73r69 74r42 74r60
+71i32 x{integer} 73r26 73r42 74r13 12|61b32 66r18
+71b43 bool{boolean} 73r31 12|61b43 64m7 68m13
+79V13*perpendicular_vec{boolean} 79>32 79>44 81r18 89r18 12|80b13 83l8 83t25
+79a32 vec1{7A9} 81r47 82r13 82r50 83r21 83r35 83r60 85r24 85r29 85r68 85r73
+. 86r22 86r27 86r77 86r82 87r23 87r28 87r67 87r72 88r22 88r27 88r77 88r82
+. 91r18 91r23 91r54 91r59 93r18 93r23 93r54 93r59 12|80b32 82r15 82r20 82r51
+. 82r56
+79a44 vec2{7A9} 81r53 82r36 84r29 84r44 84r69 85r41 85r46 85r84 85r89 86r39
+. 86r44 86r93 86r98 87r40 87r45 87r83 87r88 88r39 88r44 88r93 88r98 91r35
+. 91r40 91r70 91r75 93r35 93r40 93r70 93r75 12|80b44 82r32 82r37 82r67 82r72
+83i15 x{integer} 83r40 83r65
+84i24 x{integer} 84r49 84r74
 X 12 matharray.adb
 9a7 result{11|7A9} 12m10 13r32 13r72 14r32 15r46 16r33 18r14
 11i11 i{integer} 12r18 12r32 12r42 15r62
 15i41 j{integer} 16r41 16r57 16r67
-31a7 res{11|7A9} 33r16 34m10 34r21 35r33 36r33 36r51 36r69 37r46 38r36 38r53
-. 39r33 39r54 40r33 40r43 42r14
-33i11 i{integer} 34r14 34r32 34r42 37r59
-37i41 j{integer} 38r47 39r48 39r59 40r37 40r54 40r65
-58i7 i{integer} 61r14 62r15 63r15 67r43 68r32 68r78 71m10 71r13
-68i64 k{integer} 69r53 69r61 69r71 70r55 70r62
+31a7 res{11|7A9} 34r16 42m10 42r30 46r14
+34i11 i{integer} 42r14 42r26 42r41
+62i7 i{integer} 65r14 66r15 67r15 71r43 72r32 72r78 75m10 75r13
+72i64 k{integer} 73r53 73r61 73r71 74r55 74r62
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS matharray__midpoint 1 calculator__add

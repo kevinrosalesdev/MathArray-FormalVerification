@@ -30,14 +30,18 @@ package body MathArray with SPARK_Mode => On is
    function derivative (vec1 : vec) return vec is
       res : vec(vec1'Range) := (others => 0);
    begin
+      
       for i in res'Range loop
-         res(i) := (res'Last - i) * vec1(i);
-         pragma Loop_Invariant (res'Length = vec1'Length);
-         pragma Loop_Invariant (res'Length = 1 or res'Length = 2 or res'Length = 3);
-         pragma Loop_Invariant (for all j in res'First .. i =>
-                                  (res'Last - j) in res'Range and then
-                                res'Loop_Entry(j) /= res (j) and then
-                                res(j) = (res'Last - j) * vec1 (j));
+                  
+--           pragma Loop_Invariant (res'Length = vec1'Length);
+--           pragma Loop_Invariant (res'Length = 1 or res'Length = 2 or res'Length = 3);
+--           pragma Loop_Invariant (for all j in res'First .. i =>
+--                                    (res'Last - j) in res'Range and then
+--                                  
+--                                  res(j) = (res'Last-j) * vec1'Loop_Entry (j));
+         res(i) :=  vec1(i)*(res'Last - i);
+         
+
       end loop;
       return res;
    end derivative;
