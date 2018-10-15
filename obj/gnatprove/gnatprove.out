@@ -1,19 +1,19 @@
 Summary of SPARK analysis
 =========================
 
-----------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer       Provers   Justified   Unproved
-----------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .             .           .          .
-Flow Dependencies                 .           .          .          .             .           .          .
-Initialization                   22          22          .          .             .           .          .
-Non-Aliasing                      .           .          .          .             .           .          .
-Run-time Checks                 134           .          3          .    127 (CVC4)           .          4
-Assertions                       17           .          .          .     15 (CVC4)           .          2
-Functional Contracts              9           .          .          .      9 (CVC4)           .          .
-LSP Verification                  .           .          .          .             .           .          .
-----------------------------------------------------------------------------------------------------------
-Total                           182    22 (12%)     3 (2%)          .     151 (83%)           .     6 (3%)
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer       Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .          .             .           .          .
+Flow Dependencies                 .          .          .          .             .           .          .
+Initialization                   25         25          .          .             .           .          .
+Non-Aliasing                      .          .          .          .             .           .          .
+Run-time Checks                 260          .          6          .    251 (CVC4)           .          3
+Assertions                       17          .          .          .     15 (CVC4)           .          2
+Functional Contracts             15          .          .          .     14 (CVC4)           .          1
+LSP Verification                  .          .          .          .             .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                           317    25 (8%)     6 (2%)          .     280 (88%)           .     6 (2%)
 
 
 Analyzed 4 units
@@ -23,12 +23,13 @@ in unit calculator, 3 subprograms and packages out of 3 analyzed
   Calculator.Multiply at calculator.ads:35 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 21 checks out of 22 proved
 in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:9 skipped
-in unit matharray, 5 subprograms and packages out of 5 analyzed
+in unit matharray, 6 subprograms and packages out of 6 analyzed
   MathArray at matharray.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  MathArray.derivative at matharray.ads:39 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 32 checks out of 37 proved
-  MathArray.get at matharray.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  MathArray.derivative at matharray.ads:46 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 23 checks out of 28 proved
+  MathArray.get at matharray.ads:68 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
   MathArray.midpoint at matharray.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (32 checks)
-  MathArray.perpendicular_vec at matharray.ads:70 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
+  MathArray.module at matharray.ads:24 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (141 checks)
+  MathArray.perpendicular_vec at matharray.ads:76 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped

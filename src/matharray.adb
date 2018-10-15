@@ -18,24 +18,26 @@ package body MathArray with SPARK_Mode => On is
       return result;
    end midpoint;
    
---     procedure module (vec1 : vecFloat; res : out Float)is
---     begin
---        if vec1'Length = 2 then
---           res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'Last)*vec1(vec1'Last));
---        else
---           res:=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last));
---        end if;
---     end module;
+   procedure module (vec1 : vecFloat; res : out Float)is
+   begin
+      if vec1'Length = 2 then
+         res:=Ada.Numerics.Elementary_Functions.Sqrt(abs(vec1(vec1'First)*vec1(vec1'First)) + abs(vec1(vec1'Last)*vec1(vec1'Last)));
+      else
+         res:=Ada.Numerics.Elementary_Functions.Sqrt(abs(vec1(vec1'First)*vec1(vec1'First)) + abs(vec1(vec1'First+1)*vec1(vec1'First+1)) + abs(vec1(vec1'Last)*vec1(vec1'Last)));
+      end if;
+   end module;
    
    function derivative (vec1 : vec) return vec is
       res : vec(vec1'Range) := (others => 0);
    begin
       for i in res'Range loop
-         res(i) := (vec1'Length-(i-vec1'First+1)) * vec1(i);
+         res(i) := (res'Last - i) * vec1(i);
          pragma Loop_Invariant (res'Length = vec1'Length);
          pragma Loop_Invariant (res'Length = 1 or res'Length = 2 or res'Length = 3);
          pragma Loop_Invariant (for all j in res'First .. i =>
-                                  res(j) = (vec1'Length-(j-vec1'First+1)) * vec1 (j));            
+                                  (res'Last - j) in res'Range and then
+                                res'Loop_Entry(j) /= res (j) and then
+                                res(j) = (res'Last - j) * vec1 (j));
       end loop;
       return res;
    end derivative;

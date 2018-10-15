@@ -21,29 +21,35 @@ package MathArray with SPARK_Mode => On is
      midpoint'Result(i)=Add(point1(i),point2(i))/2);
    --Return vector midpoint of both parameters. (Parameters must have length = 2 or length = 3 and must cover same range).
    
---     procedure module (vec1 : vecFloat; res : out Float) with 
---       Global => null,
---       Depends => (res => vec1),
---       Pre=>(vec1'length=3 or vec1'Length=2) and then (for all i in vec1'Range =>
---                                                         (vec1(i)/Float'Last)*vec1(i) <= 1.0) and then 
---                                                      (if vec1'Length = 2 then
---                                                         ((vec1(vec1'First)*vec1(vec1'First))/2.0)+((vec1(vec1'Last)*vec1(vec1'Last))/2.0)<=Float'Last/2.0
---                                                       else
---                                                         Float'Last >= vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last)),
---       Post=>(if vec1'Length = 2 then                                          
---                  res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'Last)*vec1(vec1'Last))
---              else
---                  res=Ada.Numerics.Elementary_Functions.Sqrt(vec1(vec1'First)*vec1(vec1'First) + vec1(vec1'First+1)*vec1(vec1'First+1) + vec1(vec1'Last)*vec1(vec1'Last)));
+   procedure module (vec1 : vecFloat; res : out Float) with 
+     Global => null,
+     Depends => (res => vec1),
+     Pre=>(vec1'length=3 or vec1'Length=2) and then (for all x in vec1'Range => vec1(x) < sqrt(Float'Last) ) and then 
+     (for all i in vec1'Range =>
+        (vec1(i)/Float'Last)*vec1(i) <= 1.0) and then 
+     (if vec1'Length = 2 then
+        ((vec1(vec1'First)*vec1(vec1'First))/2.0)+((vec1(vec1'Last)*vec1(vec1'Last))/2.0)<=Float'Last/2.0
+      else
+            Float'Last- abs((vec1(vec1'first+1))*(vec1(vec1'first+1))) <= abs(vec1(vec1'First)*vec1(vec1'First))-abs(vec1(vec1'Last)*vec1(vec1'Last)) and then
+            Float'Last- abs((vec1(vec1'Last))*(vec1(vec1'Last))) <= abs(vec1(vec1'First+1)*vec1(vec1'First+1))-abs(vec1(vec1'First)*vec1(vec1'First)) and then
+            Float'Last- abs((vec1(vec1'first))*(vec1(vec1'first))) <= abs(vec1(vec1'last)*vec1(vec1'last))-abs(vec1(vec1'first+1)*vec1(vec1'first+1)) and then
+            Float'Last- abs((vec1(vec1'first+1))*(vec1(vec1'first+1))) <= abs(vec1(vec1'Last)*vec1(vec1'Last))-abs(vec1(vec1'First)*vec1(vec1'First)) and then
+            Float'Last- abs((vec1(vec1'last))*(vec1(vec1'last))) <= abs(vec1(vec1'First)*vec1(vec1'First))-abs(vec1(vec1'first + 1)*vec1(vec1'first + 1)) and then
+            Float'Last- abs((vec1(vec1'first))*(vec1(vec1'first))) <= abs(vec1(vec1'First+1)*vec1(vec1'First+1))-abs(vec1(vec1'Last)*vec1(vec1'Last))
+     ),
+     Post=>(if vec1'Length = 2 then                                          
+                res=Ada.Numerics.Elementary_Functions.Sqrt(abs(vec1(vec1'First)*vec1(vec1'First)) + abs(vec1(vec1'Last)*vec1(vec1'Last)))
+            else
+                res=Ada.Numerics.Elementary_Functions.Sqrt(abs(vec1(vec1'First)*vec1(vec1'First)) + abs(vec1(vec1'First+1)*vec1(vec1'First+1)) + abs(vec1(vec1'Last)*vec1(vec1'Last))));
    --Return res, which is the module of a vector with length = 2 or length = 3.
    
    function derivative (vec1 : vec) return vec with
      Global => null,
      Depends => (derivative'Result => (vec1)),
-     Pre => (vec1'Length = 1 or vec1'Length = 2 or vec1'Length = 3) and then 
-            (for all i in vec1'Range =>
-             Float((vec1(i)/Integer'Last))*Float((vec1'Length-(i-vec1'First+1))) <= 1.0),
-     Post =>(derivative'Result'Length = vec1'Length and (for all i in derivative'Result'Range =>
-             derivative'Result(i) = vec1(i)*(vec1'Length-(i-vec1'First+1))));
+     Pre => ((vec1'Length = 1 and then vec1'First = 0) or (vec1'Length = 2 and then vec1'First = 0 and then vec1'Last = 1) or (vec1'Length = 3 and then vec1'First = 0 and then vec1'Last = 2)) and then
+            (for all i in vec1'Range => Float((vec1(i)/Integer'Last))*Float((vec1'Last - i)) <= 1.0),
+     Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
+             derivative'Result(i) = vec1(i)*(vec1'Last - i)));
    --Return a derivative polynomial vec. (Vector must have length = 1, 2 or 3).
 --     
 --     function derivative_x (vec1 : vec; point : Integer) return Integer with
