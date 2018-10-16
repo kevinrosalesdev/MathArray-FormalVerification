@@ -63,12 +63,12 @@ package MathArray with SPARK_Mode => On is
                                                      
     --Return the derivative of a function in point (polynomial vec with length = 1, 2 or 3).
 
---     procedure get(a:in out vec; x:Integer; bool:out Boolean) with
---       Global => null,
---       Depends => (a => (a,x) , bool => (a,x)),
---       Pre => x /= 0 and then a'Length > 0 and then a'Last<Integer'Last,
---       Post => (if bool then a /= a'Old else (a = a'Old and then (for all j in a'Range =>
---                                              a(j) /= x)));
+   procedure get(a:in out vec; x:Integer; bool:out Boolean) with
+     Global => null,
+     Depends => (a => (a,x) , bool => (a,x)),
+     Pre => x /= 0 and then a'Length > 0 and then a'Last<Integer'Last,
+     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
+                else (for all k in a'Range => a(k) /= x));
    --Search for x in the array and replace it with zero (x can't be zero).
    --In bool it is stored true if the operation was successful, if not false.
    

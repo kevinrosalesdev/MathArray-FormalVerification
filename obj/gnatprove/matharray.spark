@@ -41,6 +41,16 @@
       "spark": "all"
     },
     {
+      "name": "MathArray.get",
+      "sloc": [
+        {
+          "file": "matharray.ads",
+          "line": 66
+        }
+      ],
+      "spark": "all"
+    },
+    {
       "name": "MathArray.perpendicular_vec",
       "sloc": [
         {
@@ -153,6 +163,66 @@
       "how_proved": "flow"
     },
     {
+      "file": "matharray.ads",
+      "line": 66,
+      "col": 43,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__131.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.ads",
+      "line": 70,
+      "col": 15,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__132.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "matharray.adb",
+      "line": 56,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "matharray__flow__133.trace",
+      "how_proved": "flow"
+    },
+    {
       "file": "matharray.adb",
       "line": 30,
       "col": 17,
@@ -169,7 +239,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__152.trace",
+      "tracefile": "matharray__flow__163.trace",
       "how_proved": "flow"
     },
     {
@@ -189,7 +259,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "matharray__flow__153.trace",
+      "tracefile": "matharray__flow__164.trace",
       "how_proved": "flow"
     }
   ],
@@ -1021,76 +1091,6 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 49,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 25,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 47759,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 49,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
       "file": "matharray.ads",
       "line": 35,
       "col": 84,
@@ -1132,8 +1132,59 @@
     },
     {
       "file": "matharray.ads",
-      "line": 79,
-      "col": 65,
+      "line": 70,
+      "col": 60,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 70,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 83,
+      "col": 69,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -1170,8 +1221,59 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 79,
-      "check_col": 65,
+      "check_line": 83,
+      "check_col": 69,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 84,
+      "col": 31,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 84,
+      "check_col": 31,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1274,16 +1376,16 @@
     },
     {
       "file": "matharray.adb",
-      "line": 68,
-      "col": 60,
+      "line": 56,
+      "col": 62,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
-        "name": "MathArray.perpendicular_vec",
+        "name": "MathArray.get",
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 66
           }
         ]
       },
@@ -1292,7 +1394,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 5,
+              "steps": 13,
               "time": 0
             }
           },
@@ -1312,8 +1414,8 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 60,
+      "check_line": 56,
+      "check_col": 62,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1324,17 +1426,17 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 24,
+      "file": "matharray.ads",
+      "line": 70,
+      "col": 78,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
-        "name": "MathArray.perpendicular_vec",
+        "name": "MathArray.get",
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 66
           }
         ]
       },
@@ -1362,9 +1464,9 @@
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 24,
+      "check_file": "matharray.ads",
+      "check_line": 70,
+      "check_col": 78,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1467,9 +1569,9 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 38,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 80,
+      "col": 74,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.perpendicular_vec",
@@ -1491,15 +1593,26 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 38,
+      "check_line": 80,
+      "check_col": 74,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1536,137 +1649,6 @@
       "check_file": "matharray.ads",
       "check_line": 18,
       "check_col": 12,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 86,
-      "col": 44,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 44,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 86,
-      "col": 52,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 52,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -1962,9 +1944,9 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
-      "col": 69,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 79,
+      "col": 40,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.perpendicular_vec",
@@ -1986,11 +1968,152 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 69,
+      "check_line": 79,
+      "check_col": 40,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 82,
+      "col": 92,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 82,
+      "check_col": 92,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 49,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 25,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 47759,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 49,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -2093,57 +2216,6 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
-      "col": 79,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 79,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
       "line": 36,
       "col": 104,
       "rule": "VC_INDEX_CHECK",
@@ -2235,57 +2307,6 @@
       "check_file": "matharray.adb",
       "check_line": 22,
       "check_col": 67,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 83,
-      "col": 42,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 42,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -2655,57 +2676,6 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 48,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 48,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
       "line": 32,
       "col": 102,
       "rule": "VC_INDEX_CHECK",
@@ -2831,108 +2801,6 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1180,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 79,
-      "col": 40,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 79,
-      "check_col": 40,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 88,
-      "col": 79,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 79,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
       }
@@ -3114,6 +2982,57 @@
       "stats": {
         "CVC4": {
           "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 60,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -3576,6 +3495,46 @@
     },
     {
       "file": "matharray.ads",
+      "line": 84,
+      "col": 92,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 84,
+      "check_col": 92,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
       "line": 34,
       "col": 61,
       "rule": "VC_OVERFLOW_CHECK",
@@ -3616,8 +3575,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 80,
-      "col": 74,
+      "line": 83,
+      "col": 42,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -3654,8 +3613,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 80,
-      "check_col": 74,
+      "check_line": 83,
+      "check_col": 42,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -3936,6 +3895,46 @@
     },
     {
       "file": "matharray.ads",
+      "line": 86,
+      "col": 34,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 86,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
       "line": 50,
       "col": 32,
       "rule": "VC_INDEX_CHECK",
@@ -4088,10 +4087,10 @@
       }
     },
     {
-      "file": "matharray.ads",
-      "line": 88,
-      "col": 34,
-      "rule": "VC_OVERFLOW_CHECK",
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 24,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.perpendicular_vec",
@@ -4113,15 +4112,26 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
-      "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 34,
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 24,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -4351,8 +4361,94 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
-      "col": 31,
+      "line": 80,
+      "col": 49,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (none)",
+              "steps": 233,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 180,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 151,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 80,
+      "check_col": 49,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 82,
+      "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -4389,52 +4485,12 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 31,
+      "check_line": 82,
+      "check_col": 48,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 88,
-      "col": 52,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 52,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -4476,57 +4532,6 @@
         "CVC4": {
           "count": 1,
           "max_steps": 192,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 41,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 41,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
       }
@@ -4613,6 +4618,57 @@
     },
     {
       "file": "matharray.ads",
+      "line": 88,
+      "col": 63,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 88,
+      "check_col": 63,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
       "line": 32,
       "col": 137,
       "rule": "VC_INDEX_CHECK",
@@ -4653,6 +4709,57 @@
       "check_file": "matharray.ads",
       "check_line": 32,
       "check_col": 137,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 86,
+      "col": 27,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 86,
+      "check_col": 27,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -4928,6 +5035,28 @@
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
                   },
                   "CVC4_CE": {
                     "result": "Failure",
@@ -4940,28 +5069,6 @@
               },
               {
                 "proof_attempts": {
-                  "CVC4": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -4985,12 +5092,6 @@
                     "steps": -1,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -5086,6 +5187,12 @@
               },
               {
                 "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Failure",
                     "steps": -1,
@@ -5134,76 +5241,6 @@
       "check_file": "matharray.ads",
       "check_line": 48,
       "check_col": 75,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 83,
-      "col": 32,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 2632,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5288,57 +5325,6 @@
       "stats": {
         "CVC4": {
           "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 81,
-      "col": 91,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 91,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -5608,8 +5594,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 80,
-      "col": 49,
+      "line": 83,
+      "col": 25,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -5628,44 +5614,9 @@
               "result": "Valid",
               "steps": 5,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (none)",
-              "steps": 233,
-              "time": 0
             }
           },
           "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 180,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 151,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
           }
         },
         {
@@ -5681,8 +5632,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 80,
-      "check_col": 49,
+      "check_line": 83,
+      "check_col": 25,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -5968,23 +5919,23 @@
               },
               {
                 "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
                   }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -7174,23 +7125,23 @@
               },
               {
                 "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -8516,29 +8467,29 @@
               },
               {
                 "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
                     "steps": 1006,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -8721,8 +8672,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 74,
+      "line": 88,
+      "col": 69,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -8748,8 +8699,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 74,
+      "check_line": 88,
+      "check_col": 69,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -9011,6 +8962,57 @@
       }
     },
     {
+      "file": "matharray.adb",
+      "line": 56,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 24,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 56,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
       "file": "matharray.ads",
       "line": 33,
       "col": 85,
@@ -9103,8 +9105,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
-      "col": 63,
+      "line": 86,
+      "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -9141,8 +9143,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 63,
+      "check_line": 86,
+      "check_col": 79,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -9205,7 +9207,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 81,
       "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -9243,7 +9245,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 81,
       "check_col": 48,
       "how_proved": "prover",
       "stats": {
@@ -9347,8 +9349,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 31,
+      "line": 86,
+      "col": 44,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -9370,6 +9372,26 @@
             }
           },
           "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
           }
         },
         {
@@ -9381,12 +9403,32 @@
             }
           },
           "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
           }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 31,
+      "check_line": 86,
+      "check_col": 44,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -9399,7 +9441,7 @@
     {
       "file": "matharray.ads",
       "line": 88,
-      "col": 27,
+      "col": 44,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -9437,7 +9479,7 @@
       ],
       "check_file": "matharray.ads",
       "check_line": 88,
-      "check_col": 27,
+      "check_col": 44,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -9631,8 +9673,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
-      "col": 69,
+      "line": 86,
+      "col": 52,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -9658,8 +9700,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 69,
+      "check_line": 86,
+      "check_col": 52,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -10122,7 +10164,7 @@
                 "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
-                    "steps": 29069,
+                    "steps": 24498,
                     "time": 0
                   }
                 },
@@ -10133,15 +10175,9 @@
                 "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
-                    "steps": 24498,
+                    "steps": 29069,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -10894,6 +10930,12 @@
                 },
                 "transformations": {
                 }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
               }
             ]
           }
@@ -10953,59 +10995,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
-      "col": 85,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 85,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 83,
-      "col": 75,
+      "line": 84,
+      "col": 74,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -11022,7 +11013,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 1413,
+              "steps": 5,
               "time": 0
             }
           },
@@ -11031,8 +11022,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 75,
+      "check_line": 84,
+      "check_col": 74,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -11044,7 +11035,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 81,
       "col": 31,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -11082,7 +11073,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 81,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -11199,17 +11190,17 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 76,
+      "file": "matharray.ads",
+      "line": 71,
+      "col": 49,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
-        "name": "MathArray.perpendicular_vec",
+        "name": "MathArray.get",
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 66
           }
         ]
       },
@@ -11237,13 +11228,53 @@
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 76,
+      "check_file": "matharray.ads",
+      "check_line": 71,
+      "check_col": 49,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 83,
+      "col": 75,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1413,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 83,
+      "check_col": 75,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -11302,58 +11333,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
-      "col": 44,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 88,
-      "check_col": 44,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 84,
+      "line": 81,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -11380,7 +11360,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 81,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -11537,23 +11517,23 @@
               },
               {
                 "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                   "CVC4": {
                     "result": "Valid",
                     "steps": 5,
                     "time": 0
                   }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -11755,12 +11735,6 @@
               },
               {
                 "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
                     "steps": 513,
@@ -11843,6 +11817,12 @@
                     "steps": 513,
                     "time": 0
                   }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -11889,9 +11869,9 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
-      "col": 38,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 86,
+      "col": 63,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.perpendicular_vec",
@@ -11913,15 +11893,26 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 38,
+      "check_line": 86,
+      "check_col": 63,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -11980,82 +11971,6 @@
     },
     {
       "file": "matharray.ads",
-      "line": 85,
-      "col": 14,
-      "rule": "VC_POSTCONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 4092,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 85,
-      "check_col": 14,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
       "line": 31,
       "col": 100,
       "rule": "VC_INDEX_CHECK",
@@ -12096,6 +12011,57 @@
       "check_file": "matharray.ads",
       "check_line": 31,
       "check_col": 100,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 88,
+      "col": 27,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 88,
+      "check_col": 27,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -12329,6 +12295,97 @@
     },
     {
       "file": "matharray.ads",
+      "line": 82,
+      "col": 38,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 82,
+      "check_col": 38,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 84,
+      "col": 86,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 84,
+      "check_col": 86,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
       "line": 35,
       "col": 19,
       "rule": "VC_FP_OVERFLOW_CHECK",
@@ -12489,8 +12546,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
-      "col": 92,
+      "line": 81,
+      "col": 81,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -12516,8 +12573,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
-      "check_col": 92,
+      "check_line": 81,
+      "check_col": 81,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -12528,9 +12585,9 @@
       }
     },
     {
-      "file": "matharray.ads",
-      "line": 86,
-      "col": 27,
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 41,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -12566,9 +12623,60 @@
           }
         }
       ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 27,
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 56,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.get",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 66
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 79,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 56,
+      "check_col": 32,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -12791,8 +12899,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
-      "col": 81,
+      "line": 82,
+      "col": 74,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -12818,63 +12926,12 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 81,
+      "check_line": 82,
+      "check_col": 74,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 82,
-      "col": 102,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 102,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -13154,50 +13211,10 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 31,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 3413,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 31,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
       "file": "matharray.ads",
-      "line": 84,
-      "col": 74,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 82,
+      "col": 31,
+      "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
         "name": "MathArray.perpendicular_vec",
@@ -13219,15 +13236,26 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
-      "check_col": 74,
+      "check_line": 82,
+      "check_col": 31,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -13275,8 +13303,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
-      "col": 102,
+      "line": 81,
+      "col": 91,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -13313,8 +13341,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
-      "check_col": 102,
+      "check_line": 81,
+      "check_col": 91,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -13471,6 +13499,46 @@
         "CVC4": {
           "count": 1,
           "max_steps": 107,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 31,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 3413,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 31,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
       }
@@ -13733,6 +13801,12 @@
                     "steps": -1,
                     "time": 0
                   }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
                 },
                 "transformations": {
                 }
@@ -31900,12 +31974,6 @@
               },
               {
                 "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
                   "CVC4_CE": {
                     "result": "Unknown (none)",
                     "steps": 9778,
@@ -31938,9 +32006,9 @@
       }
     },
     {
-      "file": "matharray.ads",
-      "line": 86,
-      "col": 63,
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 76,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -31976,9 +32044,9 @@
           }
         }
       ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 63,
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 76,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -32070,8 +32138,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
-      "col": 86,
+      "line": 81,
+      "col": 75,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -32108,8 +32176,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
-      "check_col": 86,
+      "check_line": 81,
+      "check_col": 75,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -32415,6 +32483,46 @@
       }
     },
     {
+      "file": "matharray.adb",
+      "line": 63,
+      "col": 66,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 2683,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.adb",
+      "check_line": 63,
+      "check_col": 66,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
       "file": "matharray.ads",
       "line": 31,
       "col": 44,
@@ -32555,8 +32663,48 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 86,
+      "line": 84,
+      "col": 38,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 84,
+      "check_col": 38,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 88,
+      "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -32593,8 +32741,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 86,
+      "check_line": 88,
+      "check_col": 79,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -32929,6 +33077,28 @@
                     "result": "Valid",
                     "steps": 5,
                     "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
+                    "time": 0
                   },
                   "CVC4_CE": {
                     "result": "Failure",
@@ -32965,29 +33135,7 @@
                 "proof_attempts": {
                   "CVC4": {
                     "result": "Valid",
-                    "steps": 5,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
                     "steps": 170,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
-                    "steps": 5,
                     "time": 0
                   }
                 },
@@ -33126,38 +33274,6 @@
                     "time": 0
                   },
                   "CVC4_CE": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
-                    "steps": 5,
-                    "time": 0
-                  },
-                  "CVC4_CE": {
-                    "result": "Failure",
-                    "steps": -1,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
-                    "steps": 5,
-                    "time": 0
-                  },
-                  "CVC4_CE": {
                     "result": "Unknown (none)",
                     "steps": 32379,
                     "time": 0
@@ -33176,6 +33292,60 @@
                   "CVC4_CE": {
                     "result": "Failure",
                     "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
+                    "time": 0
+                  },
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
+                    "time": 0
+                  },
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Valid",
+                    "steps": 5,
                     "time": 0
                   }
                 },
@@ -33281,28 +33451,6 @@
                     "result": "Valid",
                     "steps": 5,
                     "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
-                    "steps": 5,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                  "CVC4": {
-                    "result": "Valid",
-                    "steps": 5,
-                    "time": 0
                   },
                   "CVC4_CE": {
                     "result": "Failure",
@@ -33336,6 +33484,46 @@
       "check_file": "matharray.ads",
       "check_line": 48,
       "check_col": 155,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 88,
+      "col": 34,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 88,
+      "check_col": 34,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -33438,8 +33626,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
-      "col": 75,
+      "line": 82,
+      "col": 102,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -33476,8 +33664,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 75,
+      "check_line": 82,
+      "check_col": 102,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -33604,6 +33792,57 @@
       }
     },
     {
+      "file": "matharray.ads",
+      "line": 79,
+      "col": 65,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 79,
+      "check_col": 65,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
       "file": "matharray.adb",
       "line": 20,
       "col": 67,
@@ -33655,17 +33894,17 @@
       }
     },
     {
-      "file": "matharray.adb",
-      "line": 68,
-      "col": 66,
-      "rule": "VC_OVERFLOW_CHECK",
+      "file": "matharray.ads",
+      "line": 70,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
       "severity": "info",
       "entity": {
-        "name": "MathArray.perpendicular_vec",
+        "name": "MathArray.get",
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 66
           }
         ]
       },
@@ -33674,7 +33913,18 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 2683,
+              "steps": 126,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 294,
               "time": 0
             }
           },
@@ -33682,13 +33932,13 @@
           }
         }
       ],
-      "check_file": "matharray.adb",
-      "check_line": 68,
-      "check_col": 66,
+      "check_file": "matharray.ads",
+      "check_line": 70,
+      "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -33747,8 +33997,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
-      "col": 69,
+      "line": 84,
+      "col": 102,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -33785,8 +34035,59 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 69,
+      "check_line": 84,
+      "check_col": 102,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 82,
+      "col": 86,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 82,
+      "check_col": 86,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -33838,6 +34139,243 @@
       "check_file": "matharray.ads",
       "check_line": 50,
       "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 83,
+      "col": 85,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 83,
+      "check_col": 85,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 83,
+      "col": 32,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 2632,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 83,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 86,
+      "col": 69,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 86,
+      "check_col": 69,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 85,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 75
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 4092,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 85,
+      "check_col": 14,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -34432,46 +34970,6 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
-      "col": 34,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 86,
-      "check_col": 34,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
       "line": 27,
       "col": 35,
       "rule": "VC_INDEX_CHECK",
@@ -34512,57 +35010,6 @@
       "check_file": "matharray.ads",
       "check_line": 27,
       "check_col": 35,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 81,
-      "col": 48,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 81,
-      "check_col": 48,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -34855,8 +35302,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
-      "col": 25,
+      "line": 84,
+      "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
       "entity": {
@@ -34893,8 +35340,8 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
-      "check_col": 25,
+      "check_line": 84,
+      "check_col": 48,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -34906,8 +35353,8 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
-      "col": 92,
+      "line": 88,
+      "col": 52,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -34929,32 +35376,12 @@
             }
           },
           "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
           }
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
-      "check_col": 92,
+      "check_line": 88,
+      "check_col": 52,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -35494,6 +35921,38 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "MathArray.perpendicular_vec",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "MathArray.perpendicular_vec",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_POST",
         "arg": {
           "name": "MathArray.derivative",
@@ -35510,6 +35969,22 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "MathArray.get",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 66
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
           "name": "MathArray.derivative",
@@ -35528,27 +36003,11 @@
       "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
-          "name": "MathArray.perpendicular_vec",
+          "name": "MathArray.get",
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 75
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "MathArray.perpendicular_vec",
-          "sloc": [
-            {
-              "file": "matharray.ads",
-              "line": 75
+              "line": 66
             }
           ]
         }
@@ -35565,6 +36024,22 @@
             {
               "file": "matharray.ads",
               "line": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "MathArray.get",
+          "sloc": [
+            {
+              "file": "matharray.ads",
+              "line": 66
             }
           ]
         }
@@ -35572,14 +36047,14 @@
     }
   ],
   "timings": {
-    "marking": 2.48704105615616E-03,
-    "globals (basic)": 1.86688080430031E-02,
-    "globals/properties (advanced)": 2.72614508867264E-02,
-    "flow analysis": 8.25387146323919E-03,
-    "codepeer results": 5.54600001123617E-06,
-    "init_why_sections": 2.53014004556462E-04,
-    "translation of standard": 3.38901393115520E-03,
-    "translation of compilation unit": 7.63149112462997E-02,
-    "proof": 4.84576892852783E+00
+    "marking": 5.10631687939167E-03,
+    "globals (basic)": 4.63372804224491E-02,
+    "globals/properties (advanced)": 6.36199340224266E-02,
+    "flow analysis": 3.14719639718533E-02,
+    "codepeer results": 1.02639996839571E-05,
+    "init_why_sections": 4.61162009742111E-04,
+    "translation of standard": 7.45660578832030E-03,
+    "translation of compilation unit": 2.02210292220116E-01,
+    "proof": 1.25975255966187E+01
   }
 }

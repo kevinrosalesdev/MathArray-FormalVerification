@@ -122,34 +122,40 @@ procedure Main is
          Put_Line (Msg & " Failed (exception)");
    end Test_module;
 
---     procedure Test_get is
---        Msg   : constant String := "Test_get";
---        bool:Boolean;
---        vec1:vec(1..5);
---        vec2:vec(1..2);
---     begin
---        vec1:=(1,2,3,4,5);
---        vec2:=(-4,-1);
---        get(vec1,3,bool);
---        Assert_True (bool and then vec1(3)=0, Msg & " get successfully in the middle");
---        get(vec1,1,bool);
---        Assert_True (bool and then vec1(1)=0, Msg & " get successfully in the First element");
---        get(vec1,5,bool);
---        Assert_True (bool and then vec1(5)=0, Msg & " get successfully in the last element");
---        get(vec1,10,bool);
---        Assert_True (bool = False, Msg & " get fail");
---        get(vec1,2,bool);
---        Assert_True (bool and then vec1(2)=0, Msg & " get successfully");
---        get(vec2,4,bool);
---        Assert_True (bool = False, Msg & " get fail with two elements");
---        get(vec2,-4,bool);
---        Assert_True (bool and then vec2(1)=0, Msg & " get successfully with two elements");
---     exception
---        when Assertion_Error =>
---           Put_Line (Msg & " Failed (assertion)");
---        when others =>
---           Put_Line (Msg & " Failed (exception)");
---     end Test_get;
+   procedure Test_get is
+      Msg   : constant String := "Test_get";
+      bool:Boolean;
+      vec1:vec(1..5);
+      vec2:vec(1..2);
+      v0:vec(1..1);
+   begin
+      vec1:=(1,2,3,4,5);
+      vec2:=(-4,-1);
+      get(vec1,3,bool);
+      Assert_True (bool and then vec1(3)=0, Msg & " get successfully in the middle");
+      get(vec1,1,bool);
+      Assert_True (bool and then vec1(1)=0, Msg & " get successfully in the First element");
+      get(vec1,5,bool);
+      Assert_True (bool and then vec1(5)=0, Msg & " get successfully in the last element");
+      get(vec1,10,bool);
+      Assert_True (bool = False, Msg & " get fail");
+      get(vec1,2,bool);
+      Assert_True (bool and then vec1(2)=0, Msg & " get successfully");
+      get(vec2,4,bool);
+      Assert_True (bool = False, Msg & " get fail with two elements");
+      get(vec2,-4,bool);
+      Assert_True (bool and then vec2(1)=0, Msg & " get successfully with two elements");
+      v0:=(v0'First => 2);
+      get(v0,2,bool);
+      Assert_True (bool and then v0(1)=0, Msg & " get successfully with one elements");
+      get(v0,10,bool);
+      Assert_True (bool=False and then v0(1)=0, Msg & " get successfully one one elements");
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end Test_get;
 
    procedure Test_perpendicular_vec is
       Msg   : constant String := "Test_perpendicular_vec";
@@ -159,6 +165,10 @@ procedure Main is
       v0 := (2,4); v1 := (3,-7);
       Assert_True (perpendicular_vec(v0,v1)=False , Msg & " not perpendicular");
       v0 := (6,4); v1 := (-6, 9);
+      Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular");
+      v0 := (-1,-1); v1 := (-6, -6);
+      Assert_True (perpendicular_vec(v0,v1)=False, Msg & " not perpendicular");
+      v0 := (0,0); v1 := (0, 0);
       Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular");
    exception
       when Assertion_Error =>
@@ -219,7 +229,7 @@ begin
    Put_Line ("********************* Test_Max");
    Test_midpoint;
    Test_module;
-   --Test_get;
+   Test_get;
    Test_perpendicular_vec;
    Test_derivative;
    --Test_derivative_x;

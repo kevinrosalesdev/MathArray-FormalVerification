@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#1f459933#;
+   u00001 : constant Version_32 := 16#acc21252#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -321,22 +321,18 @@ package ada_main is
    pragma Export (C, u00141, "ada__numerics__auxS");
    u00142 : constant Version_32 := 16#5fc82639#;
    pragma Export (C, u00142, "system__machine_codeS");
-   u00143 : constant Version_32 := 16#0e78ceaf#;
+   u00143 : constant Version_32 := 16#2e05aec6#;
    pragma Export (C, u00143, "matharrayB");
-   u00144 : constant Version_32 := 16#de23e580#;
+   u00144 : constant Version_32 := 16#595add8e#;
    pragma Export (C, u00144, "matharrayS");
-   u00145 : constant Version_32 := 16#dde34de3#;
-   pragma Export (C, u00145, "system__exp_intB");
-   u00146 : constant Version_32 := 16#2b83b7c4#;
-   pragma Export (C, u00146, "system__exp_intS");
-   u00147 : constant Version_32 := 16#0dcf11d5#;
-   pragma Export (C, u00147, "test_assertionsB");
-   u00148 : constant Version_32 := 16#1487d8c5#;
-   pragma Export (C, u00148, "test_assertionsS");
-   u00149 : constant Version_32 := 16#5dc07a5a#;
-   pragma Export (C, u00149, "system__memoryB");
-   u00150 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00150, "system__memoryS");
+   u00145 : constant Version_32 := 16#0dcf11d5#;
+   pragma Export (C, u00145, "test_assertionsB");
+   u00146 : constant Version_32 := 16#1487d8c5#;
+   pragma Export (C, u00146, "test_assertionsS");
+   u00147 : constant Version_32 := 16#5dc07a5a#;
+   pragma Export (C, u00147, "system__memoryB");
+   u00148 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00148, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -346,8 +342,6 @@ package ada_main is
    --  system%s
    --  system.exn_llf%s
    --  system.exn_llf%b
-   --  system.exp_int%s
-   --  system.exp_int%b
    --  system.float_control%s
    --  system.float_control%b
    --  system.img_int%s

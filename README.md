@@ -7,11 +7,6 @@ _A simple Ada/Spark package which works with some mathematical functions and arr
 
 # Pruebas #
 
-
--Poner casos de vectores de 1 elemento del Get (el que tenías puesto realmente era de dos elementos) [MIGUEL]
-
--Aumentar casos de Perp. [MIGUEL]
-
 -Aumentar casos en Derivative, incluyendo vectores de más de 3 dimensiones y resultados decimales [KEVIN]
 
 -Aumentar casos en Module, incluyendo vectores que dan resultados decimales [HECTOR]
@@ -19,9 +14,6 @@ _A simple Ada/Spark package which works with some mathematical functions and arr
 -Aumentar casos en Derivative_x [KEVIN]
 
 # Importantes #
-
-
--Postcondición extraña en Get [MIGUEL]
 
 -Acabar la VF de Derivative_x [KEVIN]
 
