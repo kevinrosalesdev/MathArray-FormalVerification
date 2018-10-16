@@ -89,6 +89,7 @@ procedure Main is
       vec1:=(3.2,0.0);
       module(vec1,res);
       Assert_True(res=3.2,Msg & " with vec 3.2,0.0");
+
       module(vec2,res);
       Assert_True(res=0.0,Msg & " with vec 0.0,0.0,0.0");
       vec2:=(1.0,0.0,0.0);
@@ -127,41 +128,42 @@ procedure Main is
       bool:Boolean;
       vec1:vec(1..5);
       vec2:vec(1..2);
-<<<<<<< HEAD
-=======
       v0:vec(1..1);
->>>>>>> f7376cfdd941f06cf0c0f5c6a73ebed0b8b3b207
    begin
       vec1:=(1,2,3,4,5);
       vec2:=(-4,-1);
       get(vec1,3,bool);
       Assert_True (bool and then vec1(3)=0, Msg & " get successfully in the middle");
+      vec1:=(1,2,3,4,5);
       get(vec1,1,bool);
       Assert_True (bool and then vec1(1)=0, Msg & " get successfully in the First element");
+      vec1:=(1,2,3,4,5);
       get(vec1,5,bool);
       Assert_True (bool and then vec1(5)=0, Msg & " get successfully in the last element");
+      vec1:=(1,2,3,4,5);
       get(vec1,10,bool);
       Assert_True (bool = False, Msg & " get fail");
+      vec1:=(1,2,3,4,5);
       get(vec1,2,bool);
       Assert_True (bool and then vec1(2)=0, Msg & " get successfully");
       get(vec2,4,bool);
       Assert_True (bool = False, Msg & " get fail with two elements");
+      vec2:=(-4,-1);
       get(vec2,-4,bool);
       Assert_True (bool and then vec2(1)=0, Msg & " get successfully with two elements");
-<<<<<<< HEAD
       vec1:=(4,4,4,4,4);
       get(vec1,4,bool);
       Assert_True(bool and then vec1(1)=0 and then (for all i in vec1'First+1 .. vec1'Last => vec1(i)=4 ), Msg & " get succesfully with the same element");
       vec1:=(0,4,4,4,4);
-      get(vec1,0,bool);
-      Assert_True (bool and then vec1(1)=0, Msg & " get successfully with zero");
-=======
+      get(vec1,4,bool);
+      Assert_True (bool and then vec1(2)=0, Msg & " get successfully with zero");
+
       v0:=(v0'First => 2);
       get(v0,2,bool);
-      Assert_True (bool and then v0(1)=0, Msg & " get successfully with one elements");
+      Assert_True (bool and then v0(1)=0, Msg & " get successfully with one element");
+      v0:=(v0'First => 2);
       get(v0,10,bool);
-      Assert_True (bool=False and then v0(1)=0, Msg & " get successfully one one elements");
->>>>>>> f7376cfdd941f06cf0c0f5c6a73ebed0b8b3b207
+      Assert_True (bool=False and then v0(1)=2, Msg & " get successfully with one element");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -177,25 +179,21 @@ procedure Main is
       v0 := (2,4); v1 := (3,-7);
       Assert_True (perpendicular_vec(v0,v1)=False , Msg & "not perpendicular (2,4),(3,-7)");
       v0 := (6,4); v1 := (-6, 9);
-<<<<<<< HEAD
       Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular (6,4),(-6,9)");
       v0 := (0,4); v1 := (-6, 0);
       Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular (0,4),(-6,0)");
-      v0 := (0,0); v1 := (-0, 0);
+      v0 := (0,0); v1 := (0, 0);
       Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular (0,0),(0,0)");
       v0 := (1,4); v1 := (-4, 1);
       Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular (1,4),(-4,1)");
       v0 := (-1,4); v1 := (-4, 1);
-      Assert_True (perpendicular_vec(v0,v1)=False, Msg & "not perpendicular (-1,4),(-4,1)");
-      v0 := (-88,-57); v1 := (-0, -136);
-      Assert_True (perpendicular_vec(v0,v1)=False, Msg & "not perpendicular -88,-57),(-0,-136)");
-=======
-      Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular");
+      Assert_True (perpendicular_vec(v0,v1)=False, Msg & " not perpendicular (-1,4),(-4,1)");
+      v0 := (-88,-57); v1 := (0, -136);
+      Assert_True (perpendicular_vec(v0,v1)=False, Msg & " not perpendicular (-88,-57),(0,-136)");
       v0 := (-1,-1); v1 := (-6, -6);
-      Assert_True (perpendicular_vec(v0,v1)=False, Msg & " not perpendicular");
+      Assert_True (perpendicular_vec(v0,v1)=False, Msg & " not perpendicular (-1,-1),(-6,-6)");
       v0 := (0,0); v1 := (0, 0);
-      Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular");
->>>>>>> f7376cfdd941f06cf0c0f5c6a73ebed0b8b3b207
+      Assert_True (perpendicular_vec(v0,v1), Msg & " perpendicular (0,0),(0,0)");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -205,7 +203,7 @@ procedure Main is
 
    procedure Test_derivative is
       Msg   : constant String := "Test_derivative";
-      dv0 : vecFloat(1..1);
+      dv0 : vecFloat(5..5);
       vecRes : vecFloat(1..1);
       vecMillion: vecFloat(1..1000000);
       vecMillionRes:vecFloat(1..1000000);
@@ -223,31 +221,31 @@ procedure Main is
       Assert_True (derivative((0.0,0.0,6.0)) = (0.0,0.0,0.0), Msg & " with 0x^2 + 0x + 6");
       Assert_True (derivative((4.0,0.0,6.0)) = (8.0,0.0,0.0), Msg & " with 4x^2 + 0x + 6");
       Assert_True (derivative((1.0,1.0,1.0)) = (2.0,1.0,0.0), Msg & " with 1x^2 + 1x + 1");
+      Assert_True (derivative((0.5,1.0,1.0)) = (1.0,1.0,0.0), Msg & " with (1/2)x^2 + 1x + 1");
       Assert_True (derivative((0.0,0.0,0.0,0.0)) = (0.0,0.0,0.0,0.0), Msg & " with 0x^3 + 0x^2 + 0x+0");
       Assert_True (derivative((2.0,0.0,6.0,0.0)) = (6.0,0.0,6.0,0.0), Msg & " with 2x^3+ 0x^2 + 6x +0");
       Assert_True (derivative((2.0,1.0,6.0,0.0)) = (6.0,2.0,6.0,0.0), Msg & " with 2x^3 + 1x^2 + 6x+0");
       Assert_True (derivative((0.0,0.0,6.0,0.0)) = (0.0,0.0,6.0,0.0), Msg & " with 0x^3 + 0x^2 + 6x+8");
       Assert_True (derivative((4.0,0.0,6.0,0.0)) = (12.0,0.0,6.0,0.0), Msg & " with 4x^3 + 0x^2+ 6x+ 0");
       Assert_True (derivative((1.0,1.0,1.0,0.0)) = (3.0,2.0,1.0,0.0), Msg & " with 1x^3 + 1x^2 + 1x+0");
+      Assert_True (derivative((2.5,1.0,1.0,0.0)) = (7.5,2.0,1.0,0.0), Msg & " with 2.5x^3 + 1x^2 + 1x+0");
       vecMillion:=(others =>0.0);
       vecMillionRes:=(others =>0.0);
-      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & "with 1 millions elements with all 0");
+      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & " with 1 million elements with all 0");
       vecMillion:=(others =>1.0);
-      for i in vecMillion'Range loop
 
-         vecMillionRes(i):=Float(vecMillion'Length-i);
-         --put_line(vecMillionRes(i)'Image);
+      for i in vecMillion'Range loop
+         vecMillionRes(i):=Float(vecMillionRes'Length - (i - vecMillionRes'First + 1));
       end loop;
 
-      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & "with 1 millions elements with all 1");
+      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & " with 1 million elements with all 1");
       vecMillion:=(others =>2.0);
-      for i in vecMillion'Range loop
 
-         vecMillionRes(i):=Float(vecMillion'Length-i)*2.0;
-         --put_line(vecMillionRes(i)'Image);
+      for i in vecMillion'Range loop
+         vecMillionRes(i):=Float(vecMillionRes'Length - (i - vecMillionRes'First + 1))*2.0;
       end loop;
 
-      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & "with 1 millions elements with all 2");
+      Assert_True(derivative(vecMillion)=vecMillionRes,Msg & " with 1 million elements with all 2");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");

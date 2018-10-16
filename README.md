@@ -7,17 +7,12 @@ _A simple Ada/Spark package which works with some mathematical functions and arr
 
 # Pruebas #
 
--Aumentar casos en Derivative, incluyendo vectores de más de 3 dimensiones y resultados decimales [KEVIN]
-
--Aumentar casos en Module, incluyendo vectores que dan resultados decimales [HECTOR]
-
--Aumentar casos en Derivative_x [KEVIN]
+-Aumentar casos en Derivative_x
 
 # Importantes #
 
--Acabar la VF de Derivative_x [KEVIN]
+-Acabar la VF de Derivative_x
 
 # General #
 
-
--¿Informar al profe de cambios en los comentarios de los métodos? [GENERAL]
+-¿Informar al profe de cambios en los comentarios de los métodos?

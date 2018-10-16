@@ -31,7 +31,7 @@ package body MathArray with SPARK_Mode => On is
       end loop;
       return res;
    end derivative;
---     
+   
 --     function derivative_x (vec1 : vecFloat; point : Integer) return Float is
 --        res : Float := 0.0;
 --        fder : vecFloat(vec1'Range);

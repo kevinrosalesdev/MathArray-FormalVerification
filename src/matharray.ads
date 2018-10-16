@@ -44,12 +44,12 @@ package MathArray with SPARK_Mode => On is
    function derivative (vec1 : vecFloat) return vecFloat with
      Global => null,
      Depends => (derivative'Result => (vec1)),
-     Pre => vec1'Length > 0  and then vec1'Length < 1000000 and then (for all i in vec1'Range =>
+     Pre => vec1'Length > 0  and then vec1'Length <= 1000000 and then (for all i in vec1'Range =>
                  (vec1(i)/Float'Last)*Float(vec1'Length - (i - vec1'First + 1)) <= 1.0 and then (vec1(i)/Float'First)*Float(vec1'Length - (i - vec1'First + 1)) >= 1.0),      
      Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
              derivative'Result(i) = vec1(i)*Float(derivative'Result'Length - (i - derivative'Result'First + 1))));
-   --Return a derivative polynomial vec. (Vector must have length < 1000000).
---     
+   --Return a derivative polynomial vec. (Vector must have length <= 1000000).
+   
 --     function derivative_x (vec1 : vecFloat; point : Integer) return Float with
 --       Global => null,
 --       Depends => (derivative_x'Result => (vec1, point)),
@@ -66,7 +66,7 @@ package MathArray with SPARK_Mode => On is
    procedure get(a:in out vec; x:Integer; bool:out Boolean) with
      Global => null,
      Depends => (a => (a,x) , bool => (a,x)),
-     Pre => x /= 0 and then a'Length > 0 and then a'Last<Integer'Last,
+     Pre => x /= 0 and then a'Length > 0,
      Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
                 else (for all k in a'Range => a(k) /= x));
    --Search for x in the array and replace it with zero (x can't be zero).
