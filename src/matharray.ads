@@ -50,16 +50,16 @@ package MathArray with SPARK_Mode => On is
              derivative'Result(i) = vec1(i)*Float(derivative'Result'Length - (i - derivative'Result'First + 1))));
    --Return a derivative polynomial vec. (Vector must have length < 1000000).
 --     
---     function derivative_x (vec1 : vec; point : Integer) return Integer with
+--     function derivative_x (vec1 : vecFloat; point : Integer) return Float with
 --       Global => null,
 --       Depends => (derivative_x'Result => (vec1, point)),
 --       Pre => (vec1'Length = 1 or vec1'Length = 2 or vec1'Length = 3) and then 
 --              (for all i in derivative(vec1)'Range =>
---              point*(derivative(vec1)(i)**(vec1'Length-(i-vec1'First+2))) <= Integer'Last),
+--              Float(point)*(derivative(vec1)(i)**(vec1'Length-(i-vec1'First+2))) <= Float(Integer'Last)),
 --       Post => vec1 = derivative(vec1) and then (if vec1'Length = 1 then
---                                                   derivative_x'Result = 0
+--                                                   derivative_x'Result = 0.0
 --                                                 elsif vec1'Length = 2 then
---                                                   derivative_x'Result = derivative(vec1)(derivative(vec1)'Last-1));
+--                                                   Float(derivative_x'Result) = derivative(vec1)(derivative(vec1)'Last-1));
                                                      
     --Return the derivative of a function in point (polynomial vec with length = 1, 2 or 3).
 

@@ -10,20 +10,23 @@ RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U matharray%b		matharray.adb		91ebb4e6 NE OO PK IL
+U matharray%b		matharray.adb		0e78ceaf NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+Z system.exp_int%s	s-expint.adb		s-expint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U matharray%s		matharray.ads		728c5d5c EE NE OO PK IL
+U matharray%s		matharray.ads		de23e580 EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -40,11 +43,13 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181015235708 71646040 matharray%s
-D matharray.adb		20181015234652 6b7a5ae0 matharray%b
+D matharray.ads		20181016094318 ddcbd89c matharray%s
+D matharray.adb		20181016094402 58469875 matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-exnllf.ads		20180524051738 bc7ebbdc system.exn_llf%s
+D s-expint.ads		20180524051738 192336fc system.exp_int%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
@@ -69,7 +74,8 @@ X 13 matharray.ads
 4K9*MathArray 90l5 90e14 14|4b14 71l5 71t14
 6A9*vec(integer)<integer> 9r32 9r46 9r58 75r39 75r51 14|6r32 6r46 6r58 7r14
 . 66r39 66r51
-7A9*vecFloat(float)<integer> 22r29 44r32 44r49 14|17r29 26r32 26r49 27r13
+7A9*vecFloat(float)<integer> 22r29 44r32 44r49 53r34 14|17r29 26r32 26r49
+. 27r13 35r34 37r14
 9V13*midpoint{6A9} 9>23 9>37 11r18 18r26 19r13 14|6b13 15l8 15t16
 9a23 point1{6A9} 11r38 12r14 12r53 12r90 12r109 13r29 14r19 15r20 16r21 17r20
 . 19r33 14|6b23 7r19 9r16 10r25 12r47
@@ -92,12 +98,17 @@ X 13 matharray.ads
 . 22r144 22r149 22r160 22r165
 22f39 res{float} 24r18 39r17 41r17 14|17b39 20m10 22m10
 26i15 i{integer} 27r15 27r35
-44V13*derivative{7A9} 44>25 46r18 49r14 49r76 50r14 50r51 50r83 14|26b13
-. 33l8 33t18
+44V13*derivative{7A9} 44>25 46r18 49r14 49r76 50r14 50r51 50r83 57s27 58s27
+. 59s21 62s79 62s96 14|26b13 33l8 33t18 39s15
 44a25 vec1{7A9} 46r40 47r13 47r39 47r84 48r19 48r45 48r64 48r98 48r125 48r144
 . 49r41 50r37 14|26b25 27r22 30r21
 47i79 i{integer} 48r24 48r60 48r103 48r140
 49i71 i{integer} 50r32 50r42 50r79
+53V13*derivative_x{float} 53>27 53>44 55r18 60r50 62r56 14|35b13 45l8 45t20
+53a27 vec1{7A9} 55r42 56r14 56r33 56r52 57r38 58r38 58r49 58r64 59r14 59r32
+. 59r51 61r54 62r90 62r107 14|35b27 37r23 39r26 41r45 41r60 42r67 42r82
+53i44 point{integer} 55r48 58r19 14|35b44 41r37 42r59
+57i22 i{integer} 58r44 58r62
 75V13*perpendicular_vec{boolean} 75>32 75>44 77r18 85r18 14|66b13 69l8 69t25
 75a32 vec1{6A9} 77r47 78r13 78r50 79r21 79r35 79r60 81r22 81r27 81r66 81r71
 . 82r22 82r27 82r77 82r82 83r16 83r21 83r60 83r65 84r22 84r27 84r77 84r82
@@ -114,4 +125,7 @@ X 14 matharray.adb
 11i41 j{integer} 12r41 12r54 12r64
 27a7 res{13|7A9} 29r16 30m10 30r35 30r53 32r14
 29i11 i{integer} 30r14 30r26 30r49
+36f7 res{float} 41m10 41r17 42r33 42r39 44r14
+37a7 fder{13|7A9} 39m7 40r16 40r28 41r23 42r45
+40i11 i{integer} 41r28 41r58 42r50 42r80
 

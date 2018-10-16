@@ -4,7 +4,7 @@ with Test_Assertions;  use Test_Assertions;
 with Ada.Assertions;   use Ada.Assertions;
 with Ada.Float_Text_IO;
 use Ada.Float_Text_IO;
-
+with Ada.Numerics.Elementary_Functions;
 procedure Main is
 
    procedure Test_midpoint is
@@ -77,7 +77,18 @@ procedure Main is
       vec1:=(3.0,-4.0);
       module(vec1,res);
       Assert_True(res=5.0,Msg & " with vec 3.0,-4.0");
-
+      vec1:=(1.1,-1.1);
+      module(vec1,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec1(Vec1'First)**2)+(vec1(vec1'last)**2)),Msg & " with vec 1.1,-1.1");
+      vec1:=(1.0,-4.0);
+      module(vec1,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec1(Vec1'First)**2)+(vec1(vec1'last)**2)),Msg & " with vec 1.0,-4.0");
+      vec1:=(3.0,-10.0);
+      module(vec1,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec1(Vec1'First)**2)+(vec1(vec1'last)**2)),Msg & " with vec 3.0,-10.0");
+      vec1:=(3.2,0.0);
+      module(vec1,res);
+      Assert_True(res=3.2,Msg & " with vec 3.2,0.0");
       module(vec2,res);
       Assert_True(res=0.0,Msg & " with vec 0.0,0.0,0.0");
       vec2:=(1.0,0.0,0.0);
@@ -92,6 +103,18 @@ procedure Main is
       vec2:=(-1.0,-2.0,2.0);
       module(vec2,res);
       Assert_True(res=3.0,Msg & " with vec -1.0,-2.0,2.0");
+      vec2:=(0.0,-2.1,0.0);
+      module(vec2,res);
+      Assert_True(res=2.1,Msg & " with vec 0.0,-2.1,0.0");
+      vec2:=(-1.6,-2.04,2.6);
+      module(vec2,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec2(Vec2'First)**2)+(vec2(Vec2'First+1)**2)+(vec2(vec2'last)**2)),Msg & " with vec -1.6,-2.04,2.6");
+      vec2:=(31.0,-8.0,6.5);
+      module(vec2,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec2(Vec2'First)**2)+(vec2(Vec2'First+1)**2)+(vec2(vec2'last)**2)),Msg & " with vec 31.0,-8.0,6.5");
+      vec2:=(-123.4,7.00154,12.887);
+      module(vec2,res);
+      Assert_True(res=Ada.Numerics.Elementary_Functions.Sqrt((vec2(Vec2'First)**2)+(vec2(Vec2'First+1)**2)+(vec2(vec2'last)**2)),Msg & " with vec -123.4,7.00154,12.887");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -162,6 +185,12 @@ procedure Main is
       Assert_True (derivative((0.0,0.0,6.0)) = (0.0,0.0,0.0), Msg & " with 0x^2 + 0x + 6");
       Assert_True (derivative((4.0,0.0,6.0)) = (8.0,0.0,0.0), Msg & " with 4x^2 + 0x + 6");
       Assert_True (derivative((1.0,1.0,1.0)) = (2.0,1.0,0.0), Msg & " with 1x^2 + 1x + 1");
+      Assert_True (derivative((0.0,0.0,0.0,0.0)) = (0.0,0.0,0.0,0.0), Msg & " with 0x^3 + 0x^2 + 0x+0");
+      Assert_True (derivative((2.0,0.0,6.0,0.0)) = (6.0,0.0,6.0,0.0), Msg & " with 2x^3+ 0x^2 + 6x +0");
+      Assert_True (derivative((2.0,1.0,6.0,0.0)) = (6.0,2.0,6.0,0.0), Msg & " with 2x^3 + 1x^2 + 6x+0");
+      Assert_True (derivative((0.0,0.0,6.0,0.0)) = (0.0,0.0,6.0,0.0), Msg & " with 0x^3 + 0x^2 + 6x+8");
+      Assert_True (derivative((4.0,0.0,6.0,0.0)) = (12.0,0.0,6.0,0.0), Msg & " with 4x^3 + 0x^2+ 6x+ 0");
+      Assert_True (derivative((1.0,1.0,1.0,0.0)) = (3.0,2.0,1.0,0.0), Msg & " with 1x^3 + 1x^2 + 1x+0");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");

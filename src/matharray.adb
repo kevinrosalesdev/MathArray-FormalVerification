@@ -32,14 +32,14 @@ package body MathArray with SPARK_Mode => On is
       return res;
    end derivative;
 --     
---     function derivative_x (vec1 : vec; point : Integer) return Integer is
---        res : Integer := 0;
---        fder : vec(vec1'Range);
+--     function derivative_x (vec1 : vecFloat; point : Integer) return Float is
+--        res : Float := 0.0;
+--        fder : vecFloat(vec1'Range);
 --     begin
 --        fder := derivative(vec1);
 --        for i in fder'First..fder'Last-1 loop
---           res := res + fder(i)*(point**(vec1'Length-(i-vec1'First+2)));
---           pragma Loop_Invariant (res = res + fder(i)*(point**(vec1'Length-(i-vec1'First+2))));
+--           res := res + fder(i)*Float(point**(vec1'Length-(i-vec1'First+2)));
+--           pragma Loop_Invariant (res = res + fder(i)*Float(point**(vec1'Length-(i-vec1'First+2))));
 --        end loop;
 --        return res;
 --     end derivative_x;
