@@ -1,4 +1,3 @@
-with Calculator; use Calculator;
 with Ada.Numerics.Elementary_Functions;
 use Ada.Numerics.Elementary_Functions;
 
@@ -42,16 +41,13 @@ package MathArray with SPARK_Mode => On is
                 res=Ada.Numerics.Elementary_Functions.Sqrt(abs(vec1(vec1'First)*vec1(vec1'First)) + abs(vec1(vec1'First+1)*vec1(vec1'First+1)) + abs(vec1(vec1'Last)*vec1(vec1'Last))));
    --Return res, which is the module of a vector with length = 2 or length = 3.
    
-   function derivative (vec1 : vec) return vec with
+   function derivative (vec1 : vecFloat) return vecFloat with
      Global => null,
      Depends => (derivative'Result => (vec1)),
-     Pre => (((vec1'Length = 1 and then vec1'First = 0) or (vec1'Length = 2 and then vec1'First = 0 and then vec1'Last = 1) 
-            or (vec1'Length = 3 and then vec1'First = 0 and then vec1'Last = 2)) and then
-            (for all i in vec1'Range =>
-                 ((Float(vec1(i))/Float'Last)*Float(vec1'Last-i) <= 1.0)and then (Float(vec1(i))/Float'First)*Float(vec1'Last-i) >= 1.0 )), 
-           
+     Pre => vec1'Length > 0  and then vec1'Length < 1000000 and then (for all i in vec1'Range =>
+                 (vec1(i)/Float'Last)*Float(vec1'Length - (i - vec1'First + 1)) <= 1.0 and then (vec1(i)/Float'First)*Float(vec1'Length - (i - vec1'First + 1)) >= 1.0),      
      Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
-             derivative'Result(i) = vec1(i)*(vec1'Last - i)));
+             derivative'Result(i) = vec1(i)*Float(derivative'Result'Length - (i - derivative'Result'First + 1))));
    --Return a derivative polynomial vec. (Vector must have length = 1, 2 or 3).
 --     
 --     function derivative_x (vec1 : vec; point : Integer) return Integer with

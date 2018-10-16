@@ -9,10 +9,8 @@ Cosas a Resolver [ELIMINAR CADA VEZ QUE SE RESUELVA UNO. DEBEN ESTAR RESUELTOS A
 
 -¿Aumentar casos de Perp.? [MIGUEL]
 
--Postcondición funcional pero extraña en Get [MIGUEL]
+-¡Importante! Postcondición extraña en Get [MIGUEL]
 
-
--Aumentar casos en Derivative [KEVIN]
 
 -Aumentar casos en Derivative_x [KEVIN]
 
@@ -22,5 +20,3 @@ Cosas a Resolver [ELIMINAR CADA VEZ QUE SE RESUELVA UNO. DEBEN ESTAR RESUELTOS A
 
 
 -¿Informar al profe de cambios en los comentarios de los métodos? [GENERAL]
-
--Quitar métodos de Calculator que no usemos [GENERAL].

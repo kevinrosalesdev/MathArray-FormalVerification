@@ -1,7 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Numerics.Elementary_Functions;
-with Calculator; use Calculator;
-
 
 package body MathArray with SPARK_Mode => On is
 
@@ -25,11 +23,11 @@ package body MathArray with SPARK_Mode => On is
       end if;
    end module;
    
-   function derivative (vec1 : vec) return vec is
-      res : vec(vec1'Range) := (others => 0);
+   function derivative (vec1 : vecFloat) return vecFloat is
+      res : vecFloat(vec1'Range) := (others => 0.0);
    begin
       for i in res'Range loop
-         res(i) :=  vec1(i)*(res'Last - i);
+         res(i) :=  vec1(i)*Float(res'Length - (i - res'First + 1));
       end loop;
       return res;
    end derivative;

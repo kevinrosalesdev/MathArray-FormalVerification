@@ -146,22 +146,22 @@ procedure Main is
 
    procedure Test_derivative is
       Msg   : constant String := "Test_derivative";
-      dv0 : vec(1..1);
-      vecRes : vec(1..1);
+      dv0 : vecFloat(1..1);
+      vecRes : vecFloat(1..1);
    begin
-      dv0 := (dv0'First => 2);
+      dv0 := (dv0'First => 2.0);
       vecRes := derivative(dv0);
-      Assert_True (vecRes(vecRes'First) = 0, Msg & " with a function with only one coefficient (2).");
-      Assert_True (derivative((3,5)) = (3,0), Msg & " with 3x + 5");
-      Assert_True (derivative((0,5)) = (0,0), Msg & " with 0x + 5");
-      Assert_True (derivative((0,0)) = (0,0), Msg & " with 0x + 0");
-      Assert_True (derivative((1,5)) = (1,0), Msg & " with x + 5");
-      Assert_True (derivative((0,0,0)) = (0,0,0), Msg & " with 0x^2 + 0x + 0");
-      Assert_True (derivative((2,0,6)) = (4,0,0), Msg & " with 2x^2 + 0x + 6");
-      Assert_True (derivative((2,1,6)) = (4,1,0), Msg & " with 2x^2 + 1x + 6");
-      Assert_True (derivative((0,0,6)) = (0,0,0), Msg & " with 0x^2 + 0x + 6");
-      Assert_True (derivative((4,0,6)) = (8,0,0), Msg & " with 4x^2 + 0x + 6");
-      Assert_True (derivative((1,1,1)) = (2,1,0), Msg & " with 1x^2 + 1x + 1");
+      Assert_True (vecRes(vecRes'First) = 0.0, Msg & " with a function with only one coefficient (2).");
+      Assert_True (derivative((3.0,5.0)) = (3.0,0.0), Msg & " with 3x + 5");
+      Assert_True (derivative((0.0,5.0)) = (0.0,0.0), Msg & " with 0x + 5");
+      Assert_True (derivative((0.0,0.0)) = (0.0,0.0), Msg & " with 0x + 0");
+      Assert_True (derivative((1.0,5.0)) = (1.0,0.0), Msg & " with x + 5");
+      Assert_True (derivative((0.0,0.0,0.0)) = (0.0,0.0,0.0), Msg & " with 0x^2 + 0x + 0");
+      Assert_True (derivative((2.0,0.0,6.0)) = (4.0,0.0,0.0), Msg & " with 2x^2 + 0x + 6");
+      Assert_True (derivative((2.0,1.0,6.0)) = (4.0,1.0,0.0), Msg & " with 2x^2 + 1x + 6");
+      Assert_True (derivative((0.0,0.0,6.0)) = (0.0,0.0,0.0), Msg & " with 0x^2 + 0x + 6");
+      Assert_True (derivative((4.0,0.0,6.0)) = (8.0,0.0,0.0), Msg & " with 4x^2 + 0x + 6");
+      Assert_True (derivative((1.0,1.0,1.0)) = (2.0,1.0,0.0), Msg & " with 1x^2 + 1x + 1");
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
