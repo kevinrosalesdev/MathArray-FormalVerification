@@ -48,7 +48,7 @@ package MathArray with SPARK_Mode => On is
                  (vec1(i)/Float'Last)*Float(vec1'Length - (i - vec1'First + 1)) <= 1.0 and then (vec1(i)/Float'First)*Float(vec1'Length - (i - vec1'First + 1)) >= 1.0),      
      Post =>(derivative'Result'Length = vec1'Length and then (for all i in derivative'Result'Range =>
              derivative'Result(i) = vec1(i)*Float(derivative'Result'Length - (i - derivative'Result'First + 1))));
-   --Return a derivative polynomial vec. (Vector must have length = 1, 2 or 3).
+   --Return a derivative polynomial vec. (Vector must have length < 1000000).
 --     
 --     function derivative_x (vec1 : vec; point : Integer) return Integer with
 --       Global => null,
