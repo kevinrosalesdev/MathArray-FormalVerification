@@ -16,7 +16,7 @@ _A simple Ada/Spark package which works with some mathematical functions and arr
 
 -Aumentar casos en Module, incluyendo vectores que dan resultados decimales [HECTOR]
 
---Aumentar casos en Derivative_x [KEVIN]
+-Aumentar casos en Derivative_x [KEVIN]
 
 # Importantes #
 
