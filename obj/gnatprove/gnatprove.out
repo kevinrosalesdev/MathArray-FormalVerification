@@ -26,10 +26,10 @@ in unit main, 0 subprograms and packages out of 1 analyzed
 in unit matharray, 6 subprograms and packages out of 6 analyzed
   MathArray at matharray.ads:4 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   MathArray.derivative at matharray.ads:44 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (35 checks)
-  MathArray.get at matharray.ads:66 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
+  MathArray.get at matharray.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
   MathArray.midpoint at matharray.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (28 checks)
   MathArray.module at matharray.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (139 checks)
-  MathArray.perpendicular_vec at matharray.ads:75 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
+  MathArray.perpendicular_vec at matharray.ads:62 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (52 checks)
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped

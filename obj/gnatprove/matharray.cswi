@@ -1,7 +1,8 @@
-20181016181650
+20181018104718
 -c
 -x
 ada
 -gnatA
+-gnat12
 -gnatc
--gnates=C:\Users\kevin\Desktop\MathArray-PR3\MathArray-PR3\obj\gnatprove\51bc7bb6.tmp
+-gnates=C:\Users\Hector\Desktop\venga\MathArray-PR3\obj\gnatprove\fb639c44.tmp

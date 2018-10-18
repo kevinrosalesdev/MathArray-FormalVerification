@@ -15228,11 +15228,11 @@ module Matharray__derivative
 
 end
 
-(* Module for defining the constant "x" defined at matharray.ads:66, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "x" defined at matharray.ads:53, created in Gnat2Why.Decls.Translate_Constant *)
 module Matharray__get__x
  use import "_gnatprove_standard".Main
 
- function x #"matharray.ads" 66 0 0#"model" "model_trace:3710" "name:x" 
+ function x #"matharray.ads" 53 0 0#"model" "model_trace:3710" "name:x" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -15240,14 +15240,14 @@ module Matharray__get__x
 
 end
 
-(* Module giving an empty axiom for the entity "x" defined at matharray.ads:66, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "x" defined at matharray.ads:53, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__get__x___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for axiomatizing type "T39s" defined at matharray.ads:70, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T39s" defined at matharray.ads:57, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__L38s__T39s
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -15285,7 +15285,7 @@ module Matharray__get__L38s__T39s
 
 end
 
-(* Module for axiomatizing type "T41s" defined at matharray.ads:71, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T41s" defined at matharray.ads:58, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__L40s__T41s
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -15323,12 +15323,12 @@ module Matharray__get__L40s__T41s
 
 end
 
-(* Module for defining the constant "vec1" defined at matharray.ads:75, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "vec1" defined at matharray.ads:62, created in Gnat2Why.Decls.Translate_Constant *)
 module Matharray__perpendicular_vec__vec1
  use import "_gnatprove_standard".Main
  use        Matharray__vec
 
- function vec1 #"matharray.ads" 75 0 0#"model_projected" "name:vec1" "model_trace:3811" 
+ function vec1 #"matharray.ads" 62 0 0#"model_projected" "name:vec1" "model_trace:3811" 
    : Matharray__vec.vec
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -15336,19 +15336,19 @@ module Matharray__perpendicular_vec__vec1
 
 end
 
-(* Module giving an empty axiom for the entity "vec1" defined at matharray.ads:75, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "vec1" defined at matharray.ads:62, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__perpendicular_vec__vec1___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining the constant "vec2" defined at matharray.ads:75, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "vec2" defined at matharray.ads:62, created in Gnat2Why.Decls.Translate_Constant *)
 module Matharray__perpendicular_vec__vec2
  use import "_gnatprove_standard".Main
  use        Matharray__vec
 
- function vec2 #"matharray.ads" 75 0 0#"model_projected" "model_trace:3820" "name:vec2" 
+ function vec2 #"matharray.ads" 62 0 0#"model_projected" "model_trace:3820" "name:vec2" 
    : Matharray__vec.vec
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -15356,14 +15356,14 @@ module Matharray__perpendicular_vec__vec2
 
 end
 
-(* Module giving an empty axiom for the entity "vec2" defined at matharray.ads:75, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "vec2" defined at matharray.ads:62, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__perpendicular_vec__vec2___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for axiomatizing type "T43s" defined at matharray.ads:80, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T43s" defined at matharray.ads:67, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__L42s__T43s
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -15401,7 +15401,7 @@ module Matharray__perpendicular_vec__L42s__T43s
 
 end
 
-(* Module for axiomatizing type "T45s" defined at matharray.ads:79, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T45s" defined at matharray.ads:66, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__L44s__T45s
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -15439,7 +15439,7 @@ module Matharray__perpendicular_vec__L44s__T45s
 
 end
 
-(* Module for possibly declaring a logic function for "perpendicular_vec" defined at matharray.ads:75, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "perpendicular_vec" defined at matharray.ads:62, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Matharray__perpendicular_vec
  use import "_gnatprove_standard".Main
  use        Matharray__vec
@@ -16388,7 +16388,7 @@ module Matharray__derivative__L_2__T15b
 
 end
 
-(* Module for axiomatizing type "TS17bP1" defined at matharray.adb:47, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "TS17bP1" defined at matharray.adb:35, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__TS17bP1
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16426,7 +16426,7 @@ module Matharray__get__TS17bP1
 
 end
 
-(* Module for axiomatizing type "S17b" defined at matharray.adb:47, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "S17b" defined at matharray.adb:35, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__S17b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16486,7 +16486,7 @@ module Matharray__get__S17b
 
 end
 
-(* Module for axiomatizing type "T18b" defined at matharray.adb:50, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T18b" defined at matharray.adb:38, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__L_3__T18b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16524,7 +16524,7 @@ module Matharray__get__L_3__T18b
 
 end
 
-(* Module for axiomatizing type "T22b" defined at matharray.adb:56, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T22b" defined at matharray.adb:44, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__L_3__L21b__T22b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16562,7 +16562,7 @@ module Matharray__get__L_3__L21b__T22b
 
 end
 
-(* Module for axiomatizing type "T20b" defined at matharray.adb:56, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T20b" defined at matharray.adb:44, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__get__L_3__L19b__T20b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16600,7 +16600,7 @@ module Matharray__get__L_3__L19b__T20b
 
 end
 
-(* Module for axiomatizing type "TS24bP1" defined at matharray.adb:61, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "TS24bP1" defined at matharray.adb:49, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__TS24bP1
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16638,7 +16638,7 @@ module Matharray__perpendicular_vec__TS24bP1
 
 end
 
-(* Module for axiomatizing type "S24b" defined at matharray.adb:61, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "S24b" defined at matharray.adb:49, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__S24b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16698,7 +16698,7 @@ module Matharray__perpendicular_vec__S24b
 
 end
 
-(* Module for axiomatizing type "TS23bP1" defined at matharray.adb:61, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "TS23bP1" defined at matharray.adb:49, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__TS23bP1
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -16736,7 +16736,7 @@ module Matharray__perpendicular_vec__TS23bP1
 
 end
 
-(* Module for axiomatizing type "S23b" defined at matharray.adb:61, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "S23b" defined at matharray.adb:49, created in Gnat2Why.Types.Translate_Type *)
 module Matharray__perpendicular_vec__S23b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -17486,18 +17486,18 @@ module Matharray__module__res___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "a" defined at matharray.ads:66, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "a" defined at matharray.ads:53, created in Gnat2Why.Decls.Translate_Variable *)
 module Matharray__get__a
  use import "_gnatprove_standard".Main
  use        Standard__integer
  use        Array__Int__Standard__integer
 
- val a #"matharray.ads" 66 0 0#"model_projected" "model_trace:3701" "name:a"  : Array__Int__Standard__integer.map__ref 
+ val a #"matharray.ads" 53 0 0#"model_projected" "model_trace:3701" "name:a"  : Array__Int__Standard__integer.map__ref 
  
- function a__first #"matharray.ads" 66 0 0#"model_projected" "name:a" "model_trace:3701'First" 
+ function a__first #"matharray.ads" 53 0 0#"model_projected" "name:a" "model_trace:3701'First" 
    : Standard__integer.integer
  
- function a__last #"matharray.ads" 66 0 0#"model_projected" "name:a" "model_trace:3701'Last" 
+ function a__last #"matharray.ads" 53 0 0#"model_projected" "name:a" "model_trace:3701'Last" 
    : Standard__integer.integer
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -17505,25 +17505,25 @@ module Matharray__get__a
 
 end
 
-(* Module giving an empty axiom for the entity "a" defined at matharray.ads:66, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "a" defined at matharray.ads:53, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__get__a___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining a ref holding the value of variable "bool" defined at matharray.ads:66, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "bool" defined at matharray.ads:53, created in Gnat2Why.Decls.Translate_Variable *)
 module Matharray__get__bool
  use import "_gnatprove_standard".Main
 
- val bool__ #"matharray.ads" 66 0 0#"model_projected" "model_trace:3719" "name:bool"  : bool__ref 
+ val bool__ #"matharray.ads" 53 0 0#"model_projected" "model_trace:3719" "name:bool"  : bool__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
 
 end
 
-(* Module giving an empty axiom for the entity "bool" defined at matharray.ads:66, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "bool" defined at matharray.ads:53, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__get__bool___axiom
  use import "_gnatprove_standard".Main
 
@@ -17618,18 +17618,18 @@ module Matharray__derivative__L_2__i___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "i" defined at matharray.adb:50, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "i" defined at matharray.adb:38, created in Gnat2Why.Decls.Translate_Variable *)
 module Matharray__get__L_3__i
  use import "_gnatprove_standard".Main
 
- val i #"matharray.adb" 50 0 0#"model_projected" "name:i" "model_trace:2681"  : int__ref 
+ val i #"matharray.adb" 38 0 0#"model_projected" "name:i" "model_trace:2681"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at matharray.adb:50, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at matharray.adb:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__get__L_3__i___axiom
  use import "_gnatprove_standard".Main
 
@@ -18473,7 +18473,7 @@ module Matharray__module
 
 end
 
-(* Module for possibly declaring a logic function for "get" defined at matharray.ads:66, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "get" defined at matharray.ads:53, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Matharray__get
  use import "_gnatprove_standard".Main
 
@@ -18510,7 +18510,7 @@ module Matharray__derivative__L_2___axiom
 
 end
 
-(* Module for defining the loop exit exception for the loop "L_3" defined at matharray.adb:50, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for defining the loop exit exception for the loop "L_3" defined at matharray.adb:38, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Matharray__get__L_3
  use import "_gnatprove_standard".Main
 
@@ -18518,7 +18518,7 @@ module Matharray__get__L_3
 
 end
 
-(* Module giving an empty axiom for the entity "L_3" defined at matharray.adb:50, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_3" defined at matharray.adb:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Matharray__get__L_3___axiom
  use import "_gnatprove_standard".Main
 
@@ -19705,28 +19705,28 @@ module Matharray__derivative__L36s__T37s___axiom
 
 end
 
-(* Module giving axioms for type "T39s" defined at matharray.ads:70, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T39s" defined at matharray.ads:57, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__L38s__T39s___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T41s" defined at matharray.ads:71, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T41s" defined at matharray.ads:58, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__L40s__T41s___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T43s" defined at matharray.ads:80, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T43s" defined at matharray.ads:67, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__L42s__T43s___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T45s" defined at matharray.ads:79, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T45s" defined at matharray.ads:66, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__L44s__T45s___axiom
  use import "_gnatprove_standard".Main
 
@@ -19945,14 +19945,14 @@ module Matharray__derivative__L_2__T15b___axiom
 
 end
 
-(* Module giving axioms for type "TS17bP1" defined at matharray.adb:47, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "TS17bP1" defined at matharray.adb:35, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__TS17bP1___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "S17b" defined at matharray.adb:47, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "S17b" defined at matharray.adb:35, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__S17b___axiom
  use import "_gnatprove_standard".Main
  use        Standard__integer__rep
@@ -19971,35 +19971,35 @@ module Matharray__get__S17b___axiom
 
 end
 
-(* Module giving axioms for type "T18b" defined at matharray.adb:50, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T18b" defined at matharray.adb:38, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__L_3__T18b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T22b" defined at matharray.adb:56, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T22b" defined at matharray.adb:44, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__L_3__L21b__T22b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T20b" defined at matharray.adb:56, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T20b" defined at matharray.adb:44, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__get__L_3__L19b__T20b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "TS24bP1" defined at matharray.adb:61, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "TS24bP1" defined at matharray.adb:49, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__TS24bP1___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "S24b" defined at matharray.adb:61, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "S24b" defined at matharray.adb:49, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__S24b___axiom
  use import "_gnatprove_standard".Main
  use        Matharray__vec
@@ -20018,14 +20018,14 @@ module Matharray__perpendicular_vec__S24b___axiom
 
 end
 
-(* Module giving axioms for type "TS23bP1" defined at matharray.adb:61, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "TS23bP1" defined at matharray.adb:49, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__TS23bP1___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "S23b" defined at matharray.adb:61, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "S23b" defined at matharray.adb:49, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Matharray__perpendicular_vec__S23b___axiom
  use import "_gnatprove_standard".Main
  use        Matharray__vec
@@ -24406,7 +24406,7 @@ module Matharray__derivative___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "get" defined at matharray.ads:66, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "get" defined at matharray.ads:53, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Matharray__get___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -24437,7 +24437,7 @@ module Matharray__get___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "perpendicular_vec" defined at matharray.ads:75, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "perpendicular_vec" defined at matharray.ads:62, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Matharray__perpendicular_vec___axiom
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -24569,35 +24569,35 @@ module Matharray__package_def
   (#"matharray.ads" 47 0 0# ());
   (#"matharray.ads" 46 0 0# ());
   (#"matharray.ads" 45 0 0# ());
-  (#"matharray.ads" 66 0 0# ());
-  (#"matharray.ads" 70 0 0# ());
-  (#"matharray.ads" 69 0 0# ());
-  (#"matharray.ads" 69 0 0# ());
-  (#"matharray.ads" 68 0 0# ());
+  (#"matharray.ads" 53 0 0# ());
+  (#"matharray.ads" 57 0 0# ());
+  (#"matharray.ads" 56 0 0# ());
+  (#"matharray.ads" 56 0 0# ());
+  (#"matharray.ads" 55 0 0# ());
+  (#"matharray.ads" 54 0 0# ());
+  (#"matharray.ads" 62 0 0# ());
+  (#"matharray.ads" 72 0 0# ());
+  (#"matharray.ads" 65 0 0# ());
+  (#"matharray.ads" 65 0 0# ());
+  (#"matharray.ads" 65 0 0# ());
   (#"matharray.ads" 67 0 0# ());
-  (#"matharray.ads" 75 0 0# ());
-  (#"matharray.ads" 85 0 0# ());
-  (#"matharray.ads" 78 0 0# ());
-  (#"matharray.ads" 78 0 0# ());
-  (#"matharray.ads" 78 0 0# ());
-  (#"matharray.ads" 80 0 0# ());
-  (#"matharray.ads" 78 0 0# ());
-  (#"matharray.ads" 77 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
-  (#"matharray.ads" 76 0 0# ());
+  (#"matharray.ads" 65 0 0# ());
+  (#"matharray.ads" 64 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
+  (#"matharray.ads" 63 0 0# ());
   (#"matharray.adb" 4 0 0# ());
   (#"matharray.adb" 6 0 0# ());
   (#"matharray.adb" 17 0 0# ());
   (#"matharray.adb" 26 0 0# ());
-  (#"matharray.adb" 47 0 0# ());
-  (#"matharray.adb" 61 0 0# ());
-  ( "GP_Sloc:matharray.adb:66:1" (#"matharray.adb" 66 0 0# ()) ) )
+  (#"matharray.adb" 35 0 0# ());
+  (#"matharray.adb" 49 0 0# ());
+  ( "GP_Sloc:matharray.adb:54:1" (#"matharray.adb" 54 0 0# ()) ) )
 end
 
 (* Module for defining the value of the aggregate at matharray.adb:7, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
@@ -25976,7 +25976,7 @@ module Matharray__derivative__subprogram_def
   matharray__derivative__result.Matharray__vecfloat.vecfloat__content )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "get" defined at matharray.ads:66, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "get" defined at matharray.ads:53, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Matharray__get__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -26006,28 +26006,28 @@ module Matharray__get__subprogram_def
  use        Matharray__get__bool___axiom
  use        Matharray__get__L_3__T18b___axiom
 
- let def #"matharray.ads" 66 0 0#"W:diverges:N" "GP_Subp:matharray.ads:66" 
+ let def #"matharray.ads" 53 0 0#"W:diverges:N" "GP_Subp:matharray.ads:53" 
    (__void_param : unit)
-  requires { #"matharray.ads" 66 0 0# true }
-  ensures { #"matharray.ads" 66 0 0# (#"matharray.ads" 70 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__if" "GP_Sloc:matharray.ads:70:14" "GP_Id:206" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
-             ^ matharray.ads:70:14:VC_POSTCONDITION" (if ((Matharray__get__bool.bool__.bool__content = True)) then (
+  requires { #"matharray.ads" 53 0 0# true }
+  ensures { #"matharray.ads" 53 0 0# (#"matharray.ads" 57 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__if" "GP_Sloc:matharray.ads:57:14" "GP_Id:206" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
+             ^ matharray.ads:57:14:VC_POSTCONDITION" (if ((Matharray__get__bool.bool__.bool__content = True)) then (
    (exists k  : int.
-    ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) /\ ( ( "GP_Pretty_Ada:3780" "GP_Sloc:matharray.ads:70:54" ((Standard__integer__rep.to_rep (let temp___830 = (old Matharray__get__a.a.Array__Int__Standard__integer.map__content ) in (
+    ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) /\ ( ( "GP_Pretty_Ada:3780" "GP_Sloc:matharray.ads:57:54" ((Standard__integer__rep.to_rep (let temp___830 = (old Matharray__get__a.a.Array__Int__Standard__integer.map__content ) in (
      (Array__Int__Standard__integer.get temp___830 k)))
-    ) = Matharray__get__x.x) ) /\ ( "GP_Pretty_Ada:3786" "GP_Sloc:matharray.ads:70:76" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) = 0) ) ) ))) else (
-   (forall k #"matharray.ads" 70 0 0#  "model" "model_trace:3788" "name:k"  : int.
-    ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) -> ( "GP_Pretty_Ada:3802" "GP_Sloc:matharray.ads:71:47" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) <> Matharray__get__x.x) ) )))) )) }
+    ) = Matharray__get__x.x) ) /\ ( "GP_Pretty_Ada:3786" "GP_Sloc:matharray.ads:57:76" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) = 0) ) ) ))) else (
+   (forall k #"matharray.ads" 57 0 0#  "model" "model_trace:3788" "name:k"  : int.
+    ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) -> ( "GP_Pretty_Ada:3802" "GP_Sloc:matharray.ads:58:47" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) <> Matharray__get__x.x) ) )))) )) }
    =
-  ( () (* Assume dynamic invariants of inputs of the subprogram matharray.ads:66 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram matharray.ads:53 *)
   ;
    assume {  (if (False) then (
    true) else (
    (Matharray__vec.dynamic_property Standard__natural.first Standard__natural.last (Standard__integer__rep.to_rep Matharray__get__a.a__first) (Standard__integer__rep.to_rep Matharray__get__a.a__last)))) };
    assume {  (Standard__integer___axiom.dynamic_invariant Matharray__get__x.x True False True True) };
    assume {  true };
-  () (* Declarations introduced by the compiler at the beginning of the subprogram matharray.ads:66 *)
+  () (* Declarations introduced by the compiler at the beginning of the subprogram matharray.ads:53 *)
   ;
-  () (* Check for RTE in the Pre of the subprogram matharray.ads:66 *)
+  () (* Check for RTE in the Pre of the subprogram matharray.ads:53 *)
   ;
    abstract ensures {true}(let _ = ( (Matharray__get__x.x <> 0) && ((  abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
    ()))
@@ -26037,7 +26037,7 @@ module Matharray__get__subprogram_def
    0)) ) > 0) ) in (
    ()))
    end ;
-  () (* Assume Pre of the subprogram matharray.ads:66 *)
+  () (* Assume Pre of the subprogram matharray.ads:53 *)
   ;
    assume {  ( (Matharray__get__x.x <> 0) /\ ((if (((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= (Standard__integer__rep.to_rep Matharray__get__a.a__last))) then (
    (((Standard__integer__rep.to_rep Matharray__get__a.a__last) - (Standard__integer__rep.to_rep Matharray__get__a.a__first)) + 1)) else (
@@ -26049,56 +26049,56 @@ module Matharray__get__subprogram_def
   ensures { (result = Matharray__get__a.a.Array__Int__Standard__integer.map__content)} 
   ) in (
    (  try
-    ( (#"matharray.adb" 47 0 0# ());
-    (#"matharray.adb" 50 0 0# ());
-    ( "GP_Sloc:matharray.adb:49:12" (#"matharray.adb" 49 0 0# #"matharray.adb" 49 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(0)) )) );
-    ( "GP_Sloc:matharray.adb:50:24" (#"matharray.adb" 50 0 0# (let temp___819 = (Standard__integer__rep.to_rep(( #"matharray.adb" 50 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
+    ( (#"matharray.adb" 35 0 0# ());
+    (#"matharray.adb" 38 0 0# ());
+    ( "GP_Sloc:matharray.adb:37:12" (#"matharray.adb" 37 0 0# #"matharray.adb" 37 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(0)) )) );
+    ( "GP_Sloc:matharray.adb:38:24" (#"matharray.adb" 38 0 0# (let temp___819 = (Standard__integer__rep.to_rep(( #"matharray.adb" 38 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
      ()))
      end ;
     Matharray__get__a.a__first ))) in (
-    (let temp___820 = (Standard__integer__rep.to_rep(( #"matharray.adb" 50 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
+    (let temp___820 = (Standard__integer__rep.to_rep(( #"matharray.adb" 38 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
      ()))
      end ;
     Matharray__get__a.a__last ))) in (
-     ( #"matharray.adb" 50 0 0# Matharray__get__L_3__i.i.int__content <- ( temp___819 );
-     () (* Translation of an Ada loop from matharray.adb:50 *)
+     ( #"matharray.adb" 38 0 0# Matharray__get__L_3__i.i.int__content <- ( temp___819 );
+     () (* Translation of an Ada loop from matharray.adb:38 *)
      ;
      (if ((Boolean.andb((temp___819 <= Matharray__get__L_3__i.i.int__content)) ((Matharray__get__L_3__i.i.int__content <= temp___820)))) then (
-      #"matharray.adb" 50 0 0# try
-       ( #"matharray.adb" 50 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
+      #"matharray.adb" 38 0 0# try
+       ( #"matharray.adb" 38 0 0# abstract ensures {true}(let _ = Matharray__get__a.a.Array__Int__Standard__integer.map__content in (
         ()))
         end ;
-       (let temp___824 = #"matharray.adb" 50 0 0# (any Array__Int__Standard__integer.map
-       ensures {#"matharray.adb" 50 0 0# (result = Matharray__get__a.a.Array__Int__Standard__integer.map__content)} 
+       (let temp___824 = #"matharray.adb" 38 0 0# (any Array__Int__Standard__integer.map
+       ensures {#"matharray.adb" 38 0 0# (result = Matharray__get__a.a.Array__Int__Standard__integer.map__content)} 
        ) in (
-        ( #"matharray.adb" 50 0 0# abstract ensures {true}(let _ = Matharray__get__L_3__i.i.int__content in (
+        ( #"matharray.adb" 38 0 0# abstract ensures {true}(let _ = Matharray__get__L_3__i.i.int__content in (
          ()))
          end ;
-        (let temp___822 = #"matharray.adb" 50 0 0# (any int
-        ensures {#"matharray.adb" 50 0 0# (result = Matharray__get__L_3__i.i.int__content)} 
+        (let temp___822 = #"matharray.adb" 38 0 0# (any int
+        ensures {#"matharray.adb" 38 0 0# (result = Matharray__get__L_3__i.i.int__content)} 
         ) in (
-         ( #"matharray.adb" 50 0 0# abstract ensures {true}(let _ = Matharray__get__bool.bool__.bool__content in (
+         ( #"matharray.adb" 38 0 0# abstract ensures {true}(let _ = Matharray__get__bool.bool__.bool__content in (
           ()))
           end ;
-         (let temp___821 = #"matharray.adb" 50 0 0# (any bool
-         ensures {#"matharray.adb" 50 0 0# (result = Matharray__get__bool.bool__.bool__content)} 
+         (let temp___821 = #"matharray.adb" 38 0 0# (any bool
+         ensures {#"matharray.adb" 38 0 0# (result = Matharray__get__bool.bool__.bool__content)} 
          ) in (
-          ( () (* First unroling of the loop statements appearing before the loop invariant of loop matharray.adb:50 *)
+          ( () (* First unroling of the loop statements appearing before the loop invariant of loop matharray.adb:38 *)
           ;
-          ( "GP_Sloc:matharray.adb:51:10" (#"matharray.adb" 51 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content)))) = Matharray__get__x.x)) then (
-           ( ( "GP_Sloc:matharray.adb:52:17" (#"matharray.adb" 52 0 0# #"matharray.adb" 52 0 0# Matharray__get__a.a.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content) (( 0 : Standard__integer.integer ))) )) );
-           ( "GP_Sloc:matharray.adb:53:18" (#"matharray.adb" 53 0 0# #"matharray.adb" 53 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(1)) )) );
-           ( "GP_Sloc:matharray.adb:54:13" (#"matharray.adb" 54 0 0# #"matharray.adb" 54 0 0# raise Matharray__get__L_3.L_3) ) )) else (
+          ( "GP_Sloc:matharray.adb:39:10" (#"matharray.adb" 39 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content)))) = Matharray__get__x.x)) then (
+           ( ( "GP_Sloc:matharray.adb:40:17" (#"matharray.adb" 40 0 0# #"matharray.adb" 40 0 0# Matharray__get__a.a.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content) (( 0 : Standard__integer.integer ))) )) );
+           ( "GP_Sloc:matharray.adb:41:18" (#"matharray.adb" 41 0 0# #"matharray.adb" 41 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(1)) )) );
+           ( "GP_Sloc:matharray.adb:42:13" (#"matharray.adb" 42 0 0# #"matharray.adb" 42 0 0# raise Matharray__get__L_3.L_3) ) )) else (
            ()))) );
-          () (* While loop translating the Ada loop from matharray.adb:50 *)
+          () (* While loop translating the Ada loop from matharray.adb:38 *)
           ;
            while True do
            invariant { 
-            (#"matharray.adb" 56 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:matharray.adb:56:32" "GP_Id:202" "comment:         pragma Loop_Invariant((for all k in a'First..i => a(k) /= x) and then bool = false);
-                               ^ matharray.adb:56:32:VC_LOOP_INVARIANT" "GP_Shape:L_3_while__pragargs__andthen" ( (forall k #"matharray.adb" 56 0 0#  "model" "name:k" "model_trace:2714"  : int.
-             ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= Matharray__get__L_3__i.i.int__content) ) -> ( "GP_Pretty_Ada:2731" "GP_Sloc:matharray.adb:56:60" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) <> Matharray__get__x.x) ) )) /\ ( "GP_Pretty_Ada:2735" "GP_Sloc:matharray.adb:56:80" ( (Matharray__get__bool.bool__.bool__content = True) <-> false ) ) ) ))
+            (#"matharray.adb" 44 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:matharray.adb:44:32" "GP_Id:202" "comment:         pragma Loop_Invariant((for all k in a'First..i => a(k) /= x) and then bool = false);
+                               ^ matharray.adb:44:32:VC_LOOP_INVARIANT" "GP_Shape:L_3_while__pragargs__andthen" ( (forall k #"matharray.adb" 44 0 0#  "model" "name:k" "model_trace:2714"  : int.
+             ( ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= Matharray__get__L_3__i.i.int__content) ) -> ( "GP_Pretty_Ada:2731" "GP_Sloc:matharray.adb:44:60" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content k)) <> Matharray__get__x.x) ) )) /\ ( "GP_Pretty_Ada:2735" "GP_Sloc:matharray.adb:44:80" ( (Matharray__get__bool.bool__.bool__content = True) <-> false ) ) ) ))
             }
-           ( () (* Assume implicit invariants from the loop matharray.adb:50 *)
+           ( () (* Assume implicit invariants from the loop matharray.adb:38 *)
            ;
             assume {  (Boolean.andb(( ( ( ( ( ( true /\ true ) /\ true ) /\ (if (((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= (Standard__integer__rep.to_rep Matharray__get__a.a__last))) then (
             (Matharray__get__L_3__T18b.dynamic_property (Standard__integer__rep.to_rep Matharray__get__a.a__first) (Standard__integer__rep.to_rep Matharray__get__a.a__last) Matharray__get__L_3__i.i.int__content)) else true) ) /\ true ) /\ (if (True) then (
@@ -26108,7 +26108,7 @@ module Matharray__get__subprogram_def
              (if (( (temp___820 < temp___825) \/ ( (temp___825 < temp___819) \/ (Matharray__get__L_3__i.i.int__content < temp___825) ) )) then (
               ((Array__Int__Standard__integer.get Matharray__get__a.a.Array__Int__Standard__integer.map__content temp___825) = (Array__Int__Standard__integer.get temp___824 temp___825))) else (
               true))) else true)) )) (( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= Matharray__get__L_3__i.i.int__content) /\ (Matharray__get__L_3__i.i.int__content <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ))) };
-           () (* Check for absence of RTE in the invariant of loop matharray.adb:50 *)
+           () (* Check for absence of RTE in the invariant of loop matharray.adb:38 *)
            ;
             abstract ensures {true}(let _ = ( ( (let k =  (any int
            ) in (
@@ -26116,8 +26116,8 @@ module Matharray__get__subprogram_def
              ()))
              end ;
             Matharray__get__a.a__first ))) <= k)) ((k <= Matharray__get__L_3__i.i.int__content)))) then (
-              abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.adb" 56 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:56:62" "GP_Id:201" "comment:         pragma Loop_Invariant((for all k in a'First..i => a(k) /= x) and then bool = false);
-                                                             ^ matharray.adb:56:62:VC_INDEX_CHECK" "GP_Shape:L_3_while__pragargs__andthen__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
+              abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.adb" 44 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:44:62" "GP_Id:201" "comment:         pragma Loop_Invariant((for all k in a'First..i => a(k) /= x) and then bool = false);
+                                                             ^ matharray.adb:44:62:VC_INDEX_CHECK" "GP_Shape:L_3_while__pragargs__andthen__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
              k ))))) <> Matharray__get__x.x) in (
               ()))
               end ))))
@@ -26129,17 +26129,17 @@ module Matharray__get__subprogram_def
            ) ) && ((Boolean.to_int(Matharray__get__bool.bool__.bool__content)) = (Boolean.to_int((Boolean.of_int(0))))) ) in (
             ()))
             end ;
-           () (* Loop statements appearing after the loop invariant of loop matharray.adb:50 *)
+           () (* Loop statements appearing after the loop invariant of loop matharray.adb:38 *)
            ;
-           () (* Check for the exit condition and loop statements appearing before the loop invariant of loop matharray.adb:50 *)
+           () (* Check for the exit condition and loop statements appearing before the loop invariant of loop matharray.adb:38 *)
            ;
            (if ((Matharray__get__L_3__i.i.int__content = temp___820)) then (
              raise Matharray__get__L_3.L_3));
             Matharray__get__L_3__i.i.int__content <- ( (Matharray__get__L_3__i.i.int__content + 1) );
-           ( "GP_Sloc:matharray.adb:51:10" (#"matharray.adb" 51 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content)))) = Matharray__get__x.x)) then (
-            ( ( "GP_Sloc:matharray.adb:52:17" (#"matharray.adb" 52 0 0# #"matharray.adb" 52 0 0# Matharray__get__a.a.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content) (( 0 : Standard__integer.integer ))) )) );
-            ( "GP_Sloc:matharray.adb:53:18" (#"matharray.adb" 53 0 0# #"matharray.adb" 53 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(1)) )) );
-            ( "GP_Sloc:matharray.adb:54:13" (#"matharray.adb" 54 0 0# #"matharray.adb" 54 0 0# raise Matharray__get__L_3.L_3) ) )) else (
+           ( "GP_Sloc:matharray.adb:39:10" (#"matharray.adb" 39 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content)))) = Matharray__get__x.x)) then (
+            ( ( "GP_Sloc:matharray.adb:40:17" (#"matharray.adb" 40 0 0# #"matharray.adb" 40 0 0# Matharray__get__a.a.Array__Int__Standard__integer.map__content <- ( (Array__Int__Standard__integer.set(Matharray__get__a.a.Array__Int__Standard__integer.map__content) (Matharray__get__L_3__i.i.int__content) (( 0 : Standard__integer.integer ))) )) );
+            ( "GP_Sloc:matharray.adb:41:18" (#"matharray.adb" 41 0 0# #"matharray.adb" 41 0 0# Matharray__get__bool.bool__.bool__content <- ( (Boolean.of_int(1)) )) );
+            ( "GP_Sloc:matharray.adb:42:13" (#"matharray.adb" 42 0 0# #"matharray.adb" 42 0 0# raise Matharray__get__L_3.L_3) ) )) else (
             ()))) ) )
           done )))
           )))
@@ -26164,10 +26164,10 @@ module Matharray__get__subprogram_def
       ()))
       end ;
      Matharray__get__a.a__last ))))))) then (
-       abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_827) ((  assert {  (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:70:60" "GP_Id:203" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
-                                                           ^ matharray.ads:70:60:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forsome__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
-      k ))))) = Matharray__get__x.x) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forsome__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:70:78" "GP_Id:204" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
-                                                                             ^ matharray.ads:70:78:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
+       abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(temp___old_827) ((  assert {  (#"matharray.ads" 57 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:57:60" "GP_Id:203" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
+                                                           ^ matharray.ads:57:60:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forsome__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
+      k ))))) = Matharray__get__x.x) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.ads" 57 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forsome__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:57:78" "GP_Id:204" "comment:     Post => (if bool then (for some k in a'Range => a'Old(k) = x and then a(k) = 0)
+                                                                             ^ matharray.ads:57:78:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
       k ))))) = 0) ) in (
        ()))
        end ))))
@@ -26186,8 +26186,8 @@ module Matharray__get__subprogram_def
       ()))
       end ;
      Matharray__get__a.a__last ))))))) then (
-       abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:71:49" "GP_Id:205" "comment:                else (for all k in a'Range => a(k) /= x));
-                                                ^ matharray.ads:71:49:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
+       abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Matharray__get__a.a.Array__Int__Standard__integer.map__content) ((  assert {  (#"matharray.ads" 58 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:58:49" "GP_Id:205" "comment:                else (for all k in a'Range => a(k) /= x));
+                                                ^ matharray.ads:58:49:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Matharray__get__a.a__first) <= k) /\ (k <= (Standard__integer__rep.to_rep Matharray__get__a.a__last)) ) )) };
       k ))))) <> Matharray__get__x.x) in (
        ()))
        end ))))
@@ -26202,7 +26202,7 @@ module Matharray__get__subprogram_def
    )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "perpendicular_vec" defined at matharray.ads:75, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "perpendicular_vec" defined at matharray.ads:62, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Matharray__perpendicular_vec__subprogram_def
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -26288,22 +26288,22 @@ module Matharray__perpendicular_vec__subprogram_def
 
  val matharray__perpendicular_vec__result "model_projected" "model_trace:3804@result" "name:perpendicular_vec"  : bool__ref 
  
- let def #"matharray.ads" 75 0 0#"W:diverges:N" "GP_Subp:matharray.ads:75" 
+ let def #"matharray.ads" 62 0 0#"W:diverges:N" "GP_Subp:matharray.ads:62" 
    (__void_param : unit)
-  requires { #"matharray.ads" 75 0 0# true }
-  ensures { #"matharray.ads" 75 0 0# (#"matharray.ads" 85 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__if" "GP_Sloc:matharray.ads:85:14" "GP_Id:258" "comment:     Post => (if perpendicular_vec'Result then 
-             ^ matharray.ads:85:14:VC_POSTCONDITION" (if ((matharray__perpendicular_vec__result.bool__content = True)) then (
-   ( "GP_Pretty_Ada:4054" "GP_Sloc:matharray.ads:86:17" ((((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2)))) + ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2))))) = 0) )) else (
-   ( "GP_Pretty_Ada:4079" "GP_Sloc:matharray.ads:88:17" ((((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2)))) + ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2))))) <> 0) ))) )) }
+  requires { #"matharray.ads" 62 0 0# true }
+  ensures { #"matharray.ads" 62 0 0# (#"matharray.ads" 72 0 0# ( "model_vc_post" "keep_on_simp" "GP_Reason:VC_POSTCONDITION" "GP_Shape:pragargs__if" "GP_Sloc:matharray.ads:72:14" "GP_Id:258" "comment:     Post => (if perpendicular_vec'Result then 
+             ^ matharray.ads:72:14:VC_POSTCONDITION" (if ((matharray__perpendicular_vec__result.bool__content = True)) then (
+   ( "GP_Pretty_Ada:4054" "GP_Sloc:matharray.ads:73:17" ((((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2)))) + ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2))))) = 0) )) else (
+   ( "GP_Pretty_Ada:4079" "GP_Sloc:matharray.ads:75:17" ((((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2)))) + ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2))))) <> 0) ))) )) }
    =
-  ( () (* Assume dynamic invariants of inputs of the subprogram matharray.ads:75 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram matharray.ads:62 *)
   ;
    assume {  (Matharray__vec___axiom.dynamic_invariant Matharray__perpendicular_vec__vec1.vec1 True False True True) };
    assume {  (Matharray__vec___axiom.dynamic_invariant Matharray__perpendicular_vec__vec2.vec2 True False True True) };
    assume {  true };
-  () (* Declarations introduced by the compiler at the beginning of the subprogram matharray.ads:75 *)
+  () (* Declarations introduced by the compiler at the beginning of the subprogram matharray.ads:62 *)
   ;
-  () (* Check for RTE in the Pre of the subprogram matharray.ads:75 *)
+  () (* Check for RTE in the Pre of the subprogram matharray.ads:62 *)
   ;
    abstract ensures {true}(let _ = ( ((  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
    ()))
@@ -26323,10 +26323,10 @@ module Matharray__perpendicular_vec__subprogram_def
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ))))) then (
-     abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((  assert {  (#"matharray.ads" 79 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:79:40" "GP_Id:256" "comment:     (for all x in  vec1'Range => vec1(x) < 46340 and then vec1(x) > -46340)
-                                       ^ matharray.ads:79:40:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
-    x ))))) < 46340) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((  assert {  (#"matharray.ads" 79 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:79:65" "GP_Id:257" "comment:     (for all x in  vec1'Range => vec1(x) < 46340 and then vec1(x) > -46340)
-                                                                ^ matharray.ads:79:65:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+     abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((  assert {  (#"matharray.ads" 66 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:66:40" "GP_Id:256" "comment:     (for all x in  vec1'Range => vec1(x) < 46340 and then vec1(x) > -46340)
+                                       ^ matharray.ads:66:40:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    x ))))) < 46340) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((  assert {  (#"matharray.ads" 66 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:66:65" "GP_Id:257" "comment:     (for all x in  vec1'Range => vec1(x) < 46340 and then vec1(x) > -46340)
+                                                                ^ matharray.ads:66:65:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     x ))))) > ( -46340 )) ) in (
      ()))
      end ))))
@@ -26344,10 +26344,10 @@ module Matharray__perpendicular_vec__subprogram_def
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ))))) then (
-     abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((  assert {  (#"matharray.ads" 80 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:80:49" "GP_Id:254" "comment:     and then (for all x in vec2'Range =>  vec2(x) < 46340 and then vec2(x) > -46340)
-                                                ^ matharray.ads:80:49:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
-    x ))))) < 46340) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((  assert {  (#"matharray.ads" 80 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:80:74" "GP_Id:255" "comment:     and then (for all x in vec2'Range =>  vec2(x) < 46340 and then vec2(x) > -46340)
-                                                                         ^ matharray.ads:80:74:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+     abstract ensures {true}(let _ = ( ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((  assert {  (#"matharray.ads" 67 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:67:49" "GP_Id:254" "comment:     and then (for all x in vec2'Range =>  vec2(x) < 46340 and then vec2(x) > -46340)
+                                                ^ matharray.ads:67:49:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    x ))))) < 46340) && ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((  assert {  (#"matharray.ads" 67 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__cmp__ixdcomp" "GP_Sloc:matharray.ads:67:74" "GP_Id:255" "comment:     and then (for all x in vec2'Range =>  vec2(x) < 46340 and then vec2(x) > -46340)
+                                                                         ^ matharray.ads:67:74:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     x ))))) > ( -46340 )) ) in (
      ()))
      end ))))
@@ -26356,136 +26356,136 @@ module Matharray__perpendicular_vec__subprogram_def
   requires { true} 
   ensures { ( (result = True) <-> (forall x   "model" "name:x" "model_trace:3890"  : int.
    ( ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) -> ( ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) x)) < 46340) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) x)) > ( -46340 )) ) )) )} 
-  ) ) && (Boolean.andb((if ((Boolean.andb(((#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:81:38" "GP_Id:237" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                                     ^ matharray.ads:81:38:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___849 = ( #"matharray.ads" 81 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+  ) ) && (Boolean.andb((if ((Boolean.andb(((#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:68:38" "GP_Id:237" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                                     ^ matharray.ads:68:38:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___849 = ( #"matharray.ads" 68 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
    ()))
    end ;
   (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-   ( #"matharray.ads" 81 0 0# assert { #"matharray.ads" 81 0 0# (#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:81:31" "GP_Id:235" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                              ^ matharray.ads:81:31:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___849) /\ (temp___849 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+   ( #"matharray.ads" 68 0 0# assert { #"matharray.ads" 68 0 0# (#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:68:31" "GP_Id:235" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                              ^ matharray.ads:68:31:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___849) /\ (temp___849 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
    temp___849 )))
   )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___850 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
    ()))
    end ;
   (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-   (  assert {  (#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:81:48" "GP_Id:236" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                                               ^ matharray.ads:81:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___850) /\ (temp___850 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+   (  assert {  (#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:68:48" "GP_Id:236" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                                               ^ matharray.ads:68:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___850) /\ (temp___850 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
    temp___850 )))
-  ))))))) )) > 0)) (((#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:81:81" "GP_Id:240" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                                                                                ^ matharray.ads:81:81:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___851 = ( #"matharray.ads" 81 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+  ))))))) )) > 0)) (((#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:68:81" "GP_Id:240" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                                                                                ^ matharray.ads:68:81:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___851 = ( #"matharray.ads" 68 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
    ()))
    end ;
   (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-   ( #"matharray.ads" 81 0 0# assert { #"matharray.ads" 81 0 0# (#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:81:75" "GP_Id:238" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                                                                          ^ matharray.ads:81:75:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___851) /\ (temp___851 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+   ( #"matharray.ads" 68 0 0# assert { #"matharray.ads" 68 0 0# (#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:68:75" "GP_Id:238" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                                                                          ^ matharray.ads:68:75:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___851) /\ (temp___851 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
    temp___851 )))
   )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___852 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
    ()))
    end ;
   (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-   (  assert {  (#"matharray.ads" 81 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:81:91" "GP_Id:239" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
-                                                                                          ^ matharray.ads:81:91:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___852) /\ (temp___852 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+   (  assert {  (#"matharray.ads" 68 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:68:91" "GP_Id:239" "comment:     and then ((if  (vec1(vec1'First)*vec2(vec2'First)) > 0 and (vec1(vec1'Last)*vec2(vec2'Last)) > 0 then
+                                                                                          ^ matharray.ads:68:91:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___852) /\ (temp___852 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
    temp___852 )))
   ))))))) )) > 0)))) then (
-   ((#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:82:38" "GP_Id:230" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                     ^ matharray.ads:82:38:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___845 = ( #"matharray.ads" 82 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ((#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:69:38" "GP_Id:230" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                     ^ matharray.ads:69:38:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___845 = ( #"matharray.ads" 69 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 82 0 0# assert { #"matharray.ads" 82 0 0# (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:82:31" "GP_Id:228" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                              ^ matharray.ads:82:31:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___845) /\ (temp___845 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 69 0 0# assert { #"matharray.ads" 69 0 0# (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:69:31" "GP_Id:228" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                              ^ matharray.ads:69:31:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___845) /\ (temp___845 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___845 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___846 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:82:48" "GP_Id:229" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                               ^ matharray.ads:82:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___846) /\ (temp___846 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:69:48" "GP_Id:229" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                               ^ matharray.ads:69:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___846) /\ (temp___846 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___846 )))
-   ))))))) )) <= (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:82:74" "GP_Id:234" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                                                         ^ matharray.ads:82:74:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub" (Standard__integer.range_check_((2147483647 - (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:82:92" "GP_Id:233" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                                                                           ^ matharray.ads:82:92:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___847 = ( #"matharray.ads" 82 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ))))))) )) <= (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:69:74" "GP_Id:234" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                                                         ^ matharray.ads:69:74:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub" (Standard__integer.range_check_((2147483647 - (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:69:92" "GP_Id:233" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                                                                           ^ matharray.ads:69:92:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___847 = ( #"matharray.ads" 69 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 82 0 0# assert { #"matharray.ads" 82 0 0# (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:82:86" "GP_Id:231" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                                                                     ^ matharray.ads:82:86:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___847) /\ (temp___847 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 69 0 0# assert { #"matharray.ads" 69 0 0# (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:69:86" "GP_Id:231" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                                                                     ^ matharray.ads:69:86:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___847) /\ (temp___847 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___847 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___848 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 82 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:82:102" "GP_Id:232" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
-                                                                                                     ^ matharray.ads:82:102:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___848) /\ (temp___848 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 69 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:69:102" "GP_Id:232" "comment:                    (vec1(vec1'First)*vec2(vec2'First))  <= Integer'Last - (vec1(vec1'Last)*vec2(vec2'Last)))                
+                                                                                                     ^ matharray.ads:69:102:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___848) /\ (temp___848 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___848 )))
    ))))))) ))))) )))) else (
-   (Boolean.of_int(1))))) ((if ((Boolean.andb(((#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:83:32" "GP_Id:250" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                               ^ matharray.ads:83:32:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___857 = ( #"matharray.ads" 83 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   (Boolean.of_int(1))))) ((if ((Boolean.andb(((#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:70:32" "GP_Id:250" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                               ^ matharray.ads:70:32:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___857 = ( #"matharray.ads" 70 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
    ()))
    end ;
   (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-   ( #"matharray.ads" 83 0 0# assert { #"matharray.ads" 83 0 0# (#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:83:25" "GP_Id:248" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                        ^ matharray.ads:83:25:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___857) /\ (temp___857 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+   ( #"matharray.ads" 70 0 0# assert { #"matharray.ads" 70 0 0# (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:70:25" "GP_Id:248" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                        ^ matharray.ads:70:25:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___857) /\ (temp___857 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
    temp___857 )))
   )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___858 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
    ()))
    end ;
   (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-   (  assert {  (#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:83:42" "GP_Id:249" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                                         ^ matharray.ads:83:42:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___858) /\ (temp___858 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+   (  assert {  (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:70:42" "GP_Id:249" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                                         ^ matharray.ads:70:42:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___858) /\ (temp___858 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
    temp___858 )))
-  ))))))) )) < 0)) (((#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:83:75" "GP_Id:253" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                                                                          ^ matharray.ads:83:75:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___859 = ( #"matharray.ads" 83 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+  ))))))) )) < 0)) (((#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult" "GP_Sloc:matharray.ads:70:75" "GP_Id:253" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                                                                          ^ matharray.ads:70:75:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___859 = ( #"matharray.ads" 70 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
    ()))
    end ;
   (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-   ( #"matharray.ads" 83 0 0# assert { #"matharray.ads" 83 0 0# (#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:83:69" "GP_Id:251" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                                                                    ^ matharray.ads:83:69:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___859) /\ (temp___859 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+   ( #"matharray.ads" 70 0 0# assert { #"matharray.ads" 70 0 0# (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:70:69" "GP_Id:251" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                                                                    ^ matharray.ads:70:69:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___859) /\ (temp___859 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
    temp___859 )))
   )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___860 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
    ()))
    end ;
   (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-   (  assert {  (#"matharray.ads" 83 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:83:85" "GP_Id:252" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
-                                                                                    ^ matharray.ads:83:85:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___860) /\ (temp___860 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+   (  assert {  (#"matharray.ads" 70 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__and__cmp__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:70:85" "GP_Id:252" "comment:     and (if  (vec1(vec1'First)*vec2(vec2'First)) < 0 and (vec1(vec1'Last)*vec2(vec2'Last)) < 0 then                   
+                                                                                    ^ matharray.ads:70:85:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___860) /\ (temp___860 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
    temp___860 )))
   ))))))) )) < 0)))) then (
-   ((#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__mult" "GP_Sloc:matharray.ads:84:38" "GP_Id:243" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                     ^ matharray.ads:84:38:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___853 = ( #"matharray.ads" 84 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ((#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__mult" "GP_Sloc:matharray.ads:71:38" "GP_Id:243" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                     ^ matharray.ads:71:38:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___853 = ( #"matharray.ads" 71 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 84 0 0# assert { #"matharray.ads" 84 0 0# (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:84:31" "GP_Id:241" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                              ^ matharray.ads:84:31:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___853) /\ (temp___853 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 71 0 0# assert { #"matharray.ads" 71 0 0# (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:71:31" "GP_Id:241" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                              ^ matharray.ads:71:31:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___853) /\ (temp___853 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___853 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___854 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:84:48" "GP_Id:242" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                               ^ matharray.ads:84:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___854) /\ (temp___854 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:71:48" "GP_Id:242" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                               ^ matharray.ads:71:48:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___854) /\ (temp___854 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___854 )))
-   ))))))) )) >= (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub" "GP_Sloc:matharray.ads:84:74" "GP_Id:247" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                                                         ^ matharray.ads:84:74:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((( -2147483648 ) - (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult" "GP_Sloc:matharray.ads:84:92" "GP_Id:246" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                                                                           ^ matharray.ads:84:92:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___855 = ( #"matharray.ads" 84 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ))))))) )) >= (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub" "GP_Sloc:matharray.ads:71:74" "GP_Id:247" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                                                         ^ matharray.ads:71:74:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((( -2147483648 ) - (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult" "GP_Sloc:matharray.ads:71:92" "GP_Id:246" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                                                                           ^ matharray.ads:71:92:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___855 = ( #"matharray.ads" 71 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 84 0 0# assert { #"matharray.ads" 84 0 0# (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:84:86" "GP_Id:244" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                                                                     ^ matharray.ads:84:86:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___855) /\ (temp___855 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 71 0 0# assert { #"matharray.ads" 71 0 0# (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:71:86" "GP_Id:244" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                                                                     ^ matharray.ads:71:86:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___855) /\ (temp___855 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___855 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___856 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 84 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:84:102" "GP_Id:245" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
-                                                                                                     ^ matharray.ads:84:102:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___856) /\ (temp___856 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 71 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__and__if__cmp__sub__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:71:102" "GP_Id:245" "comment:                    (vec1(vec1'First)*vec2(vec2'First)) >= Integer'First - (vec1(vec1'Last)*vec2(vec2'Last)))),
+                                                                                                     ^ matharray.ads:71:102:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___856) /\ (temp___856 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___856 )))
    ))))))) ))))) )))) else (
    (Boolean.of_int(1)))))) ) ) ) ) in (
    ()))
    end ;
-  () (* Assume Pre of the subprogram matharray.ads:75 *)
+  () (* Assume Pre of the subprogram matharray.ads:62 *)
   ;
    assume {  ( ((Matharray__vec.length Matharray__perpendicular_vec__vec1.vec1) = 2) /\ ( ((Matharray__vec.length Matharray__perpendicular_vec__vec2.vec2) = (Matharray__vec.length Matharray__perpendicular_vec__vec1.vec1)) /\ ( (forall x   "model" "name:x" "model_trace:3866"  : int.
    ( ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= x) /\ (x <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) -> ( ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) x)) < 46340) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) x)) > ( -46340 )) ) )) /\ ( (forall x   "model" "name:x" "model_trace:3890"  : int.
@@ -26495,38 +26495,38 @@ module Matharray__perpendicular_vec__subprogram_def
    (((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2)))) >= (( -2147483648 ) - ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec1.vec1) (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1))) * (Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Matharray__vec.to_array Matharray__perpendicular_vec__vec2.vec2) (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2))))))) else (
    true)) ) ) ) ) ) };
    try
-   ( (#"matharray.adb" 61 0 0# ());
-   (#"matharray.adb" 61 0 0# ());
-   ( "GP_Sloc:matharray.adb:63:7" (#"matharray.adb" 63 0 0# ( #"matharray.adb" 63 0 0# matharray__perpendicular_vec__result.bool__content <- ( ((#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.adb:63:49" "GP_Id:213" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                                                ^ matharray.adb:63:49:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add" (Standard__integer.range_check_(((#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.adb:63:31" "GP_Id:209" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                              ^ matharray.adb:63:31:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___831 = ( #"matharray.adb" 63 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ( (#"matharray.adb" 49 0 0# ());
+   (#"matharray.adb" 49 0 0# ());
+   ( "GP_Sloc:matharray.adb:51:7" (#"matharray.adb" 51 0 0# ( #"matharray.adb" 51 0 0# matharray__perpendicular_vec__result.bool__content <- ( ((#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.adb:51:49" "GP_Id:213" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                                                ^ matharray.adb:51:49:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add" (Standard__integer.range_check_(((#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.adb:51:31" "GP_Id:209" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                              ^ matharray.adb:51:31:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___831 = ( #"matharray.adb" 51 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.adb" 63 0 0# assert { #"matharray.adb" 63 0 0# (#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:63:24" "GP_Id:207" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                       ^ matharray.adb:63:24:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___831) /\ (temp___831 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.adb" 51 0 0# assert { #"matharray.adb" 51 0 0# (#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:51:24" "GP_Id:207" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                       ^ matharray.adb:51:24:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___831) /\ (temp___831 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___831 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___832 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.adb:63:41" "GP_Id:208" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                                        ^ matharray.adb:63:41:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___832) /\ (temp___832 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.adb:51:41" "GP_Id:208" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                                        ^ matharray.adb:51:41:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___832) /\ (temp___832 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___832 )))
-   ))))))) )) + (#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add__mult" "GP_Sloc:matharray.adb:63:66" "GP_Id:212" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                                                                 ^ matharray.adb:63:66:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___833 = ( #"matharray.adb" 63 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ))))))) )) + (#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:return__cmp__add__mult" "GP_Sloc:matharray.adb:51:66" "GP_Id:212" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                                                                 ^ matharray.adb:51:66:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___833 = ( #"matharray.adb" 51 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.adb" 63 0 0# assert { #"matharray.adb" 63 0 0# (#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:63:60" "GP_Id:210" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                                                           ^ matharray.adb:63:60:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___833) /\ (temp___833 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.adb" 51 0 0# assert { #"matharray.adb" 51 0 0# (#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.adb:51:60" "GP_Id:210" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                                                           ^ matharray.adb:51:60:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___833) /\ (temp___833 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___833 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___834 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.adb" 63 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.adb:63:76" "GP_Id:211" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
-                                                                           ^ matharray.adb:63:76:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___834) /\ (temp___834 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.adb" 51 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:return__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.adb:51:76" "GP_Id:211" "comment:      return (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0;
+                                                                           ^ matharray.adb:51:76:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___834) /\ (temp___834 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___834 )))
    ))))))) ))))) )) = 0) );
     raise Return__exc )) );
@@ -26535,68 +26535,68 @@ module Matharray__perpendicular_vec__subprogram_def
    Return__exc -> ()
   end;
    abstract ensures {true}(let _ = (if (matharray__perpendicular_vec__result.bool__content) then (
-   ((#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add" "GP_Sloc:matharray.ads:86:52" "GP_Id:220" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                                   ^ matharray.ads:86:52:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:86:34" "GP_Id:216" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                 ^ matharray.ads:86:34:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___835 = ( #"matharray.ads" 86 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ((#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add" "GP_Sloc:matharray.ads:73:52" "GP_Id:220" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                                   ^ matharray.ads:73:52:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:matharray.ads:73:34" "GP_Id:216" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                 ^ matharray.ads:73:34:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___835 = ( #"matharray.ads" 73 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 86 0 0# assert { #"matharray.ads" 86 0 0# (#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:86:27" "GP_Id:214" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                          ^ matharray.ads:86:27:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___835) /\ (temp___835 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 73 0 0# assert { #"matharray.ads" 73 0 0# (#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:73:27" "GP_Id:214" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                          ^ matharray.ads:73:27:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___835) /\ (temp___835 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___835 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___836 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:86:44" "GP_Id:215" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                           ^ matharray.ads:86:44:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___836) /\ (temp___836 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:73:44" "GP_Id:215" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                           ^ matharray.ads:73:44:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___836) /\ (temp___836 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___836 )))
-   ))))))) )) + (#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:86:69" "GP_Id:219" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                                                    ^ matharray.ads:86:69:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___837 = ( #"matharray.ads" 86 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ))))))) )) + (#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:73:69" "GP_Id:219" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                                                    ^ matharray.ads:73:69:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___837 = ( #"matharray.ads" 73 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 86 0 0# assert { #"matharray.ads" 86 0 0# (#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:86:63" "GP_Id:217" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                                              ^ matharray.ads:86:63:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___837) /\ (temp___837 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 73 0 0# assert { #"matharray.ads" 73 0 0# (#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:matharray.ads:73:63" "GP_Id:217" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                                              ^ matharray.ads:73:63:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___837) /\ (temp___837 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___837 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___838 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 86 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:86:79" "GP_Id:218" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
-                                                                              ^ matharray.ads:86:79:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___838) /\ (temp___838 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 73 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:73:79" "GP_Id:218" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) = 0
+                                                                              ^ matharray.ads:73:79:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___838) /\ (temp___838 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___838 )))
    ))))))) ))))) )) = 0)) else (
-   ((#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add" "GP_Sloc:matharray.ads:88:52" "GP_Id:227" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                                   ^ matharray.ads:88:52:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:88:34" "GP_Id:223" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                 ^ matharray.ads:88:34:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___839 = ( #"matharray.ads" 88 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ((#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add" "GP_Sloc:matharray.ads:75:52" "GP_Id:227" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                                   ^ matharray.ads:75:52:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:75:34" "GP_Id:223" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                 ^ matharray.ads:75:34:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___839 = ( #"matharray.ads" 75 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 88 0 0# assert { #"matharray.ads" 88 0 0# (#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:88:27" "GP_Id:221" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                          ^ matharray.ads:88:27:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___839) /\ (temp___839 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 75 0 0# assert { #"matharray.ads" 75 0 0# (#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:75:27" "GP_Id:221" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                          ^ matharray.ads:75:27:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___839) /\ (temp___839 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___839 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___840 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.first(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:88:44" "GP_Id:222" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                           ^ matharray.ads:88:44:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___840) /\ (temp___840 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__first_ref" "GP_Sloc:matharray.ads:75:44" "GP_Id:222" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                           ^ matharray.ads:75:44:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___840) /\ (temp___840 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___840 )))
-   ))))))) )) + (#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:88:69" "GP_Id:226" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                                                    ^ matharray.ads:88:69:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___841 = ( #"matharray.ads" 88 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
+   ))))))) )) + (#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__if__cmp__add__mult" "GP_Sloc:matharray.ads:75:69" "GP_Id:226" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                                                    ^ matharray.ads:75:69:VC_OVERFLOW_CHECK" (Standard__integer.range_check_(((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec1.vec1))) ((let temp___841 = ( #"matharray.ads" 75 0 0# abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec1.vec1 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec1.vec1)) ) in (
-    ( #"matharray.ads" 88 0 0# assert { #"matharray.ads" 88 0 0# (#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:88:63" "GP_Id:224" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                                              ^ matharray.ads:88:63:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___841) /\ (temp___841 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
+    ( #"matharray.ads" 75 0 0# assert { #"matharray.ads" 75 0 0# (#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:75:63" "GP_Id:224" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                                              ^ matharray.ads:75:63:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec1.vec1) <= temp___841) /\ (temp___841 <= (Matharray__vec.last Matharray__perpendicular_vec__vec1.vec1)) ) )) };
     temp___841 )))
    )))) * (Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Matharray__vec.to_array(Matharray__perpendicular_vec__vec2.vec2))) ((let temp___842 = (  abstract ensures {true}(let _ = Matharray__perpendicular_vec__vec2.vec2 in (
     ()))
     end ;
    (Matharray__vec.last(Matharray__perpendicular_vec__vec2.vec2)) ) in (
-    (  assert {  (#"matharray.ads" 88 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:88:79" "GP_Id:225" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
-                                                                              ^ matharray.ads:88:79:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___842) /\ (temp___842 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
+    (  assert {  (#"matharray.ads" 75 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__if__cmp__add__mult__ixdcomp__last_ref" "GP_Sloc:matharray.ads:75:79" "GP_Id:225" "comment:                (vec1(vec1'First)*vec2(vec2'First))+(vec1(vec1'Last)*vec2(vec2'Last)) /= 0);  
+                                                                              ^ matharray.ads:75:79:VC_INDEX_CHECK" ( ((Matharray__vec.first Matharray__perpendicular_vec__vec2.vec2) <= temp___842) /\ (temp___842 <= (Matharray__vec.last Matharray__perpendicular_vec__vec2.vec2)) ) )) };
     temp___842 )))
    ))))))) ))))) )) <> 0))) in (
    ()))

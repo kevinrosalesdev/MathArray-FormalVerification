@@ -45,7 +45,7 @@
       "sloc": [
         {
           "file": "matharray.ads",
-          "line": 66
+          "line": 53
         }
       ],
       "spark": "all"
@@ -55,7 +55,7 @@
       "sloc": [
         {
           "file": "matharray.ads",
-          "line": 75
+          "line": 62
         }
       ],
       "spark": "all"
@@ -164,7 +164,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 66,
+      "line": 53,
       "col": 43,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -173,7 +173,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -184,7 +184,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 70,
+      "line": 57,
       "col": 15,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -193,7 +193,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -204,7 +204,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 56,
+      "line": 44,
       "col": 10,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -213,7 +213,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -2309,7 +2309,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 70,
+      "line": 57,
       "col": 60,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -2318,7 +2318,58 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "matharray.ads",
+      "check_line": 57,
+      "check_col": 60,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "matharray.ads",
+      "line": 70,
+      "col": 69,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "MathArray.perpendicular_vec",
+        "sloc": [
+          {
+            "file": "matharray.ads",
+            "line": 62
           }
         ]
       },
@@ -2348,57 +2399,6 @@
       ],
       "check_file": "matharray.ads",
       "check_line": 70,
-      "check_col": 60,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 2,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "matharray.ads",
-      "line": 83,
-      "col": 69,
-      "rule": "VC_INDEX_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "MathArray.perpendicular_vec",
-        "sloc": [
-          {
-            "file": "matharray.ads",
-            "line": 75
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "matharray.ads",
-      "check_line": 83,
       "check_col": 69,
       "how_proved": "prover",
       "stats": {
@@ -2411,7 +2411,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 31,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -2420,7 +2420,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -2449,7 +2449,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -2553,7 +2553,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 56,
+      "line": 44,
       "col": 62,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -2562,7 +2562,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -2591,7 +2591,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 56,
+      "check_line": 44,
       "check_col": 62,
       "how_proved": "prover",
       "stats": {
@@ -2604,7 +2604,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 70,
+      "line": 57,
       "col": 78,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -2613,7 +2613,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -2642,7 +2642,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 70,
+      "check_line": 57,
       "check_col": 78,
       "how_proved": "prover",
       "stats": {
@@ -2746,7 +2746,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 80,
+      "line": 67,
       "col": 74,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -2755,7 +2755,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -2784,7 +2784,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 80,
+      "check_line": 67,
       "check_col": 74,
       "how_proved": "prover",
       "stats": {
@@ -3121,7 +3121,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 79,
+      "line": 66,
       "col": 40,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -3130,7 +3130,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -3159,7 +3159,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 79,
+      "check_line": 66,
       "check_col": 40,
       "how_proved": "prover",
       "stats": {
@@ -3172,7 +3172,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 92,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3181,7 +3181,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -3219,7 +3219,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 92,
       "how_proved": "prover",
       "stats": {
@@ -3232,7 +3232,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 49,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -3241,7 +3241,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -3289,7 +3289,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 49,
       "how_proved": "prover",
       "stats": {
@@ -4166,7 +4166,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 60,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -4175,7 +4175,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -4204,7 +4204,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 60,
       "how_proved": "prover",
       "stats": {
@@ -4672,7 +4672,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 92,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -4681,7 +4681,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -4699,7 +4699,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 92,
       "how_proved": "prover",
       "stats": {
@@ -4752,7 +4752,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
+      "line": 70,
       "col": 42,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -4761,7 +4761,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -4790,7 +4790,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
+      "check_line": 70,
       "check_col": 42,
       "how_proved": "prover",
       "stats": {
@@ -23349,7 +23349,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 34,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -23358,7 +23358,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -23376,7 +23376,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 34,
       "how_proved": "prover",
       "stats": {
@@ -23542,7 +23542,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 24,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -23551,7 +23551,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -23580,7 +23580,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 24,
       "how_proved": "prover",
       "stats": {
@@ -23815,7 +23815,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 80,
+      "line": 67,
       "col": 49,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -23824,7 +23824,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -23888,7 +23888,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 80,
+      "check_line": 67,
       "check_col": 49,
       "how_proved": "prover",
       "stats": {
@@ -23901,7 +23901,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -23910,7 +23910,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -23939,7 +23939,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 48,
       "how_proved": "prover",
       "stats": {
@@ -24072,7 +24072,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 63,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -24081,7 +24081,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -24110,7 +24110,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 63,
       "how_proved": "prover",
       "stats": {
@@ -24174,7 +24174,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 27,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -24183,7 +24183,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -24212,7 +24212,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 27,
       "how_proved": "prover",
       "stats": {
@@ -25048,7 +25048,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
+      "line": 70,
       "col": 25,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -25057,7 +25057,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -25086,7 +25086,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
+      "check_line": 70,
       "check_col": 25,
       "how_proved": "prover",
       "stats": {
@@ -28136,7 +28136,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 69,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -28145,7 +28145,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -28163,7 +28163,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 69,
       "how_proved": "prover",
       "stats": {
@@ -28427,7 +28427,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 56,
+      "line": 44,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_INIT",
       "severity": "info",
@@ -28436,7 +28436,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -28465,7 +28465,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 56,
+      "check_line": 44,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -28569,7 +28569,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -28578,7 +28578,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -28607,7 +28607,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 79,
       "how_proved": "prover",
       "stats": {
@@ -28671,7 +28671,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -28680,7 +28680,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -28709,7 +28709,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 48,
       "how_proved": "prover",
       "stats": {
@@ -28813,7 +28813,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 44,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -28822,7 +28822,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -28891,7 +28891,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 44,
       "how_proved": "prover",
       "stats": {
@@ -28904,7 +28904,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 44,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -28913,7 +28913,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -28942,7 +28942,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 44,
       "how_proved": "prover",
       "stats": {
@@ -29137,7 +29137,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 52,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -29146,7 +29146,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -29164,7 +29164,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 52,
       "how_proved": "prover",
       "stats": {
@@ -30459,7 +30459,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 74,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -30468,7 +30468,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -30486,7 +30486,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 74,
       "how_proved": "prover",
       "stats": {
@@ -30499,7 +30499,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 31,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -30508,7 +30508,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -30537,7 +30537,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -30655,7 +30655,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 71,
+      "line": 58,
       "col": 49,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -30664,7 +30664,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -30693,7 +30693,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 71,
+      "check_line": 58,
       "check_col": 49,
       "how_proved": "prover",
       "stats": {
@@ -30706,7 +30706,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
+      "line": 70,
       "col": 75,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -30715,7 +30715,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -30733,7 +30733,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
+      "check_line": 70,
       "check_col": 75,
       "how_proved": "prover",
       "stats": {
@@ -30797,7 +30797,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -30806,7 +30806,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -30824,7 +30824,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -31333,7 +31333,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 63,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -31342,7 +31342,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -31371,7 +31371,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 63,
       "how_proved": "prover",
       "stats": {
@@ -31486,7 +31486,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 27,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -31495,7 +31495,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -31524,7 +31524,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 27,
       "how_proved": "prover",
       "stats": {
@@ -31759,7 +31759,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -31768,7 +31768,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -31786,7 +31786,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -31799,7 +31799,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 86,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -31808,7 +31808,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -31837,7 +31837,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 86,
       "how_proved": "prover",
       "stats": {
@@ -32010,7 +32010,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 81,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -32019,7 +32019,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32037,7 +32037,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 81,
       "how_proved": "prover",
       "stats": {
@@ -32050,7 +32050,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 41,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -32059,7 +32059,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32088,7 +32088,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 41,
       "how_proved": "prover",
       "stats": {
@@ -32101,7 +32101,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 56,
+      "line": 44,
       "col": 32,
       "rule": "VC_LOOP_INVARIANT_PRESERV",
       "severity": "info",
@@ -32110,7 +32110,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -32139,7 +32139,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 56,
+      "check_line": 44,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -32363,7 +32363,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 74,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -32372,7 +32372,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32390,7 +32390,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 74,
       "how_proved": "prover",
       "stats": {
@@ -32676,7 +32676,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 31,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -32685,7 +32685,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32714,7 +32714,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -32767,7 +32767,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 91,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -32776,7 +32776,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32805,7 +32805,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 91,
       "how_proved": "prover",
       "stats": {
@@ -32969,7 +32969,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 31,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -32978,7 +32978,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -32996,7 +32996,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
@@ -33199,7 +33199,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 76,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -33208,7 +33208,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -33237,7 +33237,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 76,
       "how_proved": "prover",
       "stats": {
@@ -33330,7 +33330,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 81,
+      "line": 68,
       "col": 75,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -33339,7 +33339,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -33368,7 +33368,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 81,
+      "check_line": 68,
       "check_col": 75,
       "how_proved": "prover",
       "stats": {
@@ -33676,7 +33676,7 @@
     },
     {
       "file": "matharray.adb",
-      "line": 63,
+      "line": 51,
       "col": 66,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -33685,7 +33685,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -33703,7 +33703,7 @@
         }
       ],
       "check_file": "matharray.adb",
-      "check_line": 63,
+      "check_line": 51,
       "check_col": 66,
       "how_proved": "prover",
       "stats": {
@@ -33855,7 +33855,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 38,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -33864,7 +33864,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -33882,7 +33882,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
@@ -33895,7 +33895,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -33904,7 +33904,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -33933,7 +33933,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 79,
       "how_proved": "prover",
       "stats": {
@@ -34687,7 +34687,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 34,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -34696,7 +34696,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -34714,7 +34714,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 34,
       "how_proved": "prover",
       "stats": {
@@ -34818,7 +34818,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 102,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -34827,7 +34827,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -34856,7 +34856,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 102,
       "how_proved": "prover",
       "stats": {
@@ -34985,7 +34985,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 79,
+      "line": 66,
       "col": 65,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -34994,7 +34994,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35023,7 +35023,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 79,
+      "check_line": 66,
       "check_col": 65,
       "how_proved": "prover",
       "stats": {
@@ -35087,7 +35087,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 70,
+      "line": 57,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -35096,7 +35096,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 66
+            "line": 53
           }
         ]
       },
@@ -35125,7 +35125,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 70,
+      "check_line": 57,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -35189,7 +35189,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 102,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -35198,7 +35198,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35227,7 +35227,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 102,
       "how_proved": "prover",
       "stats": {
@@ -35240,7 +35240,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 82,
+      "line": 69,
       "col": 86,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -35249,7 +35249,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35278,7 +35278,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 82,
+      "check_line": 69,
       "check_col": 86,
       "how_proved": "prover",
       "stats": {
@@ -35342,7 +35342,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
+      "line": 70,
       "col": 85,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -35351,7 +35351,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35380,7 +35380,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
+      "check_line": 70,
       "check_col": 85,
       "how_proved": "prover",
       "stats": {
@@ -35393,7 +35393,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 83,
+      "line": 70,
       "col": 32,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -35402,7 +35402,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35450,7 +35450,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 83,
+      "check_line": 70,
       "check_col": 32,
       "how_proved": "prover",
       "stats": {
@@ -35463,7 +35463,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 86,
+      "line": 73,
       "col": 69,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -35472,7 +35472,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35490,7 +35490,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 86,
+      "check_line": 73,
       "check_col": 69,
       "how_proved": "prover",
       "stats": {
@@ -35503,7 +35503,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 85,
+      "line": 72,
       "col": 14,
       "rule": "VC_POSTCONDITION",
       "severity": "info",
@@ -35512,7 +35512,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -35566,7 +35566,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 85,
+      "check_line": 72,
       "check_col": 14,
       "how_proved": "prover",
       "stats": {
@@ -36500,7 +36500,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 84,
+      "line": 71,
       "col": 48,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -36509,7 +36509,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -36538,7 +36538,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 84,
+      "check_line": 71,
       "check_col": 48,
       "how_proved": "prover",
       "stats": {
@@ -36551,7 +36551,7 @@
     },
     {
       "file": "matharray.ads",
-      "line": 88,
+      "line": 75,
       "col": 52,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -36560,7 +36560,7 @@
         "sloc": [
           {
             "file": "matharray.ads",
-            "line": 75
+            "line": 62
           }
         ]
       },
@@ -36578,7 +36578,7 @@
         }
       ],
       "check_file": "matharray.ads",
-      "check_line": 88,
+      "check_line": 75,
       "check_col": 52,
       "how_proved": "prover",
       "stats": {
@@ -36885,7 +36885,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 75
+              "line": 62
             }
           ]
         }
@@ -36901,7 +36901,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 75
+              "line": 62
             }
           ]
         }
@@ -36917,7 +36917,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 75
+              "line": 62
             }
           ]
         }
@@ -37173,7 +37173,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 66
+              "line": 53
             }
           ]
         }
@@ -37205,7 +37205,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 66
+              "line": 53
             }
           ]
         }
@@ -37237,7 +37237,7 @@
           "sloc": [
             {
               "file": "matharray.ads",
-              "line": 66
+              "line": 53
             }
           ]
         }
@@ -37245,14 +37245,14 @@
     }
   ],
   "timings": {
-    "marking": 2.02677794732153E-03,
-    "globals (basic)": 2.54917070269585E-02,
-    "globals/properties (advanced)": 3.14648784697056E-02,
-    "flow analysis": 7.73128215223551E-03,
-    "codepeer results": 4.22599987359717E-06,
-    "init_why_sections": 2.03764997422695E-04,
-    "translation of standard": 2.84274201840162E-03,
-    "translation of compilation unit": 6.23676665127277E-02,
-    "proof": 4.26349782943726E+00
+    "marking": 2.52287997864187E-03,
+    "globals (basic)": 2.08520535379648E-02,
+    "globals/properties (advanced)": 2.67255455255508E-02,
+    "flow analysis": 9.46304015815258E-03,
+    "codepeer results": 5.97400003243820E-06,
+    "init_why_sections": 2.50026001594961E-04,
+    "translation of standard": 3.41546698473394E-03,
+    "translation of compilation unit": 7.61706680059433E-02,
+    "proof": 5.00011587142944E+00
   }
 }

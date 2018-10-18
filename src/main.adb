@@ -253,23 +253,6 @@ procedure Main is
          Put_Line (Msg & " Failed (exception)");
    end Test_derivative;
 
---     procedure Test_derivative_x is
---        Msg   : constant String := "Test_derivative_x";
---        dv0 : vec(1..1);
---        res0 : Integer;
---     begin
---        dv0 := (dv0'First => 2);
---        res0 := derivative_x(dv0, 4);
---        Assert_True (res0 = 0, Msg & " with a function with only one coefficient (2) in 4.");
---        Assert_True (derivative_x((3,5), 2) = 3, Msg & " with 3x + 5 in 2");
---        Assert_True (derivative_x((2,0,6), 0) = 0, Msg & " with 2x^2 + 0x + 6 in 0");
---     exception
---        when Assertion_Error =>
---           Put_Line (Msg & " Failed (assertion)");
---        when others =>
---           Put_Line (Msg & " Failed (exception)");
---     end Test_derivative_x;
-
 begin
    Put_Line ("********************* Test_Max");
    Test_midpoint;
@@ -277,5 +260,5 @@ begin
    Test_get;
    Test_perpendicular_vec;
    Test_derivative;
-   --Test_derivative_x;
+
 end Main;

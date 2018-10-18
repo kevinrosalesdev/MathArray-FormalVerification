@@ -1,7 +1,8 @@
-20181015221510
+20181018093830
 -c
 -x
 ada
 -gnatA
+-gnat12
 -gnatc
--gnates=C:\Users\Hector\Desktop\ke\MathArray-PR3\obj\gnatprove\706a07a0.tmp
+-gnates=C:\Users\Hector\Desktop\venga\MathArray-PR3\obj\gnatprove\842fad40.tmp
