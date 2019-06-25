@@ -36,8 +36,8 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D matharray.ads		20181018104430 9c69554e matharray%s
-D matharray.adb		20181018104100 ff42c012 matharray%b
+D matharray.ads		20190625001142 9c69554e matharray%s
+D matharray.adb		20190624232116 ff42c012 matharray%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s

@@ -3258,15 +3258,19 @@
             "split_disj": [
               {
                 "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
                   "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 47759,
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "Z3": {
+                    "result": "Failure",
+                    "steps": -1,
                     "time": 0
                   }
                 },
@@ -3275,7 +3279,43 @@
               },
               {
                 "proof_attempts": {
+                  "CVC4": {
+                    "result": "Unknown (none)",
+                    "steps": 1390,
+                    "time": 0
+                  },
                   "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 1872,
+                    "time": 0
+                  },
+                  "Z3": {
+                    "result": "Timeout",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "altergo": {
+                    "result": "Unknown (none)",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "Z3": {
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
@@ -23835,22 +23875,12 @@
               "result": "Valid",
               "steps": 5,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (none)",
-              "steps": 233,
-              "time": 0
             }
           },
           "transformations": {
             "split_disj": [
               {
                 "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (none)",
-                    "steps": 180,
-                    "time": 0
-                  }
                 },
                 "transformations": {
                 }
@@ -30724,7 +30754,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 1413,
+              "steps": 1522,
               "time": 0
             }
           },
@@ -32987,11 +33017,51 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 3413,
+              "steps": 3639,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (none)",
+              "steps": 7916,
               "time": 0
             }
           },
           "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 7929,
+                    "time": 0
+                  }
+                },
+                "transformations": {
+                }
+              }
+            ]
           }
         }
       ],
@@ -35411,7 +35481,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 2632,
+              "steps": 2637,
               "time": 0
             }
           },
@@ -35425,7 +35495,17 @@
               },
               {
                 "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
                   "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "Z3": {
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
@@ -35436,7 +35516,17 @@
               },
               {
                 "proof_attempts": {
+                  "CVC4": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
                   "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  },
+                  "Z3": {
                     "result": "Failure",
                     "steps": -1,
                     "time": 0
@@ -37245,14 +37335,14 @@
     }
   ],
   "timings": {
-    "marking": 2.52287997864187E-03,
-    "globals (basic)": 2.08520535379648E-02,
-    "globals/properties (advanced)": 2.67255455255508E-02,
-    "flow analysis": 9.46304015815258E-03,
-    "codepeer results": 5.97400003243820E-06,
-    "init_why_sections": 2.50026001594961E-04,
-    "translation of standard": 3.41546698473394E-03,
-    "translation of compilation unit": 7.61706680059433E-02,
-    "proof": 5.00011587142944E+00
+    "marking": 2.19099689275026E-03,
+    "globals (basic)": 2.15999465435743E-02,
+    "globals/properties (advanced)": 3.19475643336773E-02,
+    "flow analysis": 8.83975904434919E-03,
+    "codepeer results": 4.82999985251809E-06,
+    "init_why_sections": 1.98633002582937E-04,
+    "translation of standard": 3.18868807516992E-03,
+    "translation of compilation unit": 7.63126909732819E-02,
+    "proof": 6.05892467498779E+00
   }
 }
